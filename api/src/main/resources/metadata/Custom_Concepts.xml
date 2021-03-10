@@ -1690,6 +1690,8 @@
     <concept  concept_id="166261"  retired="0" datatype_id="2"  class_id="5"  is_set="0"  creator="1"  date_created="2021-03-02 22:08:34"  version="1.0"  changed_by="1"  date_changed="2021-03-02 22:08:34"  uuid="5c0a051b-7813-4159-bd49-409376bdbdd4"/>
     <concept  concept_id="166262"  retired="0" datatype_id="6"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-02 22:10:00"  version="1.0"  changed_by="1"  date_changed="2021-03-02 22:10:00"  uuid="e6059a6f-5e1b-429a-923e-23e9d09340a9"/>
     <concept  concept_id="166263"  retired="0" datatype_id="1"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-09 17:08:15"  version="1.0" changed_by="1"  date_changed="2021-03-09 17:08:15"  uuid="85282d20-acaf-4951-a1ca-f9fdaa69e020"/>
+    <concept  concept_id="166264"  retired="0" datatype_id="2"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-10 13:25:15"  version="1.0" changed_by="1"  date_changed="2021-03-10 13:25:15" uuid="5cb01928-450f-41fb-8861-32ceb5e71fbd"/>
+    <concept  concept_id="166265"  retired="0" datatype_id="1"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-10 13:42:09" version="1.0" changed_by="1"  date_changed="2021-03-10 13:42:09" uuid="3d69feae-87e3-4593-b889-8e5863d9907b"/>
 
     <!--CONCEPT NUMERIC-->
     <!--MCH-->
@@ -1812,6 +1814,7 @@
 
     <!-- covid 19 case management -->
     <concept_numeric  concept_id="166245"  units="days"  allow_decimal="0" />
+    <concept_numeric  concept_id="166265"  units="days"  allow_decimal="0" />
 
 
 
@@ -5476,7 +5479,7 @@
 
 
     <!-- covid 19 case management -->
-    <concept_name  concept_name_id="161581"  concept_id="166243"  name="dxprc"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-02 21:27:41"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="9b9821ea-680b-4719-b063-616e4e52d1cb" />
+    <concept_name  concept_name_id="161581"  concept_id="166243"  name="PCR Diagnosis date"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-02 21:27:41"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="9b9821ea-680b-4719-b063-616e4e52d1cb" />
     <concept_name  concept_name_id="161582"  concept_id="166244"  name="covid outcome"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-02 21:36:06"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="10693f8f-7924-4b4f-8809-4cc3be9a776d" />
     <concept_name  concept_name_id="161583"  concept_id="166245"  name="isolation duration"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-02 21:37:17"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="cd91f5f5-38cb-4bb1-8936-e647db6dada3" />
     <concept_name  concept_name_id="161584"  concept_id="166246"  name="disease category"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-02 21:43:09"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="31b8ad5d-0dfa-4cb0-a99b-d87af4dba3f1" />
@@ -5499,6 +5502,11 @@
     <concept_name  concept_name_id="161602"  concept_id="166261"  name="swab number"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-02 22:08:34"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="a101b026-909b-4ad6-b1b6-7e7bd62a3c0a" />
     <concept_name  concept_name_id="161603"  concept_id="166262"  name="date of 1st positive test" locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-02 22:10:00"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="4de0675e-6004-4bd4-8637-84ccb51c3957" />
     <concept_name  concept_name_id="161605"  concept_id="166263"  name="CASE ID"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-09 17:08:15"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="2e24dc8c-e7e3-4893-a603-0d7a557409d6"/>
+
+    <concept_name  concept_name_id="161610"  concept_id="166265"  name="Average stay"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-10 13:42:09"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="5bae9cf8-b2ef-471e-b9cb-68d313a6ea9e"/>
+    <concept_name  concept_name_id="161609"  concept_id="166264"  name="COVID case transfers"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-10 13:25:15"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="78bb1659-4b82-4f19-b628-ce721280d031"/>
+
+
 
 
     <!--CONCEPT ANSWERS-->
@@ -7096,6 +7104,9 @@
     <concept_answer  concept_answer_id="7366540"  concept_id="90251"  answer_concept="120749"  creator="1"  date_created="2021-03-09 16:53:37"  sort_weight="23"  uuid="ebcb6ce2-ef1d-4d2f-a0e1-1f2f14832c14"/>
     <concept_answer  concept_answer_id="7366541"  concept_id="90251"  answer_concept="149856"  creator="1"  date_created="2021-03-09 16:53:37"  sort_weight="24"  uuid="52d42976-9528-463a-9b1a-5fc6aea8a102"/>
     <concept_answer  concept_answer_id="7366542"  concept_id="90251"  answer_concept="1107"    creator="1"  date_created="2021-03-09 16:53:37"  sort_weight="25"  uuid="dc789f07-be22-42bf-a9ef-009753006b43"/>
+
+    <concept_answer  concept_answer_id="7366543"  concept_id="166264"  answer_concept="165854" creator="1"  date_created="2021-03-10 13:25:15"  sort_weight="2"  uuid="212d3d11-34cf-4d02-97dc-09a7fae266d1"/>
+    <concept_answer  concept_answer_id="7366544"  concept_id="166264"  answer_concept="99387"  creator="1"  date_created="2021-03-10 13:25:15"  sort_weight="1"  uuid="a6f227d9-c73e-43bd-bdb0-271884c3db48"/>
 
 
     <!--CONCEPT SET-->
