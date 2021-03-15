@@ -1693,6 +1693,12 @@
     <concept  concept_id="166264"  retired="0" datatype_id="2"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-10 13:25:15"  version="1.0" changed_by="1"  date_changed="2021-03-10 13:25:15" uuid="5cb01928-450f-41fb-8861-32ceb5e71fbd"/>
     <concept  concept_id="166265"  retired="0" datatype_id="1"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-10 13:42:09" version="1.0" changed_by="1"  date_changed="2021-03-10 13:42:09" uuid="3d69feae-87e3-4593-b889-8e5863d9907b"/>
 
+    <concept  concept_id="166266"  retired="0"  datatype_id="4"  class_id="10"  is_set="1"  creator="1"  date_created="2021-03-15 15:05:14"  version="1.0"  changed_by="1"  date_changed="2021-03-15 15:05:14"  uuid="cecc4537-1f09-431d-8067-854b70140458"/>
+    <concept  concept_id="166267"  retired="0"  datatype_id="3"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-15 15:08:52"  version="1.0"  changed_by="1"  date_changed="2021-03-15 15:08:52"  uuid="23d74af5-cbaa-4270-9e3c-befa7d894959"/>
+    <concept  concept_id="166268"  retired="0"  datatype_id="6"  class_id="11"  is_set="0"  creator="1"  date_created="2021-03-15 15:48:29"  version="1.0"  changed_by="1"  date_changed="2021-03-15 15:48:29"  uuid="b6f550d7-97ce-410b-9e20-c1daddabb2a5"/>
+    <concept  concept_id="166269"  retired="0"  datatype_id="4"  class_id="10"  is_set="1"  creator="1"  date_created="2021-03-15 15:50:27"  version="1.0"  changed_by="1"  date_changed="2021-03-15 15:50:27"  uuid="f95b7930-ba79-48da-acdb-5e16ace98d78"/>
+
+
     <!--CONCEPT NUMERIC-->
     <!--MCH-->
     <concept_numeric  concept_id="160081"  allow_decimal="0" />
@@ -5506,6 +5512,11 @@
     <concept_name  concept_name_id="161610"  concept_id="166265"  name="Average stay"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-10 13:42:09"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="5bae9cf8-b2ef-471e-b9cb-68d313a6ea9e"/>
     <concept_name  concept_name_id="161609"  concept_id="166264"  name="COVID case transfers"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-10 13:25:15"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="78bb1659-4b82-4f19-b628-ce721280d031"/>
 
+    <concept_name  concept_name_id="161612"  concept_id="166267"  name="Current Concerns"  		   locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-15 15:08:52"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="7e3da34a-b23f-488a-919f-967fbe9217d5"/>
+    <concept_name  concept_name_id="161613"  concept_id="166268"  name="Diagnosis by PCR Date"     locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-15 15:48:29"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="59d66c37-89a7-42cd-a844-83be5c556e5f"/>
+    <concept_name  concept_name_id="161614"  concept_id="166269"  name="Covid PCR Set"  		   locale="en"  locale_preferred="1"  creator="1"  date_created="2021-03-15 15:50:27"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="ff4e287b-9821-47a1-8d63-8e35eba7c827"/>
+
+
 
 
 
@@ -7269,6 +7280,11 @@
     <concept_set  concept_set_id="2424"  concept_id="165006"  concept_set="165009"  sort_weight="0"  creator="1"  date_created="2017-11-28 12:37:09"  uuid="2424AEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"/>
     <concept_set  concept_set_id="2423"  concept_id="165006"  concept_set="165010"  sort_weight="0"  creator="1"  date_created="2017-11-28 12:36:45"  uuid="2423AEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"/>
     <concept_set  concept_set_id="2422"  concept_id="165006"  concept_set="165007"  sort_weight="0"  creator="1"  date_created="2017-11-28 12:34:39"  uuid="2422AEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"/>
+
+    <!-- covid 19 case management -->
+
+    <concept_set  concept_set_id="2967"  concept_id="166268"  concept_set="166269"  sort_weight="0"  creator="1"  date_created="2021-03-15 15:50:27"  uuid="09079e91-387b-4462-ae8e-41d5a90cd9b2"/>
+    <concept_set  concept_set_id="2968"  concept_id="166253"  concept_set="166269"  sort_weight="1"  creator="1"  date_created="2021-03-15 15:50:27"  uuid="76dbec4d-fb43-4525-a04f-fff1d9c62e0e"/>
 
     <!--Program-->
     <concept_set  concept_set_id="2572"  concept_id="165142"  concept_set="165143"  sort_weight="3"  creator="1"  date_created="2018-09-28 12:18:23"  uuid="73317abc-c321-11e8-a355-529269fb1459"/>
