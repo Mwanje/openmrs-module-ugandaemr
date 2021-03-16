@@ -4,7 +4,6 @@ package org.openmrs.module.ugandaemr.htmlformentry;
 import org.openmrs.*;
 import org.openmrs.api.EncounterService;
 import org.openmrs.api.context.Context;
-import org.openmrs.module.ugandaemr.api.UgandaEMRService;
 import org.openmrs.module.htmlformentry.CustomFormSubmissionAction;
 import org.openmrs.module.htmlformentry.FormEntryContext.Mode;
 import org.openmrs.module.htmlformentry.FormEntrySession;
