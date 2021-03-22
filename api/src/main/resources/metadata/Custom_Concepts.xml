@@ -2762,9 +2762,8 @@
     <concept_name   concept_name_id="142022" concept_id="165205"  name="Hypertension, stage 4"  locale="en"  creator="1"  date_created="2018-12-04 07:44:49"   voided="0"  voided_by="1"   void_reason=""  uuid="142022BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB" locale_preferred="0" changed_by="1"/>
     <concept_name   concept_name_id="142023" concept_id="165205"  name="Severe hypertension"  locale="en"  creator="1"  date_created="2018-12-04 07:44:49"   voided="0"  voided_by="1" uuid="142023BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"  concept_name_type="FULLY_SPECIFIED"  locale_preferred="1" changed_by="1"/>
 
-
-    <concept_name concept_name_id="161582" concept_id="164350" name="Previous ARV Regimen line" locale="en" locale_preferred="1" creator="1" date_created="2021-03-22 15:00:49" concept_name_type="FULLY_SPECIFIED" voided="0" uuid="02f20a5c-3253-4790-9495-e34a3c1ba380" date_changed="2021-03-22 15:00:49" changed_by="1"/>
-    <concept_name concept_name_id="161581" concept_id="164515" name="Current Regimen Line" locale="en" locale_preferred="1" creator="1" date_created="2021-03-22 14:51:35" concept_name_type="FULLY_SPECIFIED" voided="0" uuid="84897886-d9b8-44ee-b029-0ebd938ae8d1" date_changed="2021-03-22 14:51:35" changed_by="1"/>
+    <concept_name concept_name_id="162582" concept_id="164350" name="Previous ARV Regimen line" locale="en" locale_preferred="1" creator="1" date_created="2021-03-22 15:00:49" concept_name_type="FULLY_SPECIFIED" voided="0" uuid="02f20a5c-3253-4790-9495-e34a3c1ba380" date_changed="2021-03-22 15:00:49" changed_by="1"/>
+    <concept_name concept_name_id="162581" concept_id="164515" name="Current Regimen Line" locale="en" locale_preferred="1" creator="1" date_created="2021-03-22 14:51:35" concept_name_type="FULLY_SPECIFIED" voided="0" uuid="84897886-d9b8-44ee-b029-0ebd938ae8d1" date_changed="2021-03-22 14:51:35" changed_by="1"/>
 
     <!--KP-->
     <concept_name  concept_id="1533"  name="RESPONDENT GENDER"  locale="en"  creator="1"  date_created="2008-02-16 13:53:50"  concept_name_id="1792"  voided="0"  voided_by="1" uuid="1792BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"  concept_name_type="FULLY_SPECIFIED"  locale_preferred="1"/>
@@ -6983,6 +6982,12 @@
     <concept_answer concept_answer_id="7366220" concept_id="165822" answer_concept="1065" creator="1" date_created="2020-05-28 15:27:05" sort_weight="1" uuid="89e81a2b-7dc7-4394-8050-26dd21f437fe"/>
     <concept_answer concept_answer_id="7366221" concept_id="165822" answer_concept="1066" creator="1" date_created="2020-05-28 15:27:05" sort_weight="1" uuid="12d5ce7c-9ab6-4045-b313-c5b9cabba272"/>
 
+    <concept_answer concept_answer_id="7367522" concept_id="164350" answer_concept="90271" creator="1" date_created="2021-03-22 15:00:49" sort_weight="1" uuid="824b5e32-8651-4ba1-8188-699b4ae89261"/>
+    <concept_answer concept_answer_id="7367523" concept_id="164350" answer_concept="90305" creator="1" date_created="2021-03-22 15:00:49" sort_weight="2" uuid="21ffba08-80da-4eb9-90c0-15a17847fb4b"/>
+    <concept_answer concept_answer_id="7367524" concept_id="164350" answer_concept="162916" creator="1" date_created="2021-03-22 15:00:49" sort_weight="3" uuid="e805ad18-fcdc-42f3-9173-35e2f8d94b2c"/>
+    <concept_answer concept_answer_id="7366521" concept_id="164515" answer_concept="162916" creator="1" date_created="2021-03-22 14:51:35" sort_weight="3" uuid="4a9b6670-8755-4618-8881-1c6fe4a60763"/>
+    <concept_answer concept_answer_id="7367519" concept_id="164515" answer_concept="90271" creator="1" date_created="2021-03-22 14:51:35" sort_weight="1" uuid="356894bc-3f60-45e6-ba45-33bfd7350385"/>
+    <concept_answer concept_answer_id="7367520" concept_id="164515" answer_concept="90305" creator="1" date_created="2021-03-22 14:51:35" sort_weight="2" uuid="3f6484f3-2d5e-4276-ad65-7b39fa1bddf5"/>
     <!--TB-->
     <concept_answer  concept_answer_id="7366253"  concept_id="165869"  answer_concept="165866" creator="1"  date_created="2020-06-18 12:25:51"  sort_weight="1"  uuid="b196b62f-0ab0-4be3-b246-1f7e2104bace"/>
     <concept_answer  concept_answer_id="7366254"  concept_id="165869"  answer_concept="165867" creator="1"  date_created="2020-06-18 12:25:51"  sort_weight="2"  uuid="032c2008-3ee9-49b1-a821-31bcf64801dd"/>
