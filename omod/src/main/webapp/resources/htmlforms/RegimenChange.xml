@@ -1,0 +1,112 @@
+<htmlform formName="ART Regimen Change"
+          formDescription="ART Regimen Change"
+          formUuid="53a3850c-855a-11eb-8dcd-0242ac130003"
+          formEncounterType="c11774c1-3b4a-4bdb-a847-6060895e006d"
+          formVersion="1.0"
+          formAddMetadata="yes"
+          formUILocation="patientDashboard.visitActions"
+          formOrder="1"
+          formIcon="icon-exchange"
+          formShowIf="(visit.active || !visit.active) &amp;&amp; patient.person.dead==false &amp;&amp; sessionLocation.uuid=='86863db4-6101-4ecf-9a86-5e716d6504e4'"
+          formDisplayStyle="Standard"
+          formLabel="ART Regimen Change">
+
+    <div>
+        <div class="row">
+            <div class="col-md-11">
+                <H1>ART Regimen Switch and Substitution</H1>
+            </div>
+            <div>
+                <div class="col-md-1">
+                    <submit class="confirm" submitLabel="Save" submitStyle="customSubmit"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <table id="art-history" class="table table-borderless">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label><b>Date</b></label>
+                        </td>
+                        <td>
+                            <div class="right-inner-addon">
+                                <i class=" icon-calendar small right-inner-addon-row"></i>
+                                <encounterDate default="today"
+                                               disallowMultipleEncountersOnDate="block"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><b>Current Regimen</b></label>
+                        </td>
+                        <td>
+                            Obs
+                            <lookup complexExpression="$fn.latestObs(90315).valueCoded" />
+                            <lookup complexExpression="#foreach($obs in $fn.allObs(90315)) $obs.valueCoded #end"/>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><b>Current Line</b></label>
+                        </td>
+                        <td>
+                            164350
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label><b>Clinician</b></label>
+                        </td>
+                        <td>
+                            <encounterProviderAndRole encounterRole="240b26f9-dd88-4172-823d-4a8bfeb7841f"
+                                                      required="required" default="currentUser"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><b>Action Type</b></label>
+                        </td>
+                        <td>
+                            <obs conceptId="99055" answerConceptIds="90003,90004"
+                                 answerLabels="Yes,No"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><b>New Regimen</b></label>
+                        </td>
+                        <td>
+                            <obs conceptId="99055"
+                                 answerConceptIds="99015,99016,99005,99006,164979,99039,99040,164977,99041,99042,99007,99008,99044,99043,99282,99283,99046,99017,99018,99019,99045,99284,99285,99286,99884,99885,164978,99888,163017,99887,90002"
+                                 answerLabels="d4T-3TC-NVP,d4T-3TC-EFV,AZT-3TC-NVP,AZT-3TC-EFV,AZT-3TC-DTG,TDF-3TC-NVP,TDF-3TC-EFV,TDF-3TC-DTG,TDF-FTC-NVP,TDF-FTC-EFV,ABC-ddI(250)-LPV/r,ABC-ddI(400)-LPV/r,TDF-3TC-LPV/r,TDF-FTC-LPV/r,ZDV-ddI(250)-LPV/r,ZDV-ddI(400)-LPV/r,AZT-3TC-LPV/r,ABC-ddI-LPV/r,ABC-ddI-NFV,ABC-ddI-SQV/r,ZDV-ddI-LPV/r,AZT-ABC-LPV/r,ABC-ddI-ATV/r,AZT-3TC-ATV/r,ABC-3TC-NVP,ABC-3TC-EFV,ABC-3TC-DTG,ABC-3TC-ATV/r,ABC-3TC-LPV/r,TDF-3TC-ATV/r,Other"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><b>New Regimen Line</b></label>
+                        </td>
+                        <td>
+                            <obs conceptId="164515" answerConceptIds="90003,90004"
+                                 answerLabels="Yes,No"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><b>Why</b></label>
+                        </td>
+                        <td>
+                            <obs style="textarea" rows="3" conceptId="90265"/>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</htmlform>
