@@ -108,7 +108,7 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <label>Covid-19 Infection</label>
-                                                <obs conceptId="166249" answerConceptIds="99353,99112" answerLabels="Confirmed, Suspected" 
+                                                <obs conceptId="166326" answerConceptIds="166324,166325" answerLabels="Confirmed, Suspected"
                                                      style="radio" class="horizontal"/>
                                             </div>
                                         </div>
@@ -120,15 +120,15 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <obs conceptId="165169" answerConceptId="5619" answerLabel="Isolation ward for suspect cases" style="checkbox" 
+                                            <obs conceptId="166317" answerConceptId="166313" answerLabel="Isolation ward for suspect cases" style="checkbox"
                                                  class="col-md-3"/> 
-                                            <obs conceptId="165169" answerConceptId="165882" answerLabel="Isolation ward for confirmed cases" style="checkbox" class="col-md-3" />
-                                            <obs conceptId="165169" answerConceptId="162277" answerLabel="High dependency unit" style="checkbox" class="col-md-2" />
-                                            <obs conceptId="165169" answerConceptId="162277" answerLabel="ICU" style="checkbox" class="col-md-2" /> 
+                                            <obs conceptId="166317" answerConceptId="166314" answerLabel="Isolation ward for confirmed cases" style="checkbox" class="col-md-3" />
+                                            <obs conceptId="166317" answerConceptId="166315" answerLabel="High dependency unit" style="checkbox" class="col-md-2" />
+                                            <obs conceptId="166317" answerConceptId="161936" answerLabel="ICU" style="checkbox" class="col-md-2" />
                                         </div>
                                         <div class="row">
-                                            <obs conceptId="165169" answerConceptId="162277" answerLabel="Other" style="checkbox" class="col-md-3" /> 
-                                            <obs conceptId="166245" labelText="Specify Other" class="col-md-4"/>
+                                            <obs conceptId="166317" answerConceptId="90002" answerLabel="Other" style="checkbox" class="col-md-3" />
+                                            <obs conceptId="166316" labelText="Specify Other" class="col-md-4"/>
                                         </div>
                                     </div>
                                 </div>
@@ -140,56 +140,42 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <label>Temperature(c)</label>
-                                                <obs conceptId=" 166254" />
+                                                <obs conceptId="5088" />
                                             </div>
                                             <div class="col-md-3">
                                                 <label>Blood Pressure</label>
-                                                <obs conceptId=" 166254" />
+                                                <obs conceptId="99654" />
                                             </div>
                                             <div class="col-md-3">
                                                 <label>Respiratory Rate</label>
-                                                <obs conceptId=" 166254" />
+                                                <obs conceptId="5242" />
                                             </div>
                                             <div class="col-md-3">
                                                 <label>Heart Rate</label>
-                                                <obs conceptId=" 166254" />
+                                                <obs conceptId=" 5087" />
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <label>Severe Dehydration</label>
-                                                <obs conceptId=" 166254" />
+                                                <obs conceptId="166406" />
                                             </div>
                                             <div class="col-md-3">
                                                 <label>GCS/15</label>
-                                                <obs conceptId="166262" />
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label>Digital Capillary Refill time > 25</label>
-                                                <obs conceptId=" 166254" />
+                                                <obs conceptId="166407" />
                                             </div>
                                             <div class="col-md-3">
                                                 <label>Oxygen Saturation</label>
-                                                <obs conceptId="166262" />
+                                                <obs conceptId="5092" />
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-3">
-                                                <label>On Room Air</label>
-                                                <obs conceptId=" 166254" />
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label>Oxygen Therapy</label>
-                                                <obs conceptId="166262" />
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label>Unknown</label>
-                                                <obs conceptId=" 166254" />
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label>AUPU</label>
-                                                <obs conceptId="166262" />
-                                            </div>
+                                                <obs conceptId="166411" answerConceptId="166408" answerLabel="Digital Capillary Refill time > 25" style="checkbox" class="col-md-3"/>
+                                                <obs conceptId="166411" answerConceptId="166409" answerLabel="On Room Air" style="checkbox" class="col-md-3"/>
+                                                <obs conceptId="166411" answerConceptId="166396" answerLabel="Oxygen Therapy" style="checkbox" class="col-md-3"/>
+                                                <obs conceptId="166411" answerConceptId="90001" answerLabel="Unknown" style="checkbox" class="col-md-3"/>
+                                                <obs conceptId="166411" answerConceptId="166410" answerLabel="AUPU" style="checkbox" class="col-md-3"/>
+
                                         </div>
                                     </div>
                                 </div>
@@ -202,17 +188,17 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                        <obs conceptId="90251" answerConceptId="90094"   answerLabel="Cough" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="90133"   answerLabel="Sputum" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90132"   answerLabel="Production" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90131"   answerLabel="Sore Throat" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="90093"   answerLabel="Chest Pain" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="158843"  answerLabel="Brightness of Breath" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="871"     answerLabel="Seizures" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="165501"  answerLabel="Vomiting/Nausea Diarrhea" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="120749"  answerLabel="Conjuctivitis Myalgia" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Other" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Specify Other" class="col-md-3" />
+                                        <obs conceptId="166413" answerConceptId="90132"   answerLabel="Cough" class="col-md-3"/>
+                                        <obs conceptId="166413" answerConceptId="1004"   answerLabel="Sputum" class="col-md-3" />
+                                        <obs conceptId="166413" answerConceptId="166412"   answerLabel="Production" class="col-md-3" />
+                                        <obs conceptId="166413" answerConceptId="158843"   answerLabel="Sore Throat" class="col-md-3"/>
+                                        <obs conceptId="166413" answerConceptId="120749"   answerLabel="Chest Pain" class="col-md-3"/>
+                                        <obs conceptId="166413" answerConceptId="158843"  answerLabel="Brightness of Breath" class="col-md-3"/>
+                                        <obs conceptId="166413" answerConceptId="206"     answerLabel="Seizures" class="col-md-3"/>
+                                        <obs conceptId="166413" answerConceptId="5980"  answerLabel="Vomiting/Nausea Diarrhea" class="col-md-3" />
+                                        <obs conceptId="166413" answerConceptId="6034"  answerLabel="Conjuctivitis Myalgia" class="col-md-3"/>
+                                        <obs conceptId="166413" answerConceptId="90002"  answerLabel="Other" class="col-md-3" />
+                                        <obs conceptId="166413" answerConceptId="149856"  answerLabel="Specify Other" class="col-md-3" />
                                     </div>
                                 </div>
                             </div>
@@ -222,31 +208,31 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                        <obs conceptId="90251" answerConceptId="90094"   answerLabel="Haemoglobin" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Creatinine" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90133"   answerLabel="WBC Count" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Sodium" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90132"   answerLabel="Haematocrit (%)" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Potassium " class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90131"   answerLabel="Platelets" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Procalcitonin " class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90093"   answerLabel="APTT/APTR" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="CRP" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="158843"  answerLabel="PT (seconds)" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="LDH" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="871"     answerLabel="INR" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Creatine" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90094"   answerLabel="Kinase" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="ALT/SGPT" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90133"   answerLabel="UTroponin" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Total Bilirubin" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90132"   answerLabel="ESR" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="AST/SGOT" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90131"   answerLabel="UD-dimer" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Urea (BUN) " class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="90093"   answerLabel="mFerritin" class="col-md-3"/>
-                                        <obs conceptId="90251" answerConceptId="149856"  answerLabel="Lactate" class="col-md-3" />
-                                        <obs conceptId="90251" answerConceptId="158843"  answerLabel="aIL-6" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="21"   answerLabel="Haemoglobin" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="790"  answerLabel="Creatinine" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="678"   answerLabel="WBC Count" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="1132"  answerLabel="Sodium" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="1015"   answerLabel="Haematocrit (%)" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="1133"  answerLabel="Potassium " class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="729"   answerLabel="Platelets" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="166327"  answerLabel="Procalcitonin " class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="166329"   answerLabel="APTT/APTR" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="166328"  answerLabel="CRP" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="166330"  answerLabel="PT (seconds)" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="1014"  answerLabel="LDH" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="166331"     answerLabel="INR" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="1011"  answerLabel="Creatine" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="1011"   answerLabel="Kinase" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="90190"  answerLabel="ALT/SGPT" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="166332"   answerLabel="UTroponin" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="655"  answerLabel="Total Bilirubin" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="855"   answerLabel="ESR" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="654"  answerLabel="AST/SGOT" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="166333"   answerLabel="UD-dimer" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="857"  answerLabel="Urea (BUN) " class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="166334"   answerLabel="mFerritin" class="col-md-3"/>
+                                        <obs conceptId="166336" answerConceptId="1012"  answerLabel="Lactate" class="col-md-3" />
+                                        <obs conceptId="166336" answerConceptId="166335"  answerLabel="aIL-6" class="col-md-3"/>
                                     </div>
                                 </div>
                             </div> 
