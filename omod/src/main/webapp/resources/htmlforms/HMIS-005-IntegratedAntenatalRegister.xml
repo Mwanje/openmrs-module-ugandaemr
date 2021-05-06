@@ -900,8 +900,8 @@
                                                                     <div class="row">
                                                                         <div class="col-md-3">
                                                                             <label>Family Planning Methods</label>
-                                                                                <obs conceptId="374" answerConceptIds="190, 5275, 162961, 160570" 
-                                                                                     answerLabels="Condoms, IUDs, Implants, Pills" /> 
+                                                                                <obs conceptId="374" answerConceptIds="190, 5275, 162961,5278,780, 5279, 5277"
+                                                                                     answerLabels="Condoms, IUDs, Implants, Diaphram/Cervical Cap, Oral Contraceptive pills, Injectable, Fertility Awareness Methods" />
                                                                         </div>
                                                                         <div class="col-md-2 pt-4">
                                                                             <obs conceptId="166183" id="166183" style="checkbox" />
