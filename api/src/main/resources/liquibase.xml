@@ -544,6 +544,14 @@ VALUES
 			UPDATE global_property SET property_value = ""  WHERE property = "ugandaemr.dhis2.organizationuuid" AND property_value="eg d06ace3e-9c46-11e7-abc4-cec278b6b50a"
 		</sql>
 	</changeSet>
+	<changeSet id="ugandaemr-14062021-1052" author="mmwanje">
+		<comment>
+			Changing Concept Name for concept 99302 from Fifty dose to Fifth dose
+		</comment>
+		<sql>
+			UPDATE concept_name SET name = 'Fifth dose' WHERE concept_id =99302 AND concept_name_type ='FULLY_SPECIFIED';
+		</sql>
+	</changeSet>
 </databaseChangeLog>
 
 
