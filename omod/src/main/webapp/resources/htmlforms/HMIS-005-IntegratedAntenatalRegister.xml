@@ -1224,12 +1224,10 @@
                                                     <div class="card-header">Blood Group</div>
                                                     <div class="card-body">
                                                         <div class="row">
-                                                            <obsgroup groupingConceptId="657">
                                                                 <div class="col-md-6">
                                                                     <label>Blood Group</label>
                                                                     <obs conceptId="300" answerConceptIds="690, 692, 694, 696, 699, 701, 1230, 1231" answerLabels="A - Postive, A - Negative, B - Postive, B - Negative, O Postive, O - Negative, AB - Postive, AB - Negative" />
                                                                 </div>
-                                                            </obsgroup>
                                                         </div>
                                                     </div>
                                                 </div>
