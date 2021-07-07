@@ -532,7 +532,7 @@
     <div>
         <div class="row">
             <div class="col-md-6">
-                <h1>HMIS MCH 001 Antenatal Card</h1>
+                <h1>HMIS MCH 001: Antenatal Card</h1>
             </div>
             <div class="col-md-5"></div>
             <div class="col-md-1">
@@ -552,9 +552,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#pregnancy-section">Pregnacy information</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#diagnosis-and-hiv-information">Progress Examination</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#investigations-section">Counselling &amp; Investigations</a>
@@ -785,6 +782,10 @@
                                                             <label>Specify other SBGV</label>
                                                             <obs id="166174" conceptId="166174" />
                                                         </div>
+                                                        <div class="col-md-6">
+                                                            <label>Health of Husband/Partner</label>
+                                                            <obs conceptId="166174" />  <!--David i cant find this concept Health of Husband/Partner-->
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -885,18 +886,6 @@
                                 <section>
                                     <div class="card">
                                         <div class="card-header">
-                                            Diagnosis
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <encounterDiagnoses required="false" selectedDiagnosesTarget="" preferredCodingSource="ICD-10-WHO" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
                                             Physical Examination
                                         </div>
                                         <div class="card-body">
@@ -973,14 +962,9 @@
                                             </div></div>
                                     </div>
 
-
-                                </section>
-                            </div>
-                            <div class="tab-pane" id="diagnosis-and-hiv-information">
-                                <section>
                                     <div class="card">
                                         <div class="card-header">
-                                            Diagnosis
+                                            Progress Examination
                                         </div>
                                         <div class="card-body">
                                             <div class="row">
@@ -991,7 +975,7 @@
                                                     <obs conceptId="166197" labelText="Fundal Height" />
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <obs conceptId="166198" labelText="Presentation/Lie" />
+                                                    <obs conceptId="166198" labelText="Presentation" />
                                                 </div>
                                                 <div class="col-md-3">
                                                     <obs conceptId="166199" labelText="Position/Lie" />
@@ -1012,22 +996,29 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-2">
+                                                <div class="col-md-3 pt-4">
                                                     <obs conceptId="166235"
                                                          style="checkbox"/>
                                                     <label>Varicose</label>
                                                 </div>
-                                                <label>Oedema</label>
-                                                <div class="col-md-2">
+
+                                                <div class="col-md-3">
+                                                    <label>Oedema</label>
                                                     <obs conceptId="460"
                                                          answerConceptIds="90003, 90004" answerLabels="Yes, No"
                                                          style="radio" class="horizontal" />
                                                 </div>
+
+                                                <div class="col-md-2">
+                                                    <obs conceptId="99317" labelText="EMTCT Code" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </section>
                             </div>
+
 
                             <div class="tab-pane" id="investigations-section">
                                 <div class="row">
