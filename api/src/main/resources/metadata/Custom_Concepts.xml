@@ -1896,6 +1896,19 @@
 
     <concept  concept_id="166452"  retired="0"  datatype_id="2"  class_id="11"  is_set="0"  creator="1"  date_created="2021-07-13 11:07:12"  version="1.0"  changed_by="1"  date_changed="2021-07-13 11:07:12" uuid="d966dfcb-e650-41fc-b07d-78d00d5f83a8"/>
 
+    <!--Emergency ART Services Register-->
+    <concept  concept_id="166463"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:56:59"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:56:59"  uuid="342db3a7-74c4-4cb0-943a-432c6b3693b6"/>
+    <concept  concept_id="166462"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:56:28"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:56:28"  uuid="93d7b669-c6d7-45dd-a727-cb438e3992e1"/>
+    <concept  concept_id="166461"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:55:59"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:55:59"  uuid="2ab8849a-8f4a-49f4-9e8b-cd84f40162cf"/>
+    <concept  concept_id="166460"  retired="0"  datatype_id="2"  class_id="11"  is_set="0"  creator="1"  date_created="2021-07-19 14:52:27" version="1.0"  changed_by="1"  date_changed="2021-07-19 14:52:27"  uuid="500a95a0-d769-485f-9094-d50413068feb"/>
+    <concept  concept_id="166459"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:51:03"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:51:03"  uuid="c141da47-7217-416e-9348-d3a6389de155"/>
+    <concept  concept_id="166458"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:50:19"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:50:19"  uuid="1072e4fe-aa9f-427d-958b-3191e01f329f"/>
+    <concept  concept_id="166457"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:49:14"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:49:14"  uuid="7b444872-3151-4bbf-a043-5ccd0ec0e9b7"/>
+    <concept  concept_id="166456"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:36:53"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:36:53"  uuid="e021a3a4-25f0-4ecb-b94c-9162c9980414"/>
+    <concept  concept_id="166455"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2021-07-19 14:35:43"  version="1.0"  changed_by="1"  date_changed="2021-07-19 14:35:43"  uuid="aab0ab6d-400c-4654-b0d9-71f79f2f5269"/>
+    <concept  concept_id="166454"  retired="0"  datatype_id="3"  class_id="11"  is_set="0"  creator="1"  date_created="2021-07-19 14:31:22" version="1.0"  changed_by="1"  date_changed="2021-07-19 14:31:22"  uuid="f523846c-b80a-4720-9c27-010ba17a1bf2"/>
+    <concept  concept_id="166453"  retired="0"  datatype_id="3"  class_id="11"  is_set="0"  creator="1"  date_created="2021-07-19 14:24:15" version="1.0"  changed_by="1"  date_changed="2021-07-19 14:24:15"  uuid="b5b933db-1054-4f78-9bab-441dbf29be69"/>
+
 
     <!--CONCEPT NUMERIC-->
     <!--MCH-->
@@ -5952,6 +5965,19 @@
 
     <concept_name  concept_name_id="162710"  concept_id="166452"  name="oral fluids given"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-13 11:07:12"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="a0958720-89b5-4805-8ebf-7c116c276f13"/>
 
+    <!-- Emergency ART Services Register -->
+    <concept_name  concept_name_id="162711"  concept_id="166453"  name="Parent Health Facility"  			 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:24:15"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="c070e8b0-addf-45eb-8c3f-b6192039d238"/>
+    <concept_name  concept_name_id="162712"  concept_id="166454"  name="District of Parent Health facility"  locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:31:22"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="88772153-834b-4d22-aeab-9ea729960c12"/>
+    <concept_name  concept_name_id="162713"  concept_id="166455"  name="Lockdown"  							 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:35:43"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="7b8fc4ed-ae80-4aac-a59e-d55cf07db732"/>
+    <concept_name  concept_name_id="162714"  concept_id="166456"  name="Natural Disaster"  					 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:36:53"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="f10f1c52-a628-4269-8271-82a784d1f491"/>
+    <concept_name  concept_name_id="162715"  concept_id="166457"  name="Active at parent facility"  		 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:49:14"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="1410159b-cd11-4eeb-ab6b-696783e1ba5f"/>
+    <concept_name  concept_name_id="162716"  concept_id="166458"  name="Active at temporary Facility"  		 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:50:19"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="347aa2b5-2b7d-497b-9a55-f031638cf2cb"/>
+    <concept_name  concept_name_id="162717"  concept_id="166459"  name="Not followed up"  					 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:51:03"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="275b541e-7480-428b-b2f3-5f100acd1e25"/>
+    <concept_name  concept_name_id="162718"  concept_id="166460"  name="Client Follow-up status"  			 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:52:27"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="cf2da083-e2aa-4e56-9146-f22b3195bc4d"/>
+    <concept_name  concept_name_id="162719"  concept_id="166461"  name="General ART Client"  				 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:55:59"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="b0d86a43-dfde-4aa5-b1b6-debbd53d567c"/>
+    <concept_name  concept_name_id="162720"  concept_id="166462"  name="Non IDU"  							 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:56:28"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="e722cfbd-065a-4066-833e-5b2b5f59ff13"/>
+    <concept_name  concept_name_id="162721"  concept_id="166463"  name="Other PPs"  						 locale="en"  locale_preferred="1"  creator="1"  date_created="2021-07-19 14:56:59"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="2dcf1c17-1511-4ebe-83d1-f1016d9469bb"/>
+
 
     <!--CONCEPT ANSWERS-->
     <!--MCH-->
@@ -8031,6 +8057,16 @@
 
     <concept_answer  concept_answer_id="7367840"  concept_id="166452"  answer_concept="90004"  creator="1"  date_created="2021-07-13 11:07:12"  sort_weight="2"  uuid="c32a251a-89db-4b90-9413-62b6cacbeb23"/>
     <concept_answer  concept_answer_id="7367841"  concept_id="166452"  answer_concept="90003"  creator="1"  date_created="2021-07-13 11:07:12"  sort_weight="1"  uuid="d6744d56-0428-4206-82a9-5c31800b6cfa"/>
+
+
+    <!-- Emergency ART Services Register -->
+
+    <concept_answer  concept_answer_id="7367842"  concept_id="160288"  answer_concept="166455"  creator="1"  date_created="2021-07-19 14:44:46"  sort_weight="21"  uuid="249b2927-0dc8-427e-ba4c-eeca26683c60"/>
+    <concept_answer  concept_answer_id="7367843"  concept_id="160288"  answer_concept="166456"  creator="1"  date_created="2021-07-19 14:44:46"  sort_weight="22"  uuid="798e47e0-93c7-4d19-a545-4506dae53fae"/>
+    <concept_answer  concept_answer_id="7367844"  concept_id="160288"  answer_concept="165043"  creator="1"  date_created="2021-07-19 14:44:46"  sort_weight="23"  uuid="41839be8-7f46-4beb-b65a-0fb58fef895e"/>
+    <concept_answer  concept_answer_id="7367845"  concept_id="166460"  answer_concept="166459"  creator="1"  date_created="2021-07-19 14:52:27"  sort_weight="3"  uuid="2c5bea51-e03a-402f-a29a-5da0d2d5a8fc"/>
+    <concept_answer  concept_answer_id="7367846"  concept_id="166460"  answer_concept="166458"  creator="1"  date_created="2021-07-19 14:52:27"  sort_weight="2"  uuid="ec1ef982-5412-4553-b9a3-ec8013b6e390"/>
+    <concept_answer  concept_answer_id="7367847"  concept_id="166460"  answer_concept="166457"  creator="1"  date_created="2021-07-19 14:52:27"  sort_weight="1"  uuid="21e24e35-4b14-40a8-981a-3ffc3ba5a9fa"/>
 
 
 
