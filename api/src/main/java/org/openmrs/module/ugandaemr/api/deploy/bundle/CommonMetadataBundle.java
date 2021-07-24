@@ -70,6 +70,9 @@ public class CommonMetadataBundle extends AbstractMetadataBundle {
         install(EncounterTypes.COVID19_FOLLOWUP);
         install(EncounterTypes.COVID19_DISCHARGE);
         install(EncounterTypes.ANC_CARD_ENCOUNTER_TYPE);
+        install(EncounterTypes.COVID19_POSTMORTEM);
+        install(EncounterTypes.COVID19_REFERRAL);
+
 
         //installing programs metadata
         log.info("Installing Programs");
