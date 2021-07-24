@@ -1213,12 +1213,12 @@
                                                         <div class="col-md-8">
                                                             <label>Complications of Pregnancy if any:</label>
                                                             <div class="row complication-of-pregnancy">
-                                                                <obs conceptId="166449" answerConceptId="147241" answerLabel="Bleeding" style="checkbox" class="col-md-3" />
-                                                                <obs conceptId="166449" answerConceptId="5980" answerLabel="Excessive vomiting" style="checkbox" class="col-md-3"/>
-                                                                <obs id="other-complication" conceptId="166449" answerConceptId="90002" answerLabel="Others Specify" style="checkbox" class="col-md-3" />
+                                                                <obs conceptId="166467" answerConceptId="147241" answerLabel="Bleeding" style="checkbox" class="col-md-3" />
+                                                                <obs conceptId="166467" answerConceptId="5980" answerLabel="Excessive vomiting" style="checkbox" class="col-md-3"/>
+                                                                <obs id="other-complication" conceptId="166467" answerConceptId="90002" answerLabel="Others Specify" style="checkbox" class="col-md-3" />
                                                                 <div class="col-md-3">
                                                                     <label>Specify other complication</label>
-                                                                    <obs id="specify-other-complication" conceptId="166450" />
+                                                                    <obs id="specify-other-complication" conceptId="166466" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1226,11 +1226,11 @@
                                                     <div class="row">
                                                         <div class="col-md-2">
                                                             <label>Any hospitalisation?</label>
-                                                            <obs id="any-hospitalization" conceptId="166451" answerConceptIds="90003, 90004" answerLabels="Yes, No" style="radio" class="horizontal"/>
+                                                            <obs id="any-hospitalization" conceptId="166468" answerConceptIds="90003, 90004" answerLabels="Yes, No" style="radio" class="horizontal"/>
                                                         </div>
                                                         <div class="col-md-3">
                                                             <label>Specify Hospitalisation</label>
-                                                            <obs id="specify-hospitalisation" conceptId="166452" />
+                                                            <obs id="specify-hospitalisation" conceptId="166469" />
                                                         </div>
                                                         <div class="col-md-3">
                                                             <label>Known HIV status</label>
