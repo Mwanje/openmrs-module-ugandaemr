@@ -69,6 +69,7 @@ public class CommonMetadataBundle extends AbstractMetadataBundle {
         install(EncounterTypes.COVID19_ENROLLMENT);
         install(EncounterTypes.COVID19_FOLLOWUP);
         install(EncounterTypes.COVID19_DISCHARGE);
+        install(EncounterTypes.ANC_CARD_ENCOUNTER_TYPE);
 
         //installing programs metadata
         log.info("Installing Programs");
