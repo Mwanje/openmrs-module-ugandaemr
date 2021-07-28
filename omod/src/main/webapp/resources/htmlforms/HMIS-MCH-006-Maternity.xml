@@ -670,7 +670,7 @@
 												</div>
 												<div class="col-md-3">
 													<label>Condition of Baby at Discharge</label>
-													<obs conceptId="99334"  class="long-value-select"  answerConceptIds="99331,162953,99332,99333,165448,165449,162954" answerLabels="MSB - Macerated Still Bath,FSB - Fresh Still Birth, NND - Immediate Neonatal Death, AL - Live Baby, AL-R - Live baby referred to another unit, AL-T - Live baby transferred to another ward/ Department, BDF - Baby Born With defect" style="dropdown" id="99334"/>
+													<obs conceptId="99334"  class="long-value-select"  answerConceptIds="135436,162953,99332,99333,165448,165449,162954" answerLabels="MSB - Macerated Still Bath,FSB - Fresh Still Birth, NND - Immediate Neonatal Death, AL - Live Baby, AL-R - Live baby referred to another unit, AL-T - Live baby transferred to another ward/ Department, BDF - Baby Born With defect" style="dropdown" id="99334"/>
 												</div>
 												<div class="col-md-3">
 													<label>Other Ward/Department</label>
