@@ -29,6 +29,7 @@
 						disable_fields("other-family-planning-option");
 					}
 				});
+ 
 
 
                 //enable/disable other management procedure
@@ -622,8 +623,12 @@
 													<obs conceptId="165451"/>
 												</div>
 												<div class="col-md-3">
-													<label>Delivered By</label>
-													<encounterProviderAndRole encounterRole="240b26f9-dd88-4172-823d-4a8bfeb7841f" id="delivered-by" />
+													<label><span class="required">*</span>Delivered By</label>
+													<encounterProvider role="Provider" style="autocomplete" id="provider"/>
+													<span style="display: none;">
+														<encounterLocation default="629d78e9-93e5-43b0-ad8a-48313fd99117"
+																		   order="629d78e9-93e5-43b0-ad8a-48313fd99117"/>
+													</span>
 												</div>
 											</div>
 											<div class="row">
