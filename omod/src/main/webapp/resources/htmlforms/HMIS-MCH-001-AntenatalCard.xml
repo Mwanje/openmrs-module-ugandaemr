@@ -1,6 +1,6 @@
 <htmlform   formName="HMIS MCH 001 Antenatal Card"
-            formDescription="Entry form for patients enrolled for ANC services" 
-            formEncounterType="9d203d7f-7d35-4856-98aa-37c75832554e"
+            formDescription="Entry form for patients enrolled for ANC services"
+            formEncounterType="044daI6d-f80e-48fe-aba9-037f241905Pe"
             formUuid="a8ded080-4123-4b68-9475-5723d6712aa2"
             formVersion="3.0.0" 
             formAddMetadata="yes" 

@@ -309,19 +309,4 @@ public class EncounterTypes {
         }
     };
 
-    public static EncounterTypeDescriptor ANC_CARD_ENCOUNTER_TYPE = new EncounterTypeDescriptor() {
-        @Override
-        public String name() {
-            return "ANC Card - Encounter";
-        }
-
-        @Override
-        public String description() {
-            return "An encounter when a patient gets ANC services";
-        }
-
-        public String uuid() {
-            return "9d203d7f-7d35-4856-98aa-37c75832554e";
-        }
-    };
 }
