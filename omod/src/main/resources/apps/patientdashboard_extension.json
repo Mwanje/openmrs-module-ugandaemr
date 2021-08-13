@@ -25,7 +25,7 @@
     "label": "Find Patient",
     "url": "ugandaemr/findpatient/findPatient.page?app=ugandaemr.findPatient",
     "icon": "icon-search",
-    "order": -8,
+    "order": 5,
     "requiredPrivilege": "App: ugandaemr.findPatient"
   },
   {
@@ -35,7 +35,7 @@
     "label": "Goto Patient Dashboard",
     "url" : "coreapps/clinicianfacing/patient.page?patientId={{patient.uuid}}",
     "icon": "icon-file-alt",
-    "order": -7,
+    "order": 10,
     "requiredPrivilege": "App: ugandaemr.patientDashbord"
   }
 ]
