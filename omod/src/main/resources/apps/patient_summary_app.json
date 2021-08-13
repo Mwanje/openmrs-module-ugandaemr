@@ -54,5 +54,44 @@
       }
     }
   ]
-}
+},
+  {
+    "id": "ugandaemr.registrationSummary.identifiers",
+    "label": "Identifiers",
+    "icon": "icon-user",
+    "extensions": [
+      {
+        "id": "org.openmrs.module.ugandaemr.registrationSummary.identifiers",
+        "extensionPointId": "registrationSummary.secondColumnContentFragments",
+        "extensionParams": {
+          "provider": "registrationapp",
+          "fragment": "summary/section",
+          "fragmentConfig": {
+            "sectionId": "identifiers",
+            "appId": "ugandaemr.registrationapp.registerPatient"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "ugandaemr.findPatientLink",
+    "extensionPointId": "registrationSummary.overallActions",
+    "type": "link",
+    "label": "Find Patient",
+    "url": "ugandaemr/findpatient/findPatient.page?app=ugandaemr.findPatient",
+    "icon": "icon-search",
+    "order": 21,
+    "requiredPrivilege": "App: ugandaemr.findPatient"
+  },
+  {
+    "id": "ugandaemr.patientDashbord",
+    "extensionPointId": "registrationSummary.overallActions",
+    "type": "link",
+    "label": "Goto Patient Dashboard",
+    "url" : "ugandaemr/coreapps/clinicianfacing/patient.page?patientId={{patient.uuid}}",
+    "icon": "icon-file-alt",
+    "order": 22,
+    "requiredPrivilege": "App: ugandaemr.patientDashbord"
+  }
 ]
