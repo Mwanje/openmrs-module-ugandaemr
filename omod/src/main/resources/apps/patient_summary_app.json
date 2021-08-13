@@ -54,25 +54,5 @@
       }
     }
   ]
-},
-    {
-    "id": "ugandaemr.findPatientLink",
-    "extensionPointId": "registrationSummary.overallActions",
-    "type": "link",
-    "label": "Find Patient",
-    "url": "ugandaemr/findpatient/findPatient.page?app=ugandaemr.findPatient",
-    "icon": "icon-search",
-    "order": 21,
-    "requiredPrivilege": "App: ugandaemr.findPatient"
-  },
-  {
-    "id": "ugandaemr.patientDashbord",
-    "extensionPointId": "registrationSummary.overallActions",
-    "type": "link",
-    "label": "Goto Patient Dashboard",
-    "url" : "ugandaemr/coreapps/clinicianfacing/patient.page?patientId={{patient.uuid}}",
-    "icon": "icon-file-alt",
-    "order": 22,
-    "requiredPrivilege": "App: ugandaemr.patientDashbord"
-  }
+}
 ]
