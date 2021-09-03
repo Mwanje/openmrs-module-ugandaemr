@@ -230,11 +230,15 @@
 												<obs conceptId="1646"  />
 											</div>
 											<div class="col-md-3">
-												<label>Gravida</label>
-												<obs conceptId="5624"  />
+												<label>Referrals in/Out</label>
+												<obs conceptId="165855" />
 											</div>
 										</div>
 										<div class="row">
+											<div class="col-md-3">
+												<label>Gravida</label>
+												<obs conceptId="5624"  />
+											</div>
 											<div class="col-md-3">
 												<label>Parity</label>
 												<obs conceptId="1053"  />
@@ -246,6 +250,9 @@
 											<div class="col-md-3">
 												<obs conceptId="161033" answerConceptIds="1395,129218" answerLabels="Term,Preterm" labelText="Delivery" class="horizontal" style="radio"/>
 											</div>
+
+										</div>
+										<div class="row">
 											<div class="col-md-3">
 												<label>Reason For Admission</label>
 												<obs conceptId="165460"  />
@@ -526,6 +533,10 @@
 																	<div class="col-md-4">
 																		<label>Apgar 5th Minute Score</label>
 																		<obs conceptId="164943"  />
+																	</div>
+																	<div class="col-md-1">
+																		<obs conceptId="164122" answerConceptId="121397" answerLabel="Asphyxia" style="checkbox"
+																			 class="horizontal" />
 																	</div>
 																	<div class="col-md-3">
 																		<obs conceptId="1587" answerConceptIds="1534,1535" answerLabels="Male,Female" 
