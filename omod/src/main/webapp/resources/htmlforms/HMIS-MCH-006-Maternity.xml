@@ -663,10 +663,10 @@
 											<obsgroup groupingConceptId="165462">
 												<div class="row">
 													<div class="col-md-2">
-														<label>PNC Timing</label>
+														<label>Mother PNC Timing</label>
 													</div>
 													<div class="col-md-4">
-														<obs conceptId="166495" answerConceptIds="165462,165463"
+														<obs conceptId="166502" answerConceptIds="165462,165463"
 															 answerLabels="PNC at 6 hours,PNC at 24 hours"/>
 													</div>
 													<div class="col-md-3">
@@ -766,8 +766,8 @@
 												<div class="row">
 
 													<div class="col-md-2">
-														<label>PNC Timing</label>
-														<obs conceptId="166495" answerConceptIds="165462,165463"
+														<label>Baby PNC Timing</label>
+														<obs conceptId="166501" answerConceptIds="165462,165463"
 															 answerLabels="PNC at 6 hours,PNC at 24 hours"/>
 													</div>
 													<div class="col-md-3">
