@@ -657,13 +657,43 @@
 											</div>
 										</div>
 									</div>
+                                    <div class="card">
+                                        <div class="card-header">Baby's PNC</div>
+                                        <div class="card-body">
+                                            <obsgroup groupingConceptId="165463">
+                                                <div class="row">
+
+                                                    <div class="col-md-2">
+                                                        <label>PNC Timing</label>
+                                                        <obs conceptId="166501" answerConceptIds="165462,165463"
+                                                             answerLabels="PNC at 6 hours,PNC at 24 hours"/>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Checked Baby's Cord?</label>
+                                                        <obs conceptId="165816" answerConceptIds="1065,1066,1175" answerLabels="Yes,No,NA"
+                                                             style="radio" class="horizontal" />
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Baby Breast Feeding?</label>
+                                                        <obs conceptId="165817" answerConceptIds="1065,1066,1175" answerLabels="Yes,No,NA"
+                                                             style="radio" class="horizontal" />
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label>Checked Baby Apgar Score at 5 Minutes</label>
+                                                        <obs conceptId="165818" answerConceptIds="1065,1066,1175" answerLabels="Yes,No,NA"
+                                                             style="radio" class="horizontal" />
+                                                    </div>
+                                                </div>
+                                            </obsgroup>
+                                        </div>
+                                    </div>
 									<div class="card">
-										<div class="card-header">Mother</div>
+										<div class="card-header">Mother's PNC</div>
 										<div class="card-body">
 											<obsgroup groupingConceptId="165462">
 												<div class="row">
 													<div class="col-md-2">
-														<label>Mother PNC Timing</label>
+														<label>PNC Timing</label>
 													</div>
 													<div class="col-md-4">
 														<obs conceptId="166502" answerConceptIds="165462,165463"
@@ -759,36 +789,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="card">
-										<div class="card-header">Baby</div>
-										<div class="card-body">
-											<obsgroup groupingConceptId="165463">
-												<div class="row">
 
-													<div class="col-md-2">
-														<label>Baby PNC Timing</label>
-														<obs conceptId="166501" answerConceptIds="165462,165463"
-															 answerLabels="PNC at 6 hours,PNC at 24 hours"/>
-													</div>
-													<div class="col-md-3">
-														<label>Checked Baby's Cord?</label>
-														 <obs conceptId="165816" answerConceptIds="1065,1066,1175" answerLabels="Yes,No,NA"
-														 style="radio" class="horizontal" />
-													</div>
-													<div class="col-md-3">
-														<label>Baby Breast Feeding?</label>
-														<obs conceptId="165817" answerConceptIds="1065,1066,1175" answerLabels="Yes,No,NA"
-														 style="radio" class="horizontal" />
-													</div>
-													<div class="col-md-4">
-														<label>Checked Baby Apgar Score at 5 Minutes</label>
-													    <obs conceptId="165818" answerConceptIds="1065,1066,1175" answerLabels="Yes,No,NA"
-														 style="radio" class="horizontal" />
-													</div>
-												</div>
-											</obsgroup>
-										</div>
-									</div>
 									<div class="card">
 										<div class="card-body">
 											<div class="row">
