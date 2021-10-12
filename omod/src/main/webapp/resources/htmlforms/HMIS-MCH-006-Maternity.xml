@@ -584,7 +584,7 @@
 																		<obs conceptId="5916"/>
 																	</div>
 																	<div class="col-md-4">
-																		<obs conceptId="165380"  answerConceptIds="165381,1408,1175" answerLabels="High,Low,NA" 
+																		<obs conceptId="165380"  answerConceptIds="1408,165381,1175" answerLabels="High,Low,NA"
 																			 labelText="Risk Status" style="radio" class="horizontal"/>
 																	</div>
 																	<div class="col-md-4">
