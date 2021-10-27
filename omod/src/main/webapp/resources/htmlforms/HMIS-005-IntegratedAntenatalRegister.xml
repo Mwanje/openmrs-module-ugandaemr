@@ -600,7 +600,11 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <label>ANC Visit Number</label>
+                                                    <label>ANC Client Number</label>
+                                                    <obs conceptId="99727" />
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>ANC Visit</label>
                                                     <obs conceptId="99727" />
                                                 </div>
                                                 <div class="col-md-4">
