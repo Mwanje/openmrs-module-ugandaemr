@@ -55,6 +55,7 @@
                     }
                 });
 
+
                 jq("#emtct-linked-to-art").click(function () {
                     if (jq(this).find("input[type='radio']:checked").val() == "90003") {
                         enable_fields("emtct-where");
@@ -592,30 +593,39 @@
                                         <div class="hidden col-md-4 html-form-entry-disabled-field">
                                           <encounterDate default="today"  disallowMultipleEncountersOnDate="block"   />
                                         </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card">
+                                            <div class="card-header">
+                                                ANC Visit info
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label>Client Number</label>
+                                                        <obs conceptId="99727" />
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Visit Number</label>
+                                                        <obs conceptId="166517"
+                                                             answerConceptIds="166508, 166509, 166507, 166510, 166511, 166512, 166513, 166514, 166515, 166516"
+                                                             answerLabels="1st ANC visit, 2nd ANC visit, 3rd ANC visit, 4th ANC visit, 5th ANC visit,6th ANC visit, 7th ANC visit, 8th ANC visit, 9th ANC visit, 10th ANC visit" class="long-value-select"/>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Referrals in/Out</label>
+                                                        <obs conceptId="165855" class="long-value-select"/>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label><span class="required">*</span>Attending Clinician</label>
+                                                        <encounterProvider role="Provider" required="true" id="provider"/>
 
-                                    <div class="card">
-                                        <div class="card-header">
-                                            ANC Visit info
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <label>ANC Client Number</label>
-                                                    <obs conceptId="99727" />
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>ANC Visit Number</label>
-                                                    <obs conceptId="166517"
-                                                         answerConceptIds="166508, 166509, 166507, 166510, 166511, 166512, 166513, 166514, 166515, 166516"
-                                                         answerLabels="1st ANC visit, 2nd ANC visit, 3rd ANC visit, 4th ANC visit, 5th ANC visit,6th ANC visit, 7th ANC visit, 8th ANC visit, 9th ANC visit, 10th ANC visit" class="long-value-select"/>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>Referrals in/Out</label>
-                                                    <obs conceptId="165855" class="long-value-select" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        </div>
                                     </div>
+
                                  <div class="row">
                                      <div class="col-md-12">
                                          <div class="card">
