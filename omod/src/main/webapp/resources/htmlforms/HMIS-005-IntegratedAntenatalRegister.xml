@@ -17,6 +17,8 @@
 
             jq(document).ready(function () {
 
+                jq("#encounter-date").addClass("html-form-entry-disabled-field");
+
                 //Block Multiple encounter entry on same date
                 //blockEncounterOnSameDateEncounter(jq("#encounterDate").find("input[type=hidden]"),"block");
 
@@ -587,12 +589,6 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="client-information">
                                 <section>
-                                        <div class="hidden">
-                                        <label>Encounter Date</label>
-                                        </div>
-                                        <div class="hidden col-md-4 html-form-entry-disabled-field">
-                                          <encounterDate default="today"  disallowMultipleEncountersOnDate="block"   />
-                                        </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="card">
