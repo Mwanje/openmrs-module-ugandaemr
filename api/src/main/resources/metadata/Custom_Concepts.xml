@@ -8356,6 +8356,10 @@
     <concept_answer concept_answer_id="7367957" concept_id="90315" answer_concept="99144" creator="1" date_created="2021-11-11 00:00:00" sort_weight="45" uuid="cf458214-42ab-11ec-be7c-105c9dfe22af"/>
     <concept_answer concept_answer_id="7367958" concept_id="90315" answer_concept="99143" creator="1" date_created="2021-11-11 00:00:00" sort_weight="46" uuid="cf45830e-42ab-11ec-be7c-105c9dfe22af"/>
     <concept_answer concept_answer_id="7367959" concept_id="90315" answer_concept="99282" creator="1" date_created="2021-11-11 00:00:00" sort_weight="47" uuid="cf4583e0-42ab-11ec-be7c-105c9dfe22af"/>
+
+    <concept_answer  concept_answer_id="7367960"  concept_id="1271"  answer_concept="1643" creator="1"  date_created="2022-02-11 14:31:21"  sort_weight="21"  uuid="b9afd321-1680-4bb8-b40a-3f95afc9b79c"/>
+    <concept_answer  concept_answer_id="7367961"  concept_id="1271"  answer_concept="302"  creator="1"  date_created="2022-02-11 14:31:21"  sort_weight="22"  uuid="4bbe666f-d4fc-434b-8fa6-4f930aaa3a97"/>
+
     <!--CONCEPT SET-->
     <!--MCH-->
     <concept_set concept_set_id="167" concept_id="1410" concept_set="1421" sort_weight="2.0" creator="1" date_created="2006-12-08 18:48:21.0" uuid="167AEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"/>
@@ -9079,7 +9083,10 @@
     <concept_reference_term  concept_reference_term_id="284121"  concept_source_id="6"  name="Glucose in urine"                       code="53328-1"   creator="1"    date_created="2021-02-04 12:47:37"   retired="0"   uuid="3d4d67db-2ed7-400f-95ae-7efbcd111b91"/>
     <concept_reference_term  concept_reference_term_id="284122"  concept_source_id="6"  name="Bilirubin in urine"                     code="53327-3"   creator="1"    date_created="2021-02-04 12:51:17"   retired="0"   uuid="d01bc130-c58a-4e69-904e-f3152c6e6c8a"/>
 
-
+    <concept_reference_term  concept_reference_term_id="284123"  concept_source_id="1"  name="Malaria Antigen Test Procedure"  code="407727009"  creator="1"  date_created="2022-02-11 12:21:05"  retired="0"  uuid="04c19775-98af-47f8-80ba-e8d2ae64d663"/>
+    <concept_reference_term  concept_reference_term_id="284124"  concept_source_id="1"  name="Complete Blood Count (CBC)"      code="26604007"   creator="1"  date_created="2022-02-11 12:30:12"  retired="0"  uuid="7458b2b9-be51-4ffb-ac55-fab7697be0e9"/>
+    <concept_reference_term  concept_reference_term_id="284125"  concept_source_id="1"  name="crAg (C)"  					   code="103094002"  creator="1"  date_created="2022-02-11 12:32:05"  retired="0"  uuid="6c9441cd-bebd-4aba-baae-47ad8b602ef7"/>
+    <concept_reference_term  concept_reference_term_id="284126"  concept_source_id="1"  name="CD4 Percent Count"               code="313938009"  creator="1"  date_created="2022-02-11 12:37:45"  retired="0"  uuid="9ea22db7-6343-4b44-9700-1da4e1feae78"/>
 
     <!--Concept Reference Map-->
     <concept_reference_map  concept_map_id="279332"  concept_reference_term_id="279332"  concept_map_type_id="1"  creator="1"  date_created="2019-11-05 14:04:43"  concept_id="165411"  uuid="4d38dbf6-c060-496b-a075-1e39894197d4"/>
@@ -9097,10 +9104,15 @@
     <concept_reference_map  concept_map_id="284112"  concept_reference_term_id="284121"  concept_map_type_id="1"  creator="1"  date_created="2021-02-04 12:48:47"  concept_id="166210"  uuid="0b1d7c33-21dd-4638-bdca-529e44649dd0"/>
     <concept_reference_map  concept_map_id="284113"  concept_reference_term_id="284122"  concept_map_type_id="1"  creator="1"  date_created="2021-02-04 12:51:36"  concept_id="166203"  uuid="929d763a-d3a2-4527-bebb-35ba5584d79f"/>
 
+    <concept_reference_map  concept_map_id="284114"  concept_reference_term_id="284123"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:21:26"  concept_id="1643"   uuid="1b032874-0048-48a9-bd4f-abcdf881bd93"/>
+    <concept_reference_map  concept_map_id="284115"  concept_reference_term_id="284125"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:32:15"  concept_id="165418" uuid="21a0d4f5-38ee-47b5-a65c-bdeada1be10b"/>
+    <concept_reference_map  concept_map_id="284116"  concept_reference_term_id="284126"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:38:02"  concept_id="657"    uuid="42548104-2b0c-4395-adb1-54d55c9cf693"/>
+    <concept_reference_map  concept_map_id="284117"  concept_reference_term_id="284124"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:40:12"  concept_id="1019"    uuid="a38861e3-d1bd-4cac-8319-4daeac42119c"/>
 
 
 
-    <!-- Changing concepts that are not test to class finding from class test-->
+
+        <!-- Changing concepts that are not test to class finding from class test-->
     <concept  concept_id="980"     retired="0" datatype_id="1"  class_id="5"  is_set="0"  creator="1"  date_created="2006-04-15 00:45:57"  version=""  changed_by="1"  date_changed="2020-09-22 20:17:53" uuid="dc915a48-30ab-102d-86b0-7a5022ba4115"/>
     <concept  concept_id="984"     retired="0" datatype_id="2"  class_id="5"  is_set="0"  creator="1"  date_created="2006-04-15 01:29:13"  version=""  changed_by="1"  date_changed="2020-09-22 20:17:53" uuid="dc918618-30ab-102d-86b0-7a5022ba4115"/>
     <concept  concept_id="1342"    retired="0" datatype_id="1"  class_id="5"  is_set="0"  creator="1"  date_created="2006-07-13 10:37:13"  version=""  changed_by="1"  date_changed="2020-09-22 20:17:53" uuid="dca1f717-30ab-102d-86b0-7a5022ba4115"/>
