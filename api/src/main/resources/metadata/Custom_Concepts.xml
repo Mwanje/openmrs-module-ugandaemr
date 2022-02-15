@@ -1308,6 +1308,18 @@
     <concept  concept_id="165403"  retired="0"  datatype_id="2"  class_id="11"  is_set="0"  creator="1"  date_created="2019-11-05 08:02:30"  version="1.0"  changed_by="1"  date_changed="2019-11-05 08:02:30" uuid="844f40ef-7b44-4b3c-a462-d5155c4d83ed"/>
     <concept  concept_id="165402"  retired="0"  datatype_id="2"  class_id="11"  is_set="0"  creator="1"  date_created="2019-11-05 07:57:20"  version="1.0"  changed_by="1"  date_changed="2019-11-05 07:57:20" uuid="f10be4c0-2ee9-4597-b52a-7f18838fd820"/>
 
+    <concept  concept_id="166518"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 09:59:52"  changed_by="1"  date_changed="2022-02-14 09:59:52"  uuid="58761e18-7ea6-4033-842f-fba5cd134ace"/>
+    <concept  concept_id="166519"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 10:08:54"  changed_by="1"  date_changed="2022-02-14 10:23:33"  uuid="4f09b0e0-14b4-4404-8532-0bde09223bd6"/>
+    <concept  concept_id="166520"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 10:18:33"  changed_by="1"  date_changed="2022-02-14 10:18:33"  uuid="95c4badb-46d6-428d-94ca-c8ef743f98d2"/>
+    <concept  concept_id="166521"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 10:22:44"  changed_by="1"  date_changed="2022-02-14 10:22:44"  uuid="246254ce-340a-4219-8a92-9f62e80afdea"/>
+    <concept  concept_id="166522"  retired="0" datatype_id="4"  class_id="8"  is_set="1"  creator="1"  date_created="2022-02-14 10:29:18"  changed_by="1"  date_changed="2022-02-14 10:29:18"  uuid="f274dcaa-e515-440e-bcd7-140a691587aa"/>
+    <concept  concept_id="166523"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:24:59"  changed_by="1"  date_changed="2022-02-14 12:24:59"  uuid="aa4b34f0-e2e4-4e0b-9224-52c91779e8c2"/>
+    <concept  concept_id="166524"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:25:35"  changed_by="1"  date_changed="2022-02-14 12:25:35"  uuid="753e4b36-5ce3-485f-9c70-4bac73bbde19"/>
+    <concept  concept_id="166525"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:27:26"  changed_by="1"  date_changed="2022-02-14 12:27:26"  uuid="7490ee77-2ab4-4b89-88f6-f67f14aab836"/>
+    <concept  concept_id="166526"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:28:17"  changed_by="1"  date_changed="2022-02-14 12:28:17"  uuid="fb2d34b2-3bcd-4b79-ae97-1f9879c02fb0"/>
+    <concept  concept_id="166527"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:29:18"  changed_by="1"  date_changed="2022-02-14 12:29:18"  uuid="47582621-8e20-4f4e-a28d-1ba85f2e7e4b"/>
+    <concept  concept_id="166528"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:31:22"  changed_by="1"  date_changed="2022-02-14 12:31:22"  uuid="43ae49b8-89f2-4c06-9212-8c012c6ef280"/>
+    <concept  concept_id="166529"  retired="0" datatype_id="4"  class_id="8"  is_set="1"  creator="1"  date_created="2022-02-14 12:34:39"  changed_by="1"  date_changed="2022-02-14 12:34:39"  uuid="7f420159-b843-44a7-b53c-c6ca52a53ec5"/>
 
     <!--CONCEPT PHARMACY-->
     <concept  concept_id="165307"  retired="0"   datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2019-10-02 20:43:53"  version="1.0"  changed_by="1"  date_changed="2019-10-02 20:43:53"  uuid="40b62b3e-bdcf-428c-8902-db5fa741191c"/>
@@ -2123,6 +2135,17 @@
     <concept_numeric  concept_id="166423"  units="U/L"    allow_decimal="1"/>
     <concept_numeric  concept_id="166429"  units="U/L" allow_decimal="1" />
 
+    <concept_numeric  concept_id="166528"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166527"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166526"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166525"  units="mL/min"  allow_decimal="0"/>
+    <concept_numeric  concept_id="166524"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166523"  units="umol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166521"  units="U/L"     allow_decimal="0"/>
+    <concept_numeric  concept_id="166520"  units="U/L"     allow_decimal="0"/>
+    <concept_numeric  concept_id="166519"  units="g/dL"    allow_decimal="1"/>
+    <concept_numeric  concept_id="166518"  units="U/L"     allow_decimal="0"/>
+
 
 
 
@@ -2514,6 +2537,18 @@
     <!--LAB-->
     <concept_description  concept_description_id="1390"  concept_id="1429"  description="Rhesus (Rh) type of blood for pregant woman screening"  locale="en"  creator="1"  date_created="2006-12-17 11:49:51"  changed_by="1" uuid="1390FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
     <concept_description  concept_description_id="18379"  concept_id="165367"  description="Migrated"  locale="en"  creator="1"  date_created="2019-10-23 12:36:36"  uuid="52b52970-ab6c-4368-b97d-2e0f6f171bb7"/>
+
+    <concept_description  concept_description_id="18559"  concept_id="166518"  description="Alkaline phosphatase ALP is an enzyme found in the liver and bone and is important for breaking down proteins."  locale="en"  creator="1"  date_created="2022-02-14 09:59:52"  uuid="4f17b08c-a923-4fc5-ae4c-87b76ed779f3"/>
+    <concept_description  concept_description_id="18560"  concept_id="166519"  description="Albumin is one of several proteins made in the liver."  locale="en"  creator="1"  date_created="2022-02-14 10:08:54"  uuid="ce441a79-cdfe-4bf4-a725-3b4162f1c66a"/>
+    <concept_description  concept_description_id="18561"  concept_id="166520"  description="L-lactate dehydrogenase"  								locale="en"  creator="1"  date_created="2022-02-14 10:18:33"  uuid="d07f3859-08ff-4d0c-b05d-d65beedbdb9f"/>
+    <concept_description  concept_description_id="18562"  concept_id="166521"  description="Gamma-glutamyltransferase"  							locale="en"  creator="1"  date_created="2022-02-14 10:22:44"  uuid="acf5a48f-4e2d-4fde-8abf-807ac7e1351c"/>
+    <concept_description  concept_description_id="18563"  concept_id="166522"  description="Liver Function Tests Liver Function Tests check the levels of certain enzymes and proteins in your blood"  locale="en"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="2fbf29e2-d92e-4437-b710-ce51494a8d1d"/>
+    <concept_description  concept_description_id="18564"  concept_id="166525"  description="Glomerular Filtration Rate"  locale="en"  creator="1"  date_created="2022-02-14 12:27:26"  uuid="68f774c5-e0aa-4d64-bd98-3cfc40e5d267"/>
+    <concept_description  concept_description_id="18565"  concept_id="166526"  description="Sodium ion"  				 locale="en"  creator="1"  date_created="2022-02-14 12:28:17"  uuid="2fb8f508-69fb-46c4-9932-b2d03dbdc790"/>
+    <concept_description  concept_description_id="18566"  concept_id="166527"  description="Potassium ion"           	 locale="en"  creator="1"  date_created="2022-02-14 12:29:18"  uuid="00d8b999-a7f6-48de-9f6c-b8f00eb7fbda"/>
+    <concept_description  concept_description_id="18567"  concept_id="166528"  description="Chloride"  				     locale="en"  creator="1"  date_created="2022-02-14 12:31:22"  uuid="9fb39e37-e6a8-4e80-b2d4-fa5eac674823"/>
+    <concept_description  concept_description_id="18568"  concept_id="166529"  description="Kidney Function Test (KFT/RFT Test) is a profile of biochemistry blood tests that are useful to assess the renal function."  locale="en"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="29f491ac-3e14-4297-b2a5-3fe362a8f272"/>
+
 
     <!-- 2019 tools -->
 
@@ -5148,6 +5183,18 @@
     <concept_name  concept_name_id="161100"  concept_id="165872"  name="TB Treatment Outcome Date"  locale="en"  locale_preferred="1"  creator="1"  date_created="2020-06-23 14:57:56"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="6ee1f79d-311a-4439-a613-5af9f72c07ad"/>
     <concept_name  concept_name_id="161099"  concept_id="165871"  name="ARV Drugs given"  locale="en"  locale_preferred="1"  creator="1"  date_created="2020-06-23 14:33:13"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="ebb0f122-61fe-45fb-9b6d-2dc827e70637"/>
 
+    <concept_name  concept_name_id="162778"  concept_id="166518"  name="ALP"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 09:59:52"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="b505fcb1-2784-4799-bb01-1befd5fb5519"/>
+    <concept_name  concept_name_id="162779"  concept_id="166519"  name="Albumin"     locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:08:54"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="9fe00fdb-3360-4d62-860f-07a9a998be5c"/>
+    <concept_name  concept_name_id="162780"  concept_id="166520"  name="LD"          locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:18:33"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="cfb33e62-d362-49fc-a0b5-e9f7d2bcf7ad"/>
+    <concept_name  concept_name_id="162781"  concept_id="166521"  name="GGT"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:22:44"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="29232dda-3ee0-4a15-926f-44994ff6c90b"/>
+    <concept_name  concept_name_id="162782"  concept_id="166522"  name="LFT"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:29:18"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="77a678e5-83d0-4bee-bbb8-62c009a562f9"/>
+    <concept_name  concept_name_id="162783"  concept_id="166523"  name="Creatinine"  locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:24:59"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="8e7e1dbc-0cf2-4909-a830-a2a99cbfb642"/>
+    <concept_name  concept_name_id="162784"  concept_id="166524"  name="Urea"        locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:25:35"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="0dabd5a0-a9e6-4471-8658-7a444c4b5db4"/>
+    <concept_name  concept_name_id="162785"  concept_id="166525"  name="GFR"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:27:26"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="50189dc2-ed9e-4c28-bbb1-08e2d6f4b56d"/>
+    <concept_name  concept_name_id="162786"  concept_id="166526"  name="Na+"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:28:17"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="a16d7748-d663-400d-8c2b-4941a7685801"/>
+    <concept_name  concept_name_id="162787"  concept_id="166527"  name="K+"          locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:29:18"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="5985d886-9c0d-418c-9a98-95092ab8355d"/>
+    <concept_name  concept_name_id="162788"  concept_id="166528"  name="Cl"          locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:31:22"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="7dca79ae-19bb-4da0-83ba-21827c2a92fa"/>
+    <concept_name  concept_name_id="162789"  concept_id="166529"  name="RFT"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:34:39"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="feb923f0-cc5b-444b-a607-7baddbc26e69"/>
 
 
     <!-- EMTCT module -->
@@ -7357,6 +7404,9 @@
     <concept_answer  concept_answer_id="7366022"  concept_id="165402"  answer_concept="1065" creator="1"  date_created="2019-11-05 07:57:21"  sort_weight="1"  uuid="759f6da5-a016-4cf2-8187-c8b9521157cf"/>
     <concept_answer  concept_answer_id="7366023"  concept_id="165402"  answer_concept="1066" creator="1"  date_created="2019-11-05 07:57:21"  sort_weight="2"  uuid="97b5e5bf-632e-46b5-b680-2fef7f113ad9"/>
 
+    <concept_answer  concept_answer_id="7367962"  concept_id="1271"  answer_concept="166522"  creator="1"  date_created="2022-02-14 12:42:01"  sort_weight="23"  uuid="1dcc6bb4-17ba-4023-9020-d42b40da3052"/>
+    <concept_answer  concept_answer_id="7367963"  concept_id="1271"  answer_concept="166529"  creator="1"  date_created="2022-02-14 12:42:01"  sort_weight="24"  uuid="b37dc09d-24eb-4e93-acc8-96586fea9635"/>
+
     <!--PHARMACY-->
     <concept_answer  concept_answer_id="7332"  concept_id="165288"  answer_concept="165307"  creator="1"  date_created="2019-10-02 20:44:51"  sort_weight="6"  uuid="f82caf18-3381-424b-bce3-98053218e991"/>
 
@@ -8968,9 +9018,26 @@
     <concept_set  concept_set_id="2834"  concept_id="165875"  concept_set="165877"  sort_weight="0"  creator="1"  date_created="2020-07-15 10:10:22"  uuid="b11a2518-eb7a-4316-b342-99e01a1c985a"/>
     <concept_set  concept_set_id="2835"  concept_id="165876"  concept_set="165877"  sort_weight="1"  creator="1"  date_created="2020-07-15 10:10:22"  uuid="5972bb5d-7edc-4674-bf73-5cbd130a303a"/>
 
+    <concept_set  concept_set_id="3010"  concept_id="166429"  concept_set="166522"  sort_weight="0"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="89a40a3b-16b4-4b5f-a15c-6c89571e9c30"/>
+    <concept_set  concept_set_id="3011"  concept_id="166423"  concept_set="166522"  sort_weight="1"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="d4e35fdb-2d3c-4f1a-ba33-1b14532ea7e2"/>
+    <concept_set  concept_set_id="3012"  concept_id="166203"  concept_set="166522"  sort_weight="2"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="8656285f-62be-4002-88e9-5ed0b05dfab4"/>
+    <concept_set  concept_set_id="3013"  concept_id="166330"  concept_set="166522"  sort_weight="3"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="f669998c-51fa-4a04-aa76-c1a91c49cf94"/>
+    <concept_set  concept_set_id="3014"  concept_id="166518"  concept_set="166522"  sort_weight="4"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="6ef4740c-6845-4569-82ae-d2b2954b0781"/>
+    <concept_set  concept_set_id="3015"  concept_id="166519"  concept_set="166522"  sort_weight="5"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="86552f5b-41f7-4307-a87d-545295b99434"/>
+    <concept_set  concept_set_id="3016"  concept_id="166520"  concept_set="166522"  sort_weight="6"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="41cb33c8-0b64-4e62-8a1d-7e804021bb8a"/>
+    <concept_set  concept_set_id="3017"  concept_id="166521"  concept_set="166522"  sort_weight="7"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="ec82db4f-27c7-4b27-bf70-f32d01007f97"/>
+    <concept_set  concept_set_id="3018"  concept_id="717"     concept_set="166522"  sort_weight="8"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="2e7d372e-7628-4434-83cd-f485bf1e2996"/>
+    <concept_set  concept_set_id="3019"  concept_id="166523"  concept_set="166529"  sort_weight="0"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="8cb333d3-f03e-4b74-b8b5-da5adaadda71"/>
+    <concept_set  concept_set_id="3020"  concept_id="166524"  concept_set="166529"  sort_weight="1"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="7434ba44-776f-4560-a1dd-c8bbc821d575"/>
+    <concept_set  concept_set_id="3021"  concept_id="166525"  concept_set="166529"  sort_weight="2"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="8953107a-1b78-4b48-8c21-cae48326596f"/>
+    <concept_set  concept_set_id="3022"  concept_id="166526"  concept_set="166529"  sort_weight="3"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="cb740dd4-832f-476c-b78a-45cbbdffc073"/>
+    <concept_set  concept_set_id="3023"  concept_id="166528"  concept_set="166529"  sort_weight="4"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="5898944e-1aed-4d23-a26f-1c7ef0d94177"/>
+    <concept_set  concept_set_id="3024"  concept_id="166527"  concept_set="166529"  sort_weight="5"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="9de0b946-8ce3-47d4-b983-0b2b7b7c7315"/>
 
 
-        <!-- DRUG -->
+
+
+    <!-- DRUG -->
     <concept_set  concept_set_id="2828"  concept_id="99035"  concept_set="165874"  sort_weight="0"  creator="1"  date_created="2020-06-25 09:47:21"  uuid="c984c414-1aaf-4644-a461-25099f07c888"/>
     <concept_set  concept_set_id="2829"  concept_id="1444"  concept_set="165874"  sort_weight="1"  creator="1"  date_created="2020-06-25 09:47:21"  uuid="5272c3e4-fc29-4e99-9e56-6fd9b362b1af"/>
     <concept_set  concept_set_id="2830"  concept_id="159368"  concept_set="165874"  sort_weight="2"  creator="1"  date_created="2020-06-25 09:47:21"  uuid="f955c9d6-a6c4-494e-b2a5-9a87b7c2147e"/>
