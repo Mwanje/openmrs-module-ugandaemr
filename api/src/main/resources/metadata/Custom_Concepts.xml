@@ -9034,6 +9034,16 @@
     <concept_set  concept_set_id="3023"  concept_id="166528"  concept_set="166529"  sort_weight="4"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="5898944e-1aed-4d23-a26f-1c7ef0d94177"/>
     <concept_set  concept_set_id="3024"  concept_id="166527"  concept_set="166529"  sort_weight="5"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="9de0b946-8ce3-47d4-b983-0b2b7b7c7315"/>
 
+    <concept_set  concept_set_id="3025"  concept_id="1021"  concept_set="1019"  sort_weight="9"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="86d026a7-5ac4-41af-bb2f-d807b3ec9b74"/>
+    <concept_set  concept_set_id="3026"  concept_id="1025"  concept_set="1019"  sort_weight="10"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="9e90f32d-2e0c-46c3-ad15-56863742db19"/>
+    <concept_set  concept_set_id="3027"  concept_id="1331"  concept_set="1019"  sort_weight="11"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="44fd06ee-73e7-4f7f-91fd-34a65cbd1667"/>
+    <concept_set  concept_set_id="3028"  concept_id="1319"  concept_set="1019"  sort_weight="12"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="36d7a126-c23f-4547-bc09-e71b0667fd9d"/>
+    <concept_set  concept_set_id="3029"  concept_id="1024"  concept_set="1019"  sort_weight="13"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="25cfd02f-a90f-41b9-8b84-de366ab4f28b"/>
+    <concept_set  concept_set_id="3030"  concept_id="1332"  concept_set="1019"  sort_weight="14"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="2fa5eff5-29c5-42b6-a172-f3d94455e891"/>
+    <concept_set  concept_set_id="3031"  concept_id="1334"  concept_set="1019"  sort_weight="15"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="c8bf27c2-d799-49d6-be8f-a012062073e3"/>
+    <concept_set  concept_set_id="3032"  concept_id="1330"  concept_set="1019"  sort_weight="16"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="54bba755-7805-40d1-a3bd-8d09fbfdbe62"/>
+    <concept_set  concept_set_id="3033"  concept_id="1022"  concept_set="1019"  sort_weight="17"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="16f95d9c-0709-4a35-8837-b22b77268978"/>
+    <concept_set  concept_set_id="3034"  concept_id="1023"  concept_set="1019"  sort_weight="18"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="381a4237-9b58-4b78-a485-433d219b3285"/>
 
 
 
@@ -9166,6 +9176,19 @@
     <concept_reference_term  concept_reference_term_id="284136"  concept_source_id="1"  name="Rapid Plasma Reagin Test Procedure"  code="19869000"  creator="1"  date_created="2022-02-15 10:59:48"  retired="0" uuid="f3b6c722-3450-4ae9-99d0-77499d45dc25"/>
     <concept_reference_term  concept_reference_term_id="284137"  concept_source_id="1"  name="Microscopy Procedure"                code="117259009" creator="1"  date_created="2022-02-15 12:02:40"  retired="0" uuid="e401c0f3-6681-46ae-9079-0b96a57addae"/>
 
+    <concept_reference_term  concept_reference_term_id="284138"  concept_source_id="1"  name="White Blood Cell Count"                            code="391558003" creator="1"  date_created="2022-03-07 11:23:07"  retired="0" uuid="fb5d8f13-ced8-4e2e-8e64-e1e62338d5ac"/>
+    <concept_reference_term  concept_reference_term_id="284139"  concept_source_id="1"  name="Neutrophil count (procedure)"                      code="30630007"  creator="1"  date_created="2022-03-07 12:46:36"  retired="0" uuid="3477ca82-76cf-4632-9f42-88cf8823bef4"/>
+    <concept_reference_term  concept_reference_term_id="284140"  concept_source_id="1"  name="Neutrophil percent differential count (procedure)" code="56972008"  creator="1"  date_created="2022-03-07 13:00:33"  retired="0" uuid="c567fa2b-e1cd-473b-a2ce-c3c398bde961"/>
+    <concept_reference_term  concept_reference_term_id="284141"  concept_source_id="1"  name="Monocyte count (procedure)"                        code="67776007"  creator="1"  date_created="2022-03-07 13:06:11"  retired="0" uuid="2b9d2f7a-7d29-42c6-bac5-871e9ac56350"/>
+    <concept_reference_term  concept_reference_term_id="284142"  concept_source_id="1"  name="Basophil count (procedure)"                        code="42351005"  creator="1"  date_created="2022-03-07 13:53:16"  retired="0" uuid="a98c7361-5932-49bc-99d8-64c3cc949df6"/>
+    <concept_reference_term  concept_reference_term_id="284143"  concept_source_id="1"  name="Monocyte count (procedure)"         				 code="365631001" creator="1"  date_created="2022-03-07 14:41:47"  retired="0" uuid="a3fcb39f-09ad-4b33-bb8c-a340174d3305"/>
+    <concept_reference_term  concept_reference_term_id="284144"  concept_source_id="1"  name="Lymphocyte count (procedure)"       				 code="74765001"  creator="1"  date_created="2022-03-07 14:47:29"  retired="0" uuid="77dad35b-8ea2-4dd1-a945-537d94c3b0e6"/>
+    <concept_reference_term  concept_reference_term_id="284145"  concept_source_id="1"  name="Eosinophil percent differential count (procedure)" code="365601007" creator="1"  date_created="2022-03-07 15:04:40"  retired="0" uuid="b3a6720a-3304-4183-a3c0-3fcce5a174ba"/>
+    <concept_reference_term  concept_reference_term_id="284146"  concept_source_id="1"  name="Eosinophil count (procedure)"  					 code="71960002"  creator="1"  date_created="2022-03-07 15:05:37"  retired="0" uuid="67c51a35-4f13-48f7-a75a-0d49a9614e55"/>
+    <concept_reference_term  concept_reference_term_id="284147"  concept_source_id="1"  name="Atypical lymphocyte (morphologic abnormality)"     code="86528005"  creator="1"  date_created="2022-03-07 15:27:04"  retired="0" uuid="c80e678f-1c93-4c0b-b3e4-77c669ce2f82"/>
+    <concept_reference_term  concept_reference_term_id="284148"  concept_source_id="1"  name="Neutrophil percent differential count (procedure)" code="271035003" creator="1"  date_created="2022-03-07 15:39:35"  retired="0" uuid="920e7faf-81c3-4015-96df-8bc5383ae563"/>
+    <concept_reference_term  concept_reference_term_id="284149"  concept_source_id="1"  name="Monocyte percent differential count (procedure)"   code="271037006" creator="1"  date_created="2022-03-07 15:49:34"  retired="0" uuid="4c39af95-5fe7-485f-b4e3-827f63efc4d1"/>
+
     <!--Concept Reference Map-->
     <concept_reference_map  concept_map_id="279332"  concept_reference_term_id="279332"  concept_map_type_id="1"  creator="1"  date_created="2019-11-05 14:04:43"  concept_id="165411"  uuid="4d38dbf6-c060-496b-a075-1e39894197d4"/>
     <concept_reference_map  concept_map_id="283697"  concept_reference_term_id="283697"  concept_map_type_id="1"  creator="1"  date_created="2020-02-04 11:07:00"  concept_id="165412"  uuid="59315974-1aba-4139-9667-9d148f345668"/>
@@ -9197,6 +9220,18 @@
     <concept_reference_map  concept_map_id="284126"  concept_reference_term_id="284135"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:51:47"  concept_id="302"  	uuid="8603e8a9-b0c9-4e2e-bafe-490d6be41b1d"/>
     <concept_reference_map  concept_map_id="284127"  concept_reference_term_id="284136"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:59:59"  concept_id="165417"  uuid="29c6fdea-8348-4546-84fb-28eda16f7075"/>
     <concept_reference_map  concept_map_id="284128"  concept_reference_term_id="284137"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 12:02:59"  concept_id="165415"  uuid="10e4a556-36a4-4ead-ab1b-cc080b5e3ecd"/>
+
+    <concept_reference_map  concept_map_id="284129"  concept_reference_term_id="284138"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 11:23:22"  concept_id="678"   uuid="4210db3b-392a-4b3c-85fc-f558ffeb134c"/>
+    <concept_reference_map  concept_map_id="284131"  concept_reference_term_id="284140"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 13:00:48"  concept_id="1021"  uuid="2660681f-36a5-48c1-81e6-cebfdd2a1c2a"/>
+    <concept_reference_map  concept_map_id="284133"  concept_reference_term_id="284142"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 13:53:30"  concept_id="1025"  uuid="29b00886-7cc7-4e61-ba33-7723b0766c13"/>
+    <concept_reference_map  concept_map_id="284134"  concept_reference_term_id="284143"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 14:42:14"  concept_id="1331"  uuid="f514ce18-5a48-4648-87ec-5ff3c9b71b0b"/>
+    <concept_reference_map  concept_map_id="284135"  concept_reference_term_id="284144"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 14:47:43"  concept_id="1319"  uuid="ae319faf-900c-4c8f-b2aa-53526d935cd7"/>
+    <concept_reference_map  concept_map_id="284136"  concept_reference_term_id="284145"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:04:56"  concept_id="1024"  uuid="47d349de-a1a5-4126-ab36-4d7491b2808e"/>
+    <concept_reference_map  concept_map_id="284137"  concept_reference_term_id="284146"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:06:02"  concept_id="1332"  uuid="17b5d764-e086-497c-aae1-2a8bc1c6805c"/>
+    <concept_reference_map  concept_map_id="284138"  concept_reference_term_id="284147"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:27:19"  concept_id="1334"  uuid="15dd2e2a-5ce6-481b-8e6c-002daa5dfbb6"/>
+    <concept_reference_map  concept_map_id="284139"  concept_reference_term_id="284139"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:38:18"  concept_id="1330"  uuid="abad0f04-3b97-4441-a4ad-46f2a6667cbd"/>
+    <concept_reference_map  concept_map_id="284140"  concept_reference_term_id="284148"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:39:48"  concept_id="1022"  uuid="1e0719bc-068c-47b0-bdb1-7f3304eeef89"/>
+    <concept_reference_map  concept_map_id="284141"  concept_reference_term_id="284149"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:49:44"  concept_id="1023"  uuid="e5cd08e7-b957-4553-aed1-83c31cfa8c91"/>
 
 
 
