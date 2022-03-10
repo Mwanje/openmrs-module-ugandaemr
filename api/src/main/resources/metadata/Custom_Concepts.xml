@@ -2146,6 +2146,24 @@
     <concept_numeric  concept_id="166519"  units="g/dL"    allow_decimal="1"/>
     <concept_numeric  concept_id="166518"  units="U/L"     allow_decimal="0"/>
 
+    <concept_numeric  concept_id="21"   hi_normal="17.8" low_critical="7" low_normal="10.4" units="g/dL" allow_decimal="1"/>
+    <concept_numeric  concept_id="678"  hi_normal="8.2" low_critical="1.4" low_normal="2.9" units="10^3/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="679"  hi_normal="6.1" low_critical="2.3" low_normal="4" units="10^6/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="729"  hi_normal="419" low_critical="49" low_normal="134" units="10^3/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="851"  hi_normal="100" low_normal="80" units="fL" allow_decimal="1"/>
+    <concept_numeric  concept_id="1015" hi_normal="51.9" low_critical="21" low_normal="32.3" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1016" hi_normal="20" low_normal="10" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1018" hi_normal="34" low_normal="26" units="pg" allow_decimal="1"/>
+    <concept_numeric  concept_id="1021" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1022" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1023" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1024" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1025" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1319" units="cells/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="1330" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
+    <concept_numeric  concept_id="1331" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
+    <concept_numeric  concept_id="1332" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
+    <concept_numeric  concept_id="1334" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
 
 
 
