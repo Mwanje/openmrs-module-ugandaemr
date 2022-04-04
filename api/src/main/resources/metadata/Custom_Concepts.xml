@@ -9193,8 +9193,9 @@
     <concept_reference_term  concept_reference_term_id="284135"  concept_source_id="1"  name="Urinalysis"                          code="27171005"  creator="1"  date_created="2022-02-15 10:51:24"  retired="0" uuid="6633fdec-0954-446e-b5d7-0b3efaea2317"/>
     <concept_reference_term  concept_reference_term_id="284136"  concept_source_id="1"  name="Rapid Plasma Reagin Test Procedure"  code="19869000"  creator="1"  date_created="2022-02-15 10:59:48"  retired="0" uuid="f3b6c722-3450-4ae9-99d0-77499d45dc25"/>
     <concept_reference_term  concept_reference_term_id="284137"  concept_source_id="1"  name="Microscopy Procedure"                code="117259009" creator="1"  date_created="2022-02-15 12:02:40"  retired="0" uuid="e401c0f3-6681-46ae-9079-0b96a57addae"/>
+    <concept_reference_term  concept_reference_term_id="284150"  concept_source_id="6"  name="Microscopic observation [Identifier] in Sputum by Cyto stain"  code="10526-2"  creator="1"  date_created="2022-04-01 14:36:20"  retired="0"  uuid="1248abc1-86d9-42a8-994b-0bdd5a491346"/>
 
-    <concept_reference_term  concept_reference_term_id="284138"  concept_source_id="1"  name="White Blood Cell Count"                            code="391558003" creator="1"  date_created="2022-03-07 11:23:07"  retired="0" uuid="fb5d8f13-ced8-4e2e-8e64-e1e62338d5ac"/>
+    <concept_reference_term  concept_reference_term_id="eq"  concept_source_id="1"  name="White Blood Cell Count"                            code="391558003" creator="1"  date_created="2022-03-07 11:23:07"  retired="0" uuid="fb5d8f13-ced8-4e2e-8e64-e1e62338d5ac"/>
     <concept_reference_term  concept_reference_term_id="284139"  concept_source_id="1"  name="Neutrophil count (procedure)"                      code="30630007"  creator="1"  date_created="2022-03-07 12:46:36"  retired="0" uuid="3477ca82-76cf-4632-9f42-88cf8823bef4"/>
     <concept_reference_term  concept_reference_term_id="284140"  concept_source_id="1"  name="Neutrophil percent differential count (procedure)" code="56972008"  creator="1"  date_created="2022-03-07 13:00:33"  retired="0" uuid="c567fa2b-e1cd-473b-a2ce-c3c398bde961"/>
     <concept_reference_term  concept_reference_term_id="284141"  concept_source_id="1"  name="Monocyte count (procedure)"                        code="67776007"  creator="1"  date_created="2022-03-07 13:06:11"  retired="0" uuid="2b9d2f7a-7d29-42c6-bac5-871e9ac56350"/>
@@ -9206,6 +9207,14 @@
     <concept_reference_term  concept_reference_term_id="284147"  concept_source_id="1"  name="Atypical lymphocyte (morphologic abnormality)"     code="86528005"  creator="1"  date_created="2022-03-07 15:27:04"  retired="0" uuid="c80e678f-1c93-4c0b-b3e4-77c669ce2f82"/>
     <concept_reference_term  concept_reference_term_id="284148"  concept_source_id="1"  name="Neutrophil percent differential count (procedure)" code="271035003" creator="1"  date_created="2022-03-07 15:39:35"  retired="0" uuid="920e7faf-81c3-4015-96df-8bc5383ae563"/>
     <concept_reference_term  concept_reference_term_id="284149"  concept_source_id="1"  name="Monocyte percent differential count (procedure)"   code="271037006" creator="1"  date_created="2022-03-07 15:49:34"  retired="0" uuid="4c39af95-5fe7-485f-b4e3-827f63efc4d1"/>
+    <concept_reference_term  concept_reference_term_id="284151"  concept_source_id="1"  name="Red cell distribution width determination (procedure)"                code="66842004"  creator="1"  date_created="2022-04-04 11:38:32"  retired="0" uuid="374babac-0d1f-4508-8c38-9af417b06c01"/>
+    <concept_reference_term  concept_reference_term_id="284152"  concept_source_id="1"  name="Red blood cell count (procedure)"  					                code="14089001"  creator="1"  date_created="2022-04-04 11:45:05"  retired="0" uuid="864cebb1-4700-4fba-bec6-eff224e4b453"/>
+    <concept_reference_term  concept_reference_term_id="284153"  concept_source_id="1"  name="Platelet count (procedure)"    				     	                code="61928009"  creator="1"  date_created="2022-04-04 11:48:05"  retired="0" uuid="887b6e1e-43cf-4d8d-814b-38bf44dd1353"/>
+    <concept_reference_term  concept_reference_term_id="284154"  concept_source_id="1"  name="Erythrocyte mean corpuscular volume determination (procedure)"        code="104133003" creator="1"  date_created="2022-04-04 12:23:08"  retired="0" uuid="2199fcc9-687f-4427-8fd9-647ccc4dbc81"/>
+    <concept_reference_term  concept_reference_term_id="284155"  concept_source_id="1"  name="Erythrocyte mean corpuscular volume determination (procedure)"        code="54706004"  creator="1"  date_created="2022-04-04 13:45:13"  retired="0" uuid="901e4cf3-3bfa-4815-bafa-020ba43f3a06"/>
+    <concept_reference_term  concept_reference_term_id="284156"  concept_source_id="1"  name="Mean corpuscular hemoglobin concentration determination (procedure)"  code="37254006"  creator="1"  date_created="2022-04-04 13:48:36"  retired="0" uuid="04e932cb-27ca-4da4-b4a7-965fc0c823bd"/>
+    <concept_reference_term  concept_reference_term_id="284157"  concept_source_id="1"  name="Measurement of total hemoglobin concentration (procedure)"            code="441689006" creator="1"  date_created="2022-04-04 13:51:23"  retired="0" uuid="a43d6e4a-3e49-4165-b7d5-8d90a3f3a768"/>
+    <concept_reference_term  concept_reference_term_id="284158"  concept_source_id="1"  name="Finding of hematocrit (finding)"                                      code="365616005" creator="1"  date_created="2022-04-04 13:54:25"  retired="0" uuid="62f19401-6bf2-4384-81c0-957f6a951f59"/>
 
     <!--Concept Reference Map-->
     <concept_reference_map  concept_map_id="279332"  concept_reference_term_id="279332"  concept_map_type_id="1"  creator="1"  date_created="2019-11-05 14:04:43"  concept_id="165411"  uuid="4d38dbf6-c060-496b-a075-1e39894197d4"/>
@@ -9250,6 +9259,16 @@
     <concept_reference_map  concept_map_id="284139"  concept_reference_term_id="284139"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:38:18"  concept_id="1330"  uuid="abad0f04-3b97-4441-a4ad-46f2a6667cbd"/>
     <concept_reference_map  concept_map_id="284140"  concept_reference_term_id="284148"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:39:48"  concept_id="1022"  uuid="1e0719bc-068c-47b0-bdb1-7f3304eeef89"/>
     <concept_reference_map  concept_map_id="284141"  concept_reference_term_id="284149"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:49:44"  concept_id="1023"  uuid="e5cd08e7-b957-4553-aed1-83c31cfa8c91"/>
+
+    <concept_reference_map  concept_map_id="284142"  concept_reference_term_id="284150"  concept_map_type_id="1"  creator="1"  date_created="2022-04-01 14:36:46"  concept_id="165415"  uuid="712cb163-d667-4a03-82e5-710f24b9c369"/>
+    <concept_reference_map  concept_map_id="284143"  concept_reference_term_id="284151"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 11:38:46"  concept_id="1016" uuid="6d7d80c9-d7a7-42da-ac50-e7618c9ee902"/>
+    <concept_reference_map  concept_map_id="284144"  concept_reference_term_id="284152"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 11:45:21"  concept_id="679"  uuid="dfa39a55-4e55-4cf5-860b-f4cbb99c8f6f"/>
+    <concept_reference_map  concept_map_id="284145"  concept_reference_term_id="284153"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 11:48:17"  concept_id="729"  uuid="adb230dc-2c2e-4082-8807-91a36da74b38"/>
+    <concept_reference_map  concept_map_id="284146"  concept_reference_term_id="284154"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 12:23:20"  concept_id="851"  uuid="52206f7a-20d8-4757-b389-3d827b746daa"/>
+    <concept_reference_map  concept_map_id="284147"  concept_reference_term_id="284155"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:45:26"  concept_id="1018" uuid="a1c842b2-2bdd-4279-891d-55b79fd30db1"/>
+    <concept_reference_map  concept_map_id="284148"  concept_reference_term_id="284156"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:48:48"  concept_id="1017" uuid="9a4918cd-0308-4cbf-9293-5dc4568cdd32"/>
+    <concept_reference_map  concept_map_id="284149"  concept_reference_term_id="284157"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:51:33"  concept_id="21"   uuid="267959be-347c-4672-9fd3-d6d6cf695188"/>
+    <concept_reference_map  concept_map_id="284150"  concept_reference_term_id="284158"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:54:38"  concept_id="1015" uuid="d3ea0726-b164-4cdf-8907-607147a2a355"/>
 
 
 
