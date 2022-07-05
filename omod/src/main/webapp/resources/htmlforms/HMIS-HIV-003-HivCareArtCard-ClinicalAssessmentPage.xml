@@ -552,7 +552,6 @@
                 });
                 <ifMode mode="ENTER">
                 disable_fields("edd");
-                disable_fields("emtct");
                 disable_fields("age-in-months");
                 disable_fields("anc_no");
 
@@ -617,7 +616,6 @@
 
                 <ifMode mode="EDIT">
                     disable_enable_on_edit_mode("edd");
-                    disable_enable_on_edit_mode("emtct");
                     disable_enable_on_edit_mode("age-in-months");
                     disable_enable_on_edit_mode("anc_no");
 
@@ -716,17 +714,15 @@
                    jq('.tpt-without-inh').show();
                 </ifMode>
 
-                /* enable the edd,emtct,age in months and ANC no. fields in case the client is pregnant */
+                /* enable the edd,age in months and ANC no. fields in case the client is pregnant */
 
                 jq(".pregnancy").change(function () {
                     if (jq(this).find('#pregnant').find(':checkbox').prop('checked')) {
                         enable_fields("edd");
-                        enable_fields("emtct");
                         enable_fields("age-in-months");
                         enable_fields("anc_no");
                     } else {
                         disable_fields("edd");
-                        disable_fields("emtct");
                         disable_fields("age-in-months");
                         disable_fields("anc_no");
                     }
@@ -744,21 +740,10 @@
                 });
 
                 jq(".pregnancy").change(function () {
-                    if (jq(this).find('#breast-feeding').find(':checkbox').prop('checked')) {
-                        enable_fields("emtct");
-                    } else if(jq(this).find('#pregnant').find(':checkbox').prop('checked')){
-                        enable_fields("emtct");
-                    }else{
-                        disable_fields("emtct");
-                    }
-                });
-
-                jq(".pregnancy").change(function () {
                     if (jq(this).find('#not-pregnant-not-breast-feeding').find(':checkbox').prop('checked')) {
                         jq("#pregnant").find("input[type$='checkbox']").prop("checked", false);
                         jq("#breast-feeding").find("input[type$='checkbox']").prop("checked", false);
                         disable_fields("edd");
-                        disable_fields("emtct");
                         disable_fields("162983");
                         disable_fields("anc_no");
                         disable_fields("162983");
@@ -772,7 +757,6 @@
                         jq("#breast-feeding").find("input[type$='checkbox']").prop("checked", false);
                         jq("#not-pregnant-not-breast-feeding").find("input[type$='checkbox']").prop("checked", false);
                         disable_fields("edd");
-                        disable_fields("emtct");
                         disable_fields("162983");
                         disable_fields("anc_no");
                     }
@@ -1427,11 +1411,13 @@
             var cohort = getValue('refill_point_id.value');
             var date = encounterDate.getFullYear()+'-'+(encounterDate.getMonth()+1)+'-'+encounterDate.getDate();
             var DSDCategory = getValue('cddp_category.value');
-            var dataToPost = "{\"patient\": \"" +  patientUUID + "\", \"cohort\": \"" + cohort + "\",\"startDate\": \"" + date+ "\"}";
-            if (cohort == "" &amp;&amp; (DSDCategory==="a6a0ab45-b7dc-43b2-b28c-45a91f968ebf" || DSDCategory==="d77cc565-5e53-4633-8fc7-956cfc1831d9")){
-                jq().toastmessage('showErrorToast', "Select at least a DSD Refill for this client");
-                return false;
+            if (cohort == ""){
+               if(DSDCategory==="a6a0ab45-b7dc-43b2-b28c-45a91f968ebf" || DSDCategory==="d77cc565-5e53-4633-8fc7-956cfc1831d9"){
+                    jq().toastmessage('showErrorToast', "Select at least a DSD Refill for this client");
+                    return false;
+               }
             }else{
+                var dataToPost = "{\"patient\": \"" +  patientUUID + "\", \"cohort\": \"" + cohort + "\",\"startDate\": \"" + date+ "\"}";
                 jq.ajax({
                 type: "POST",
                 url: '/' + OPENMRS_CONTEXT_PATH + "/ws/rest/v1/cohortm/cohortmember/",
@@ -1444,7 +1430,13 @@
                 },
                 error: function (response) {
                     if (cohort !== ""){
-                        jq().toastmessage('showErrorToast', "Error while Added Client to Refill Group");}
+                        var errorMessage = response.responseJSON.error.message;
+                        if(errorMessage.indexOf("already exists") > 0){
+                            jq().toastmessage('showSuccessToast', response.responseJSON.error.message);
+                        }else{
+                            jq().toastmessage('showErrorToast', response.responseJSON.error.message);
+                        }
+                     }
                 }
                 });
             }
@@ -1648,6 +1640,10 @@
     </span>
     <span class="hidden" id="numberOfPatients"><lookup expression="fn.globalProperty('ugandaemr.maximumPatientsPerDay')"/></span>
 
+    <div class="hidden">
+        <encounterLocation id="location_id" default="SessionAttribute:emrContext.sessionLocationId"/>
+    </div>
+
     <restrictByRole exclude="HIV Clinic">
         <div>
             <div class="row">
@@ -1746,7 +1742,8 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>Attending Clinician</label>
-                                                        <encounterProvider role="Provider" style="autocomplete" id="provider"/>
+                                                        <encounterProviderAndRole encounterRole="240b26f9-dd88-4172-823d-4a8bfeb7841f"
+                                                                                  required="required"  id="provider"/>
                                                         <span class="required">*</span><span style="display: none;">
                                                             <encounterLocation default="629d78e9-93e5-43b0-ad8a-48313fd99117"
                                                                                order="629d78e9-93e5-43b0-ad8a-48313fd99117"/>
@@ -2899,8 +2896,6 @@
                         <div class="hidden">
                             <label>Encounter Date</label>
                             <encounterDate default="today" disallowMultipleEncountersOnDate="block"/>
-                            <encounterLocation id="location_id"
-                                               default="SessionAttribute:emrContext.sessionLocationId"/>
 
                         </div>
                         <div class="submission-section hidden">
@@ -3910,27 +3905,26 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div id="cddp_categorization" class="card">
-                        <div class="card-header">Drug Pick Up Model</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3" id="cddp_category">
-                                    <label>CDDP Category</label>
-                                    <workflowState  workflowId="4" stateIds="16,14,15" stateLabels="General CDDP, CLDDP,CRPDDP"/>
-                                </div>
-                                <div class="col-md-3">
-                                   <label>DSD Group Refill Point</label>
-                                    <div class="form-group">
-                                        <select class="form-control" id="refill_point_select_id" name="refill_point_select_id">
-                                            <option value="">Select Refill Point</option>
-                                        </select>
+                        <div id="cddp_categorization" class="card">
+                            <div class="card-header">Drug Pick Up Model</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3" id="cddp_category">
+                                        <label>CDDP Category</label>
+                                        <workflowState  workflowId="4" stateIds="16,14,15" stateLabels="General CDDP, CLDDP,CRPDDP"/>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <obs id="refill_point_id" conceptId="166500"
-                                         labelText="DSD Group Code"/>
+                                    <div class="col-md-3">
+                                        <label>DSD Group Refill Point</label>
+                                        <div class="form-group">
+                                            <select class="form-control" id="refill_point_select_id" name="refill_point_select_id">
+                                                <option value="">Select Refill Point</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <obs id="refill_point_id" conceptId="166500"
+                                             labelText="DSD Group Code"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>

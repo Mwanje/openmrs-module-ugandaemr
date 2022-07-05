@@ -172,6 +172,12 @@
     </globalProperty>
 
     <globalProperty>
+        <property>ugandaemr.hts.recency.surveillance_report_coverage_months</property>
+        <description>The number of months for which the Recency Surveillance Report is generated from the current date. This is to improve the performance of this report for high volume HTS sites</description>
+        <defaultValue>36</defaultValue>
+    </globalProperty>
+
+    <globalProperty>
         <property>ugandaemr.patientflags.disabledFlags</property>
         <description>Separate Names of flags you want to disable with , example Transfered Out Patient,Un-supressed Viral Load</description>
         <defaultValue></defaultValue>
@@ -262,6 +268,12 @@
         <defaultValue>false</defaultValue>
         <description>This allows a health center to enable other categories of CDDP such as CRPDDP</description>
         <dataType>org.openmrs.customdatatype.datatype.BooleanDatatype</dataType>
+    </globalProperty>
+
+    <globalProperty>
+        <property>ugandaemr.SMSTemplate</property>
+        <defaultValue>Dear &lt;name&gt; this is to remind you of your appointment on &lt;date&gt; </defaultValue>
+        <description>This is a facility SMS Template used by the SMS Program</description>
     </globalProperty>
 
     <privilege>
