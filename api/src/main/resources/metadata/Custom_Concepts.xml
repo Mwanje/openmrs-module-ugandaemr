@@ -2447,6 +2447,36 @@
     <concept_numeric  concept_id="166423"  units="U/L"    allow_decimal="1"/>
     <concept_numeric  concept_id="166429"  units="U/L" allow_decimal="1" />
 
+    <concept_numeric  concept_id="166528"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166527"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166526"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166525"  units="mL/min"  allow_decimal="0"/>
+    <concept_numeric  concept_id="166524"  units="mmol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166523"  units="umol/L"  allow_decimal="1"/>
+    <concept_numeric  concept_id="166521"  units="U/L"     allow_decimal="0"/>
+    <concept_numeric  concept_id="166520"  units="U/L"     allow_decimal="0"/>
+    <concept_numeric  concept_id="166519"  units="g/dL"    allow_decimal="1"/>
+    <concept_numeric  concept_id="166518"  units="U/L"     allow_decimal="0"/>
+    <concept_numeric  concept_id="21"   hi_normal="17.8" low_critical="7" low_normal="10.4" units="g/dL" allow_decimal="1"/>
+    <concept_numeric  concept_id="678"  hi_normal="8.2" low_critical="1.4" low_normal="2.9" units="10^3/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="679"  hi_normal="6.1" low_critical="2.3" low_normal="4" units="10^6/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="729"  hi_normal="419" low_critical="49" low_normal="134" units="10^3/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="851"  hi_normal="100" low_normal="80" units="fL" allow_decimal="1"/>
+    <concept_numeric  concept_id="1015" hi_normal="51.9" low_critical="21" low_normal="32.3" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1016" hi_normal="20" low_normal="10" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1018" hi_normal="34" low_normal="26" units="pg" allow_decimal="1"/>
+    <concept_numeric  concept_id="1021" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1022" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1023" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1024" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1025" units="%" allow_decimal="1"/>
+    <concept_numeric  concept_id="1319" units="cells/Ã¯Â¿Â½L" allow_decimal="1"/>
+    <concept_numeric  concept_id="1330" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
+    <concept_numeric  concept_id="1331" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
+    <concept_numeric  concept_id="1332" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
+    <concept_numeric  concept_id="1334" units="10^3/Ã¯Â¿Â½L" allow_decimal="1" />
+
+
     <concept_numeric  concept_id="166597"    allow_decimal="1"/>
     <concept_numeric  concept_id="166631"    allow_decimal="1"/>
     <concept_numeric  concept_id="166632"    allow_decimal="1"/>
@@ -2842,6 +2872,19 @@
     <!--LAB-->
     <concept_description  concept_description_id="1390"  concept_id="1429"  description="Rhesus (Rh) type of blood for pregant woman screening"  locale="en"  creator="1"  date_created="2006-12-17 11:49:51"  changed_by="1" uuid="1390FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"/>
     <concept_description  concept_description_id="18379"  concept_id="165367"  description="Migrated"  locale="en"  creator="1"  date_created="2019-10-23 12:36:36"  uuid="52b52970-ab6c-4368-b97d-2e0f6f171bb7"/>
+
+    <concept_description  concept_description_id="18559"  concept_id="166518"  description="Alkaline phosphatase ALP is an enzyme found in the liver and bone and is important for breaking down proteins."  locale="en"  creator="1"  date_created="2022-02-14 09:59:52"  uuid="4f17b08c-a923-4fc5-ae4c-87b76ed779f3"/>
+    <concept_description  concept_description_id="18560"  concept_id="166519"  description="Albumin is one of several proteins made in the liver."  locale="en"  creator="1"  date_created="2022-02-14 10:08:54"  uuid="ce441a79-cdfe-4bf4-a725-3b4162f1c66a"/>
+    <concept_description  concept_description_id="18561"  concept_id="166520"  description="L-lactate dehydrogenase"  								locale="en"  creator="1"  date_created="2022-02-14 10:18:33"  uuid="d07f3859-08ff-4d0c-b05d-d65beedbdb9f"/>
+    <concept_description  concept_description_id="18562"  concept_id="166521"  description="Gamma-glutamyltransferase"  							locale="en"  creator="1"  date_created="2022-02-14 10:22:44"  uuid="acf5a48f-4e2d-4fde-8abf-807ac7e1351c"/>
+    <concept_description  concept_description_id="18563"  concept_id="166522"  description="Liver Function Tests Liver Function Tests check the levels of certain enzymes and proteins in your blood"  locale="en"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="2fbf29e2-d92e-4437-b710-ce51494a8d1d"/>
+    <concept_description  concept_description_id="18564"  concept_id="166525"  description="Glomerular Filtration Rate"  locale="en"  creator="1"  date_created="2022-02-14 12:27:26"  uuid="68f774c5-e0aa-4d64-bd98-3cfc40e5d267"/>
+    <concept_description  concept_description_id="18565"  concept_id="166526"  description="Sodium ion"  				 locale="en"  creator="1"  date_created="2022-02-14 12:28:17"  uuid="2fb8f508-69fb-46c4-9932-b2d03dbdc790"/>
+
+    <concept_description  concept_description_id="18712"  concept_id="166527"  description="Potassium ion"           	 locale="en"  creator="1"  date_created="2022-02-14 12:29:18"  uuid="00d8b999-a7f6-48de-9f6c-b8f00eb7fbda"/>
+    <concept_description  concept_description_id="18713"  concept_id="166528"  description="Chloride"  				     locale="en"  creator="1"  date_created="2022-02-14 12:31:22"  uuid="9fb39e37-e6a8-4e80-b2d4-fa5eac674823"/>
+    <concept_description  concept_description_id="18714"  concept_id="166529"  description="Kidney Function Test (KFT/RFT Test) is a profile of biochemistry blood tests that are useful to assess the renal function."  locale="en"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="29f491ac-3e14-4297-b2a5-3fe362a8f272"/>
+
 
     <!-- 2019 tools -->
 
@@ -5623,6 +5666,19 @@
     <concept_name  concept_name_id="161100"  concept_id="165872"  name="TB Treatment Outcome Date"  locale="en"  locale_preferred="1"  creator="1"  date_created="2020-06-23 14:57:56"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="6ee1f79d-311a-4439-a613-5af9f72c07ad"/>
     <concept_name  concept_name_id="161099"  concept_id="165871"  name="ARV Drugs given"  locale="en"  locale_preferred="1"  creator="1"  date_created="2020-06-23 14:33:13"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="ebb0f122-61fe-45fb-9b6d-2dc827e70637"/>
 
+    <concept_name  concept_name_id="162778"  concept_id="166518"  name="ALP"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 09:59:52"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="b505fcb1-2784-4799-bb01-1befd5fb5519"/>
+    <concept_name  concept_name_id="162779"  concept_id="166519"  name="Albumin"     locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:08:54"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="9fe00fdb-3360-4d62-860f-07a9a998be5c"/>
+    <concept_name  concept_name_id="162780"  concept_id="166520"  name="LD"          locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:18:33"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="cfb33e62-d362-49fc-a0b5-e9f7d2bcf7ad"/>
+    <concept_name  concept_name_id="162781"  concept_id="166521"  name="GGT"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:22:44"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="29232dda-3ee0-4a15-926f-44994ff6c90b"/>
+    <concept_name  concept_name_id="162782"  concept_id="166522"  name="LFT"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 10:29:18"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="77a678e5-83d0-4bee-bbb8-62c009a562f9"/>
+    <concept_name  concept_name_id="162783"  concept_id="166523"  name="Creatinine"  locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:24:59"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="8e7e1dbc-0cf2-4909-a830-a2a99cbfb642"/>
+    <concept_name  concept_name_id="162784"  concept_id="166524"  name="Urea"        locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:25:35"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="0dabd5a0-a9e6-4471-8658-7a444c4b5db4"/>
+    <concept_name  concept_name_id="162785"  concept_id="166525"  name="GFR"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:27:26"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="50189dc2-ed9e-4c28-bbb1-08e2d6f4b56d"/>
+    <concept_name  concept_name_id="162786"  concept_id="166526"  name="Na+"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:28:17"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="a16d7748-d663-400d-8c2b-4941a7685801"/>
+    <concept_name  concept_name_id="162787"  concept_id="166527"  name="K+"          locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:29:18"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="5985d886-9c0d-418c-9a98-95092ab8355d"/>
+    <concept_name  concept_name_id="162788"  concept_id="166528"  name="Cl"          locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:31:22"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="7dca79ae-19bb-4da0-83ba-21827c2a92fa"/>
+    <concept_name  concept_name_id="162789"  concept_id="166529"  name="RFT"         locale="en"  locale_preferred="1"  creator="1"  date_created="2022-02-14 12:34:39"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="feb923f0-cc5b-444b-a607-7baddbc26e69"/>
+
 
 
     <!-- EMTCT module -->
@@ -8179,6 +8235,27 @@
     <concept_answer  concept_answer_id="7366022"  concept_id="165402"  answer_concept="1065" creator="1"  date_created="2019-11-05 07:57:21"  sort_weight="1"  uuid="759f6da5-a016-4cf2-8187-c8b9521157cf"/>
     <concept_answer  concept_answer_id="7366023"  concept_id="165402"  answer_concept="1066" creator="1"  date_created="2019-11-05 07:57:21"  sort_weight="2"  uuid="97b5e5bf-632e-46b5-b680-2fef7f113ad9"/>
 
+
+    <concept_answer  concept_answer_id="7367968"  concept_id="1271"  answer_concept="166522"  creator="1"  date_created="2022-02-14 12:42:01"  sort_weight="23"  uuid="1dcc6bb4-17ba-4023-9020-d42b40da3052"/>
+    <concept_answer  concept_answer_id="7367969"  concept_id="1271"  answer_concept="166529"  creator="1"  date_created="2022-02-14 12:42:01"  sort_weight="24"  uuid="b37dc09d-24eb-4e93-acc8-96586fea9635"/>
+
+    <concept_answer  concept_answer_id="7367970"  concept_id="1271"  answer_concept="1643" creator="1"  date_created="2022-02-11 14:31:21"  sort_weight="21"  uuid="b9afd321-1680-4bb8-b40a-3f95afc9b79c"/>
+    <concept_answer  concept_answer_id="7367971"  concept_id="1271"  answer_concept="302"  creator="1"  date_created="2022-02-11 14:31:21"  sort_weight="22"  uuid="4bbe666f-d4fc-434b-8fa6-4f930aaa3a97"/>
+
+
+    <concept  concept_id="166518"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 09:59:52"  changed_by="1"  date_changed="2022-02-14 09:59:52"  uuid="58761e18-7ea6-4033-842f-fba5cd134ace"/>
+    <concept  concept_id="166519"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 10:08:54"  changed_by="1"  date_changed="2022-02-14 10:23:33"  uuid="4f09b0e0-14b4-4404-8532-0bde09223bd6"/>
+    <concept  concept_id="166520"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 10:18:33"  changed_by="1"  date_changed="2022-02-14 10:18:33"  uuid="95c4badb-46d6-428d-94ca-c8ef743f98d2"/>
+    <concept  concept_id="166521"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 10:22:44"  changed_by="1"  date_changed="2022-02-14 10:22:44"  uuid="246254ce-340a-4219-8a92-9f62e80afdea"/>
+    <concept  concept_id="166522"  retired="0" datatype_id="4"  class_id="8"  is_set="1"  creator="1"  date_created="2022-02-14 10:29:18"  changed_by="1"  date_changed="2022-02-14 10:29:18"  uuid="f274dcaa-e515-440e-bcd7-140a691587aa"/>
+    <concept  concept_id="166523"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:24:59"  changed_by="1"  date_changed="2022-02-14 12:24:59"  uuid="aa4b34f0-e2e4-4e0b-9224-52c91779e8c2"/>
+    <concept  concept_id="166524"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:25:35"  changed_by="1"  date_changed="2022-02-14 12:25:35"  uuid="753e4b36-5ce3-485f-9c70-4bac73bbde19"/>
+    <concept  concept_id="166525"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:27:26"  changed_by="1"  date_changed="2022-02-14 12:27:26"  uuid="7490ee77-2ab4-4b89-88f6-f67f14aab836"/>
+    <concept  concept_id="166526"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:28:17"  changed_by="1"  date_changed="2022-02-14 12:28:17"  uuid="fb2d34b2-3bcd-4b79-ae97-1f9879c02fb0"/>
+    <concept  concept_id="166527"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:29:18"  changed_by="1"  date_changed="2022-02-14 12:29:18"  uuid="47582621-8e20-4f4e-a28d-1ba85f2e7e4b"/>
+    <concept  concept_id="166528"  retired="0" datatype_id="1"  class_id="1"  is_set="0"  creator="1"  date_created="2022-02-14 12:31:22"  changed_by="1"  date_changed="2022-02-14 12:31:22"  uuid="43ae49b8-89f2-4c06-9212-8c012c6ef280"/>
+    <concept  concept_id="166529"  retired="0" datatype_id="4"  class_id="8"  is_set="1"  creator="1"  date_created="2022-02-14 12:34:39"  changed_by="1"  date_changed="2022-02-14 12:34:39"  uuid="7f420159-b843-44a7-b53c-c6ca52a53ec5"/>
+
     <!--PHARMACY-->
     <concept_answer  concept_answer_id="7332"  concept_id="165288"  answer_concept="165307"  creator="1"  date_created="2019-10-02 20:44:51"  sort_weight="6"  uuid="f82caf18-3381-424b-bce3-98053218e991"/>
 
@@ -10137,6 +10214,31 @@
     <concept_set  concept_set_id="2834"  concept_id="165875"  concept_set="165877"  sort_weight="0"  creator="1"  date_created="2020-07-15 10:10:22"  uuid="b11a2518-eb7a-4316-b342-99e01a1c985a"/>
     <concept_set  concept_set_id="2835"  concept_id="165876"  concept_set="165877"  sort_weight="1"  creator="1"  date_created="2020-07-15 10:10:22"  uuid="5972bb5d-7edc-4674-bf73-5cbd130a303a"/>
 
+    <concept_set  concept_set_id="3035"  concept_id="166429"  concept_set="166522"  sort_weight="0"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="89a40a3b-16b4-4b5f-a15c-6c89571e9c30"/>
+    <concept_set  concept_set_id="3036"  concept_id="166423"  concept_set="166522"  sort_weight="1"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="d4e35fdb-2d3c-4f1a-ba33-1b14532ea7e2"/>
+    <concept_set  concept_set_id="3037"  concept_id="166203"  concept_set="166522"  sort_weight="2"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="8656285f-62be-4002-88e9-5ed0b05dfab4"/>
+    <concept_set  concept_set_id="3038"  concept_id="166330"  concept_set="166522"  sort_weight="3"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="f669998c-51fa-4a04-aa76-c1a91c49cf94"/>
+    <concept_set  concept_set_id="3039"  concept_id="166518"  concept_set="166522"  sort_weight="4"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="6ef4740c-6845-4569-82ae-d2b2954b0781"/>
+    <concept_set  concept_set_id="3040"  concept_id="166519"  concept_set="166522"  sort_weight="5"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="86552f5b-41f7-4307-a87d-545295b99434"/>
+    <concept_set  concept_set_id="3041"  concept_id="166520"  concept_set="166522"  sort_weight="6"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="41cb33c8-0b64-4e62-8a1d-7e804021bb8a"/>
+    <concept_set  concept_set_id="3042"  concept_id="166521"  concept_set="166522"  sort_weight="7"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="ec82db4f-27c7-4b27-bf70-f32d01007f97"/>
+    <concept_set  concept_set_id="3043"  concept_id="717"     concept_set="166522"  sort_weight="8"  creator="1"  date_created="2022-02-14 10:29:18"  uuid="2e7d372e-7628-4434-83cd-f485bf1e2996"/>
+    <concept_set  concept_set_id="3044"  concept_id="166523"  concept_set="166529"  sort_weight="0"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="8cb333d3-f03e-4b74-b8b5-da5adaadda71"/>
+    <concept_set  concept_set_id="3045"  concept_id="166524"  concept_set="166529"  sort_weight="1"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="7434ba44-776f-4560-a1dd-c8bbc821d575"/>
+    <concept_set  concept_set_id="3046"  concept_id="166525"  concept_set="166529"  sort_weight="2"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="8953107a-1b78-4b48-8c21-cae48326596f"/>
+    <concept_set  concept_set_id="3047"  concept_id="166526"  concept_set="166529"  sort_weight="3"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="cb740dd4-832f-476c-b78a-45cbbdffc073"/>
+    <concept_set  concept_set_id="3048"  concept_id="166528"  concept_set="166529"  sort_weight="4"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="5898944e-1aed-4d23-a26f-1c7ef0d94177"/>
+    <concept_set  concept_set_id="3049"  concept_id="166527"  concept_set="166529"  sort_weight="5"  creator="1"  date_created="2022-02-14 12:34:39"  uuid="9de0b946-8ce3-47d4-b983-0b2b7b7c7315"/>
+    <concept_set  concept_set_id="3050"  concept_id="1021"  concept_set="1019"  sort_weight="9"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="86d026a7-5ac4-41af-bb2f-d807b3ec9b74"/>
+    <concept_set  concept_set_id="3051"  concept_id="1025"  concept_set="1019"  sort_weight="10"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="9e90f32d-2e0c-46c3-ad15-56863742db19"/>
+    <concept_set  concept_set_id="3052"  concept_id="1331"  concept_set="1019"  sort_weight="11"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="44fd06ee-73e7-4f7f-91fd-34a65cbd1667"/>
+    <concept_set  concept_set_id="3053"  concept_id="1319"  concept_set="1019"  sort_weight="12"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="36d7a126-c23f-4547-bc09-e71b0667fd9d"/>
+    <concept_set  concept_set_id="3054"  concept_id="1024"  concept_set="1019"  sort_weight="13"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="25cfd02f-a90f-41b9-8b84-de366ab4f28b"/>
+    <concept_set  concept_set_id="3055"  concept_id="1332"  concept_set="1019"  sort_weight="14"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="2fa5eff5-29c5-42b6-a172-f3d94455e891"/>
+    <concept_set  concept_set_id="3056"  concept_id="1334"  concept_set="1019"  sort_weight="15"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="c8bf27c2-d799-49d6-be8f-a012062073e3"/>
+    <concept_set  concept_set_id="3057"  concept_id="1330"  concept_set="1019"  sort_weight="16"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="54bba755-7805-40d1-a3bd-8d09fbfdbe62"/>
+    <concept_set  concept_set_id="3058"  concept_id="1022"  concept_set="1019"  sort_weight="17"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="16f95d9c-0709-4a35-8837-b22b77268978"/>
+    <concept_set  concept_set_id="3059"  concept_id="1023"  concept_set="1019"  sort_weight="18"  creator="1"  date_created="2022-03-07 16:32:54"  uuid="381a4237-9b58-4b78-a485-433d219b3285"/>
 
 
         <!-- DRUG -->
@@ -10252,6 +10354,43 @@
     <concept_reference_term  concept_reference_term_id="284121"  concept_source_id="6"  name="Glucose in urine"                       code="53328-1"   creator="1"    date_created="2021-02-04 12:47:37"   retired="0"   uuid="3d4d67db-2ed7-400f-95ae-7efbcd111b91"/>
     <concept_reference_term  concept_reference_term_id="284122"  concept_source_id="6"  name="Bilirubin in urine"                     code="53327-3"   creator="1"    date_created="2021-02-04 12:51:17"   retired="0"   uuid="d01bc130-c58a-4e69-904e-f3152c6e6c8a"/>
 
+    <concept_reference_term  concept_reference_term_id="284123"  concept_source_id="1"  name="Malaria Antigen Test Procedure"  code="407727009"  creator="1"  date_created="2022-02-11 12:21:05"  retired="0"  uuid="04c19775-98af-47f8-80ba-e8d2ae64d663"/>
+    <concept_reference_term  concept_reference_term_id="284124"  concept_source_id="1"  name="Complete Blood Count (CBC)"      code="26604007"   creator="1"  date_created="2022-02-11 12:30:12"  retired="0"  uuid="7458b2b9-be51-4ffb-ac55-fab7697be0e9"/>
+    <concept_reference_term  concept_reference_term_id="284125"  concept_source_id="1"  name="crAg (C)"  					   code="103094002"  creator="1"  date_created="2022-02-11 12:32:05"  retired="0"  uuid="6c9441cd-bebd-4aba-baae-47ad8b602ef7"/>
+    <concept_reference_term  concept_reference_term_id="284126"  concept_source_id="1"  name="CD4 Percent Count"               code="313938009"  creator="1"  date_created="2022-02-11 12:37:45"  retired="0"  uuid="9ea22db7-6343-4b44-9700-1da4e1feae78"/>
+    <concept_reference_term  concept_reference_term_id="284127"  concept_source_id="1"  name="Kidney Function Tests"               code="44277000"  creator="1"  date_created="2022-02-15 10:25:55"  retired="0" uuid="6bec0da4-ce4a-4fa1-b785-148bf54940f6"/>
+    <concept_reference_term  concept_reference_term_id="284128"  concept_source_id="1"  name="Liver Function Test"                 code="26958001"  creator="1"  date_created="2022-02-15 10:27:29"  retired="0" uuid="283db707-4062-434b-955c-60a11ac41a15"/>
+    <concept_reference_term  concept_reference_term_id="284129"  concept_source_id="1"  name="Creatinine"                          code="15373003"  creator="1"  date_created="2022-02-15 10:38:07"  retired="0" uuid="b8948927-0a5a-4c6a-8252-96b6d9d9e6ce"/>
+    <concept_reference_term  concept_reference_term_id="284130"  concept_source_id="1"  name="Urea"                                code="387092000" creator="1"  date_created="2022-02-15 10:40:17"  retired="0" uuid="36ebc891-abc4-47d7-ac91-946d2459405e"/>
+    <concept_reference_term  concept_reference_term_id="284131"  concept_source_id="1"  name="Glomerular filtration rate"          code="80274001"  creator="1"  date_created="2022-02-15 10:41:06"  retired="0" uuid="94dd60c3-c91d-47fc-b697-bfe53e163428"/>
+    <concept_reference_term  concept_reference_term_id="284132"  concept_source_id="1"  name="Potassium ionophore"                 code="301091001" creator="1"  date_created="2022-02-15 10:42:26"  retired="0" uuid="4cfe5ec1-ae6b-4656-bd44-66dcd5f4e947"/>
+    <concept_reference_term  concept_reference_term_id="284133"  concept_source_id="1"  name="Chloride"                            code="50213009"  creator="1"  date_created="2022-02-15 10:43:31"  retired="0" uuid="c145be37-c7a3-4db0-a03a-7149e4781e93"/>
+    <concept_reference_term  concept_reference_term_id="284134"  concept_source_id="1"  name="Sodium"                              code="39972003"  creator="1"  date_created="2022-02-15 10:44:32"  retired="0" uuid="297113a6-b225-4c6b-b913-430b5813af91"/>
+    <concept_reference_term  concept_reference_term_id="284135"  concept_source_id="1"  name="Urinalysis"                          code="27171005"  creator="1"  date_created="2022-02-15 10:51:24"  retired="0" uuid="6633fdec-0954-446e-b5d7-0b3efaea2317"/>
+    <concept_reference_term  concept_reference_term_id="284136"  concept_source_id="1"  name="Rapid Plasma Reagin Test Procedure"  code="19869000"  creator="1"  date_created="2022-02-15 10:59:48"  retired="0" uuid="f3b6c722-3450-4ae9-99d0-77499d45dc25"/>
+    <concept_reference_term  concept_reference_term_id="284137"  concept_source_id="1"  name="Microscopy Procedure"                code="117259009" creator="1"  date_created="2022-02-15 12:02:40"  retired="0" uuid="e401c0f3-6681-46ae-9079-0b96a57addae"/>
+    <concept_reference_term  concept_reference_term_id="284150"  concept_source_id="6"  name="Microscopic observation [Identifier] in Sputum by Cyto stain"  code="10526-2"  creator="1"  date_created="2022-04-01 14:36:20"  retired="0"  uuid="1248abc1-86d9-42a8-994b-0bdd5a491346"/>
+    <concept_reference_term  concept_reference_term_id="284138"  concept_source_id="1"  name="White Blood Cell Count"                            code="391558003" creator="1"  date_created="2022-03-07 11:23:07"  retired="0" uuid="fb5d8f13-ced8-4e2e-8e64-e1e62338d5ac"/>
+    <concept_reference_term  concept_reference_term_id="284139"  concept_source_id="1"  name="Neutrophil count (procedure)"                      code="30630007"  creator="1"  date_created="2022-03-07 12:46:36"  retired="0" uuid="3477ca82-76cf-4632-9f42-88cf8823bef4"/>
+    <concept_reference_term  concept_reference_term_id="284140"  concept_source_id="1"  name="Neutrophil percent differential count (procedure)" code="56972008"  creator="1"  date_created="2022-03-07 13:00:33"  retired="0" uuid="c567fa2b-e1cd-473b-a2ce-c3c398bde961"/>
+    <concept_reference_term  concept_reference_term_id="284141"  concept_source_id="1"  name="Monocyte count (procedure)"                        code="67776007"  creator="1"  date_created="2022-03-07 13:06:11"  retired="0" uuid="2b9d2f7a-7d29-42c6-bac5-871e9ac56350"/>
+    <concept_reference_term  concept_reference_term_id="284142"  concept_source_id="1"  name="Basophil count (procedure)"                        code="42351005"  creator="1"  date_created="2022-03-07 13:53:16"  retired="0" uuid="a98c7361-5932-49bc-99d8-64c3cc949df6"/>
+    <concept_reference_term  concept_reference_term_id="284143"  concept_source_id="1"  name="Monocyte count (procedure)"         				 code="365631001" creator="1"  date_created="2022-03-07 14:41:47"  retired="0" uuid="a3fcb39f-09ad-4b33-bb8c-a340174d3305"/>
+    <concept_reference_term  concept_reference_term_id="284144"  concept_source_id="1"  name="Lymphocyte count (procedure)"       				 code="74765001"  creator="1"  date_created="2022-03-07 14:47:29"  retired="0" uuid="77dad35b-8ea2-4dd1-a945-537d94c3b0e6"/>
+    <concept_reference_term  concept_reference_term_id="284145"  concept_source_id="1"  name="Eosinophil percent differential count (procedure)" code="365601007" creator="1"  date_created="2022-03-07 15:04:40"  retired="0" uuid="b3a6720a-3304-4183-a3c0-3fcce5a174ba"/>
+    <concept_reference_term  concept_reference_term_id="284146"  concept_source_id="1"  name="Eosinophil count (procedure)"  					 code="71960002"  creator="1"  date_created="2022-03-07 15:05:37"  retired="0" uuid="67c51a35-4f13-48f7-a75a-0d49a9614e55"/>
+    <concept_reference_term  concept_reference_term_id="284147"  concept_source_id="1"  name="Atypical lymphocyte (morphologic abnormality)"     code="86528005"  creator="1"  date_created="2022-03-07 15:27:04"  retired="0" uuid="c80e678f-1c93-4c0b-b3e4-77c669ce2f82"/>
+    <concept_reference_term  concept_reference_term_id="284148"  concept_source_id="1"  name="Neutrophil percent differential count (procedure)" code="271035003" creator="1"  date_created="2022-03-07 15:39:35"  retired="0" uuid="920e7faf-81c3-4015-96df-8bc5383ae563"/>
+    <concept_reference_term  concept_reference_term_id="284149"  concept_source_id="1"  name="Monocyte percent differential count (procedure)"   code="271037006" creator="1"  date_created="2022-03-07 15:49:34"  retired="0" uuid="4c39af95-5fe7-485f-b4e3-827f63efc4d1"/>
+    <concept_reference_term  concept_reference_term_id="284151"  concept_source_id="1"  name="Red cell distribution width determination (procedure)"                code="66842004"  creator="1"  date_created="2022-04-04 11:38:32"  retired="0" uuid="374babac-0d1f-4508-8c38-9af417b06c01"/>
+    <concept_reference_term  concept_reference_term_id="284152"  concept_source_id="1"  name="Red blood cell count (procedure)"  					                code="14089001"  creator="1"  date_created="2022-04-04 11:45:05"  retired="0" uuid="864cebb1-4700-4fba-bec6-eff224e4b453"/>
+    <concept_reference_term  concept_reference_term_id="284153"  concept_source_id="1"  name="Platelet count (procedure)"    				     	                code="61928009"  creator="1"  date_created="2022-04-04 11:48:05"  retired="0" uuid="887b6e1e-43cf-4d8d-814b-38bf44dd1353"/>
+    <concept_reference_term  concept_reference_term_id="284154"  concept_source_id="1"  name="Erythrocyte mean corpuscular volume determination (procedure)"        code="104133003" creator="1"  date_created="2022-04-04 12:23:08"  retired="0" uuid="2199fcc9-687f-4427-8fd9-647ccc4dbc81"/>
+    <concept_reference_term  concept_reference_term_id="284155"  concept_source_id="1"  name="Erythrocyte mean corpuscular volume determination (procedure)"        code="54706004"  creator="1"  date_created="2022-04-04 13:45:13"  retired="0" uuid="901e4cf3-3bfa-4815-bafa-020ba43f3a06"/>
+    <concept_reference_term  concept_reference_term_id="284156"  concept_source_id="1"  name="Mean corpuscular hemoglobin concentration determination (procedure)"  code="37254006"  creator="1"  date_created="2022-04-04 13:48:36"  retired="0" uuid="04e932cb-27ca-4da4-b4a7-965fc0c823bd"/>
+    <concept_reference_term  concept_reference_term_id="284157"  concept_source_id="1"  name="Measurement of total hemoglobin concentration (procedure)"            code="441689006" creator="1"  date_created="2022-04-04 13:51:23"  retired="0" uuid="a43d6e4a-3e49-4165-b7d5-8d90a3f3a768"/>
+    <concept_reference_term  concept_reference_term_id="284158"  concept_source_id="1"  name="Finding of hematocrit (finding)"                                      code="365616005" creator="1"  date_created="2022-04-04 13:54:25"  retired="0" uuid="62f19401-6bf2-4384-81c0-957f6a951f59"/>
+
 
 
     <!--Concept Reference Map-->
@@ -10269,6 +10408,43 @@
     <concept_reference_map  concept_map_id="284111"  concept_reference_term_id="284120"  concept_map_type_id="1"  creator="1"  date_created="2021-02-04 12:48:01"  concept_id="166204"  uuid="e1d8e8d4-3609-4608-8fe6-ae37f8911a29"/>
     <concept_reference_map  concept_map_id="284112"  concept_reference_term_id="284121"  concept_map_type_id="1"  creator="1"  date_created="2021-02-04 12:48:47"  concept_id="166210"  uuid="0b1d7c33-21dd-4638-bdca-529e44649dd0"/>
     <concept_reference_map  concept_map_id="284113"  concept_reference_term_id="284122"  concept_map_type_id="1"  creator="1"  date_created="2021-02-04 12:51:36"  concept_id="166203"  uuid="929d763a-d3a2-4527-bebb-35ba5584d79f"/>
+
+    <concept_reference_map  concept_map_id="284114"  concept_reference_term_id="284123"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:21:26"  concept_id="1643"   uuid="1b032874-0048-48a9-bd4f-abcdf881bd93"/>
+    <concept_reference_map  concept_map_id="284115"  concept_reference_term_id="284125"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:32:15"  concept_id="165418" uuid="21a0d4f5-38ee-47b5-a65c-bdeada1be10b"/>
+    <concept_reference_map  concept_map_id="284116"  concept_reference_term_id="284126"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:38:02"  concept_id="657"    uuid="42548104-2b0c-4395-adb1-54d55c9cf693"/>
+    <concept_reference_map  concept_map_id="284117"  concept_reference_term_id="284124"  concept_map_type_id="1"  creator="1"  date_created="2022-02-11 12:40:12"  concept_id="1019"    uuid="a38861e3-d1bd-4cac-8319-4daeac42119c"/>
+    <concept_reference_map  concept_map_id="284118"  concept_reference_term_id="284127"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:26:16"  concept_id="166529"  uuid="e0be8481-38f4-4b13-bc42-79d08aac328d"/>
+    <concept_reference_map  concept_map_id="284119"  concept_reference_term_id="284128"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:27:48"  concept_id="166522"  uuid="c369647d-a03b-415b-9f40-456031ce16a7"/>
+    <concept_reference_map  concept_map_id="284120"  concept_reference_term_id="284129"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:38:19"  concept_id="166523"  uuid="bb61d29b-b04a-4f23-af68-7378829f9e1e"/>
+    <concept_reference_map  concept_map_id="284121"  concept_reference_term_id="284130"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:40:31"  concept_id="166524"  uuid="1f93554f-ce63-40f1-afe9-5674ed4c1a7b"/>
+    <concept_reference_map  concept_map_id="284122"  concept_reference_term_id="284131"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:41:24"  concept_id="166525"  uuid="ef4959f8-96bc-4983-81c8-331184e84146"/>
+    <concept_reference_map  concept_map_id="284123"  concept_reference_term_id="284132"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:42:41"  concept_id="166527"  uuid="e34b2dab-5df6-439c-b38a-e91af5dd18eb"/>
+    <concept_reference_map  concept_map_id="284124"  concept_reference_term_id="284133"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:43:41"  concept_id="166528"  uuid="7a717fb7-d39a-42bc-9906-fcc09dc2aa46"/>
+    <concept_reference_map  concept_map_id="284125"  concept_reference_term_id="284134"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:44:48"  concept_id="166526"  uuid="7e6a8eaa-ffca-4652-90af-05259b61b68e"/>
+    <concept_reference_map  concept_map_id="284126"  concept_reference_term_id="284135"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:51:47"  concept_id="302"  	uuid="8603e8a9-b0c9-4e2e-bafe-490d6be41b1d"/>
+    <concept_reference_map  concept_map_id="284127"  concept_reference_term_id="284136"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 10:59:59"  concept_id="165417"  uuid="29c6fdea-8348-4546-84fb-28eda16f7075"/>
+    <concept_reference_map  concept_map_id="284128"  concept_reference_term_id="284137"  concept_map_type_id="1"  creator="1"  date_created="2022-02-15 12:02:59"  concept_id="165415"  uuid="10e4a556-36a4-4ead-ab1b-cc080b5e3ecd"/>
+    <concept_reference_map  concept_map_id="284129"  concept_reference_term_id="284138"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 11:23:22"  concept_id="678"   uuid="4210db3b-392a-4b3c-85fc-f558ffeb134c"/>
+    <concept_reference_map  concept_map_id="284131"  concept_reference_term_id="284140"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 13:00:48"  concept_id="1021"  uuid="2660681f-36a5-48c1-81e6-cebfdd2a1c2a"/>
+    <concept_reference_map  concept_map_id="284133"  concept_reference_term_id="284142"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 13:53:30"  concept_id="1025"  uuid="29b00886-7cc7-4e61-ba33-7723b0766c13"/>
+    <concept_reference_map  concept_map_id="284134"  concept_reference_term_id="284143"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 14:42:14"  concept_id="1331"  uuid="f514ce18-5a48-4648-87ec-5ff3c9b71b0b"/>
+    <concept_reference_map  concept_map_id="284135"  concept_reference_term_id="284144"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 14:47:43"  concept_id="1319"  uuid="ae319faf-900c-4c8f-b2aa-53526d935cd7"/>
+    <concept_reference_map  concept_map_id="284136"  concept_reference_term_id="284145"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:04:56"  concept_id="1024"  uuid="47d349de-a1a5-4126-ab36-4d7491b2808e"/>
+    <concept_reference_map  concept_map_id="284137"  concept_reference_term_id="284146"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:06:02"  concept_id="1332"  uuid="17b5d764-e086-497c-aae1-2a8bc1c6805c"/>
+    <concept_reference_map  concept_map_id="284138"  concept_reference_term_id="284147"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:27:19"  concept_id="1334"  uuid="15dd2e2a-5ce6-481b-8e6c-002daa5dfbb6"/>
+    <concept_reference_map  concept_map_id="284139"  concept_reference_term_id="284139"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:38:18"  concept_id="1330"  uuid="abad0f04-3b97-4441-a4ad-46f2a6667cbd"/>
+    <concept_reference_map  concept_map_id="284140"  concept_reference_term_id="284148"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:39:48"  concept_id="1022"  uuid="1e0719bc-068c-47b0-bdb1-7f3304eeef89"/>
+    <concept_reference_map  concept_map_id="284141"  concept_reference_term_id="284149"  concept_map_type_id="1"  creator="1"  date_created="2022-03-07 15:49:44"  concept_id="1023"  uuid="e5cd08e7-b957-4553-aed1-83c31cfa8c91"/>
+    <concept_reference_map  concept_map_id="284142"  concept_reference_term_id="284150"  concept_map_type_id="1"  creator="1"  date_created="2022-04-01 14:36:46"  concept_id="165415"  uuid="712cb163-d667-4a03-82e5-710f24b9c369"/>
+    <concept_reference_map  concept_map_id="284143"  concept_reference_term_id="284151"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 11:38:46"  concept_id="1016" uuid="6d7d80c9-d7a7-42da-ac50-e7618c9ee902"/>
+    <concept_reference_map  concept_map_id="284144"  concept_reference_term_id="284152"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 11:45:21"  concept_id="679"  uuid="dfa39a55-4e55-4cf5-860b-f4cbb99c8f6f"/>
+    <concept_reference_map  concept_map_id="284145"  concept_reference_term_id="284153"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 11:48:17"  concept_id="729"  uuid="adb230dc-2c2e-4082-8807-91a36da74b38"/>
+    <concept_reference_map  concept_map_id="284146"  concept_reference_term_id="284154"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 12:23:20"  concept_id="851"  uuid="52206f7a-20d8-4757-b389-3d827b746daa"/>
+    <concept_reference_map  concept_map_id="284147"  concept_reference_term_id="284155"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:45:26"  concept_id="1018" uuid="a1c842b2-2bdd-4279-891d-55b79fd30db1"/>
+    <concept_reference_map  concept_map_id="284148"  concept_reference_term_id="284156"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:48:48"  concept_id="1017" uuid="9a4918cd-0308-4cbf-9293-5dc4568cdd32"/>
+    <concept_reference_map  concept_map_id="284149"  concept_reference_term_id="284157"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:51:33"  concept_id="21"   uuid="267959be-347c-4672-9fd3-d6d6cf695188"/>
+    <concept_reference_map  concept_map_id="284150"  concept_reference_term_id="284158"  concept_map_type_id="1"  creator="1"  date_created="2022-04-04 13:54:38"  concept_id="1015" uuid="d3ea0726-b164-4cdf-8907-607147a2a355"/>
+
 
 
 
