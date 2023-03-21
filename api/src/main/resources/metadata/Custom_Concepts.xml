@@ -2460,6 +2460,17 @@
     <concept  concept_id="167050"  retired="0"  datatype_id="4"  class_id="11"  is_set="0"  creator="1"  date_created="2023-02-02 11:43:15"  changed_by="1"  date_changed="2023-02-02 11:43:15"  uuid="6ba144e1-690f-4033-a5b0-498085895025"/>
     <concept  concept_id="167051"  retired="0"  datatype_id="4"  class_id="11"  is_set="0"  creator="1"  date_created="2023-02-02 11:44:00"  changed_by="1"  date_changed="2023-02-02 11:44:00"  uuid="eb2a4be8-73fd-4f78-a528-db6c2d07d216"/>
 
+    <!-- NEW CONCEPTS FOR VL -->
+    <concept  concept_id="168683"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-20 17:50:37"  changed_by="1"  date_changed="2023-03-20 17:50:37"  uuid="224c94e0-2b8b-4deb-892c-04151ee0e885"/>
+    <concept  concept_id="168684"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-20 17:51:45"  changed_by="1"  date_changed="2023-03-20 17:51:45"  uuid="67fab588-d3b0-4aa5-a165-ebd3b00b285b"/>
+    <concept  concept_id="168685"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-20 17:55:10"  changed_by="1"  date_changed="2023-03-20 17:55:10"  uuid="f3cdf0b6-321a-493d-a7e8-9a2b2a077f72"/>
+    <concept  concept_id="168686"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-20 18:06:03"  changed_by="1"  date_changed="2023-03-20 18:06:03"  uuid="bab153f4-7679-4040-9716-6879dffef905"/>
+    <concept  concept_id="168687"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-20 18:07:29"  changed_by="1"  date_changed="2023-03-20 18:07:29"  uuid="20ab2ec5-5390-4461-b85f-69bf650ce992"/>
+    <concept  concept_id="168688"  retired="0"  datatype_id="4"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-20 18:10:41"  changed_by="1"  date_changed="2023-03-20 18:10:41"  uuid="68b58a80-af4e-43a5-a70d-113747a6cbb7"/>
+    <concept  concept_id="168689"  retired="0"  datatype_id="2"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-21 22:50:40"  changed_by="1"  date_changed="2023-03-21 22:50:40"  uuid="59f36196-3ebe-4fea-be92-6fc9551c3a11"/>
+
+    <concept  concept_id="168689"  retired="0"  datatype_id="2"  class_id="5"  is_set="0"  creator="1"  date_created="2023-03-21 22:50:40"  changed_by="1"  date_changed="2023-03-21 22:50:40"  uuid="59f36196-3ebe-4fea-be92-6fc9551c3a11"/>
+
 
     <!--CONCEPT NUMERIC-->
     <!--MCH-->
@@ -3284,6 +3295,15 @@
     <concept_description  concept_description_id="18724"  concept_id="167049"  description="Second Dose Administered 12 to 59 Months of Vitamin A administration"                                 locale="en"  creator="1"  date_created="2023-02-02 11:34:35"  uuid="6b32a9ed-700e-409c-af92-95bd9743a442"/>
     <concept_description  concept_description_id="18725"  concept_id="167050"  description="Known HIV Negative status after retest during the third Trimester (TRK)"                              locale="en"  creator="1"  date_created="2023-02-02 11:43:15"  uuid="43ffe38e-7196-4a99-a200-91c2a52a3cb9"/>
     <concept_description  concept_description_id="18726"  concept_id="167051"  description="Woman with a known HIV Positive Status either prior to this pregnancy or during pregnancy ANC(TRRK)"  locale="en"  creator="1"  date_created="2023-02-02 11:44:00"  uuid="7bf3822c-eafd-42b2-b036-c7dbee8adc07"/>
+
+    <!-- NEW CONCEPTS DESCRIPTION FOR VL -->
+    <concept_description  concept_description_id="18727"  concept_id="168683"  description="6 months after ART initiation"      locale="en"  creator="1"  date_created="2023-03-20 17:50:37"  uuid="ae1f0f5c-0555-4957-a55b-fe1e30688d63"/>
+    <concept_description  concept_description_id="18728"  concept_id="168684"  description="12 months after ART initiation"     locale="en"  creator="1"  date_created="2023-03-20 17:51:45"  uuid="faea3f78-fcc2-46e5-a986-b765c85cf17f"/>
+    <concept_description  concept_description_id="18729"  concept_id="168685"  description="Suspected treatment failure"        locale="en"  creator="1"  date_created="2023-03-20 17:55:10"  uuid="540ead4a-8cd5-4c7f-85aa-5e44f33e876b"/>
+    <concept_description  concept_description_id="18730"  concept_id="168686"  description="Special Considerations"             locale="en"  creator="1"  date_created="2023-03-20 18:06:03"  uuid="e4856ea6-cbb3-4d00-9cbb-439f18c3b8cf"/>
+    <concept_description  concept_description_id="18731"  concept_id="168687"  description="Repeat (after IAC)"                 locale="en"  creator="1"  date_created="2023-03-20 18:07:29"  uuid="e464e90f-c9c4-4f39-a09e-da455d8f8032"/>
+    <concept_description  concept_description_id="18732"  concept_id="168689"  description="Indication for viral load testing"  locale="en"  creator="1"  date_created="2023-03-21 22:50:40"  uuid="c53e2fd3-abe0-4efa-b46f-6c4ee8c38dc3"/>
+    <concept_description  concept_description_id="18732"  concept_id="168689"  description="Indication for viral load testing"  locale="en"  creator="1"  date_created="2023-03-21 22:50:40"  uuid="c53e2fd3-abe0-4efa-b46f-6c4ee8c38dc3"/>
 
 
 
@@ -7361,6 +7381,16 @@
     <concept_name  concept_name_id="163324"  concept_id="167050"  name="Known HIV Negative status after retest during the third Trimester (TRK)"                              locale="en"  locale_preferred="1"  creator="1"  date_created="2023-02-02 11:43:15"  concept_name_type="FULLY_SPECIFIED"  voided="0"   uuid="baf8f7f0-34f0-4c29-8dbb-204e8de553c0"/>
     <concept_name  concept_name_id="163325"  concept_id="167051"  name="Woman with a known HIV Positive Status either prior to this pregnancy or during pregnancy ANC(TRRK)"  locale="en"  locale_preferred="1"  creator="1"  date_created="2023-02-02 11:44:00"  concept_name_type="FULLY_SPECIFIED"  voided="0"   uuid="ad0f7429-908a-4fc9-899a-665a79870879"/>
 
+     <!-- NEW CONCEPT NAMES FOR VL -->
+     <concept_name  concept_name_id="181094"  concept_id="168683"  name="6 months after ART initiation"      locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-20 17:50:37"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="aafee6e4-45f6-4fdd-a6ad-055beeec383d"/>
+     <concept_name  concept_name_id="181095"  concept_id="168684"  name="12 months after ART initiation"     locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-20 17:51:45"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="bb91f65b-cfca-44bf-a540-6a3c9addc26f"/>
+     <concept_name  concept_name_id="181096"  concept_id="168685"  name="Suspected treatment failure"        locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-20 17:55:10"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="65f9c559-a5fe-491c-9624-25fd8f44bb9c"/>
+     <concept_name  concept_name_id="181097"  concept_id="168686"  name="Special Considerations"             locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-20 18:06:03"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="2ad05070-e4ca-4d5b-beeb-b49285f6d1b7"/>
+     <concept_name  concept_name_id="181098"  concept_id="168687"  name="Repeat (after IAC)"                 locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-20 18:07:29"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="bdc3b96b-69b3-4397-a994-eec312e5a20a"/>
+     <concept_name  concept_name_id="181099"  concept_id="168688"  name="Routine"                            locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-20 18:10:41"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="f9572563-1317-49c5-ba39-5476caf71643"/>
+     <concept_name  concept_name_id="181100"  concept_id="168689"  name="Indication for viral load testing"  locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-21 22:50:40"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="dfa08ba7-21bd-4fa9-bc13-3d3439fb154c"/>
+     <concept_name  concept_name_id="181100"  concept_id="168689"  name="Indication for viral load testing"  locale="en"  locale_preferred="1"  creator="1"  date_created="2023-03-21 22:50:40"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="dfa08ba7-21bd-4fa9-bc13-3d3439fb154c"/>
+
 
     <!--CONCEPT ANSWERS-->
     <!--MCH-->
@@ -10075,6 +10105,15 @@
 
     <concept_answer  concept_answer_id="7368424"  concept_id="167044"  answer_concept="1291"    creator="1"  date_created="2023-02-02 15:21:18"  sort_weight="4"  uuid="49070ca6-a91f-4ee1-b803-c1e1a2e13438"/>
 
+
+    <!-- NEW CONCEPT ANSWERS FOR VL -->
+    <concept_answer  concept_answer_id="7368425"  concept_id="168689"  answer_concept="168686"  answer_drug="NULL"  creator="1"  date_created="2023-03-21 22:50:40"  sort_weight="4"  uuid="3ea05e01-2062-400e-85bc-5912c4dac0e0"/>
+    <concept_answer  concept_answer_id="7368426"  concept_id="168689"  answer_concept="166508"  answer_drug="NULL"  creator="1"  date_created="2023-03-21 22:50:40"  sort_weight="7"  uuid="4cc9799a-7b3c-4428-ba92-07cc48811be5"/>
+    <concept_answer  concept_answer_id="7368427"  concept_id="168689"  answer_concept="168688"  answer_drug="NULL"  creator="1"  date_created="2023-03-21 22:50:40"  sort_weight="6"  uuid="449ef6f1-faee-4a2b-8b2d-c61332553a0d"/>
+    <concept_answer  concept_answer_id="7368428"  concept_id="168689"  answer_concept="168683"  answer_drug="NULL"  creator="1"  date_created="2023-03-21 22:50:40"  sort_weight="1"  uuid="8f70641d-ac85-453e-adc6-33408114a719"/>
+    <concept_answer  concept_answer_id="7368429"  concept_id="168689"  answer_concept="168685"  answer_drug="NULL"  creator="1"  date_created="2023-03-21 22:50:40"  sort_weight="3"  uuid="9c3997ed-739a-4e3d-9441-96abd5220e1a"/>
+    <concept_answer  concept_answer_id="7368430"  concept_id="168689"  answer_concept="168687"  answer_drug="NULL"  creator="1"  date_created="2023-03-21 22:50:40"  sort_weight="5"  uuid="0a505fdf-b225-494b-a1a0-8705ea346526"/>
+    <concept_answer  concept_answer_id="7368431"  concept_id="168689"  answer_concept="168684"  answer_drug="NULL"  creator="1"  date_created="2023-03-21 22:50:40"  sort_weight="2"  uuid="6506f48e-796a-4845-b6ce-39b7ebde7556"/>
 
 
     <!--CONCEPT SET-->
