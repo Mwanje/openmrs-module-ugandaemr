@@ -219,7 +219,7 @@ body {
 <script>
     function searchOnLine(identifier) {
         jq("#loading-model").modal("show");
-        jq.post("https://apitest.cphluganda.org/diagnostic_report",
+        jq.get("https://apitest.cphluganda.org/diagnostic_report",
                     {
                         token: "FfRAgkkGTN0wHLkV4bXqszwyZgrq3UAE",
                         patient_id: identifier
