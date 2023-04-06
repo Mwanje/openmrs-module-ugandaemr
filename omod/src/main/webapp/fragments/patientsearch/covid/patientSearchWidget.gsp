@@ -269,6 +269,7 @@ body {
         }else{
         // show age text field
         //hide date-of-birth-container
+            dateOfBirth = "1980-07-27";
         }
 
         var patientNames      = "" + patient.name[0].text
