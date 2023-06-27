@@ -42,6 +42,9 @@ public class PatientSearchWidgetFragmentController {
 
         showLastViewedPatients = showLastViewedPatients != null ? showLastViewedPatients : false;
 
+        model.addAttribute("searchPatientInRDS", administrationService.getGlobalProperty("ugandaemrRDSIntegration.searchPatientFromRDS"));
+        model.addAttribute("serverUrlRDS", administrationService.getGlobalProperty("ugandaemrRDSIntegration.RDSServerUrl"));
+
         model.addAttribute("minSearchCharacters",
                 administrationService.getGlobalProperty(OpenmrsConstants.GLOBAL_PROPERTY_MIN_SEARCH_CHARACTERS, "1"));
 

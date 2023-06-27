@@ -298,6 +298,18 @@
         <description>The number of months for tests backlog to display in the lab worklist and referred tests</description>
     </globalProperty>
 
+    <globalProperty>
+        <property>ugandaemrRDSIntegration.searchPatientFromRDS</property>
+        <defaultValue>false</defaultValue>
+        <description>This allow a facility to search for a client from the RDS system</description>
+    </globalProperty>
+
+    <globalProperty>
+        <property>ugandaemrRDSIntegration.RDSServerUrl</property>
+        <defaultValue>https://apitest.cphluganda.org/diagnostic_report</defaultValue>
+        <description>This defines the url to the RDS system</description>
+    </globalProperty>
+
     <privilege>
         <name>Task: HIV Clinic Access</name>
         <description>Able to access HIV patient clinic information</description>
