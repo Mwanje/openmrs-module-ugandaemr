@@ -69,6 +69,20 @@ body {
     width: 100%;
 }
 
+.rds-search-input {
+    width: 100%;
+    height: 35px;
+}
+
+.rds-search-btn {
+    background: #027ffe !important;
+    color: white !important;
+    padding: 8px 10px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-size: 16px;
+    width: 100%;
+}
 </style>
 <script type="text/javascript">
     var myVar;
@@ -684,6 +698,27 @@ body {
             </div>
         </div>
 
+    <% if (searchPatientInRDS == "true") { %>
+        <p>
+            <a data-toggle="collapse" style="width: 10px" href="#PatientSearchRDS" role="button" aria-expanded="false"
+               aria-controls="collapseExample">
+                Search Patient From RDS
+            </a>
+        </p>
+
+          <div class="collapse" id="PatientSearchRDS">
+              <div class="card card-body">
+                  <div class="row">
+                      <div class="col-3">
+                          <input type="text" class="rds-search-input" id="covid-patient-id" placeholder="Patient Unique Identifier" value="" autocomplete="off"/>
+                      </div>
+                      <div class="col-3">
+                          <input type="submit" value="Search For Patient" class="rds-search-btn" id="patient-search-rds" autocomplete="off"/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    <% } %>
         <div class="row">
             <div id="nhcr" class="col-7">
             <a data-toggle="collapse" style="width: 10px" href="#collapseExample" role="button" aria-expanded="false"
@@ -772,3 +807,177 @@ ${ui.includeFragment("ugandaemr", "checkIn")}
 
 
 <div id="patient-search-results"></div>
+
+<div class="modal fade" id="rdsMostRecentEncounterModel" tabindex="-1" role="dialog"
+     aria-labelledby="mostRecentEncounterModelLabel"
+     aria-hidden="false">
+    <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rdsMostRecentEncounterModelLabel" style="color : #ffffff" >Patient Information From RDS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="">
+                    <h5>Patient Information</h5>
+                    <div>
+                        <strong>Patient Names:</strong> <span style="" id="rds-patient-names"></span>
+                    </div>
+
+                    <div>
+                        <strong>Sex:</strong> <span id="rds-gender"></span>
+                    </div>
+
+                    <div id="rds-date-of-birth-container">
+                        <strong>Date of Birth:</strong> <span id="rds-birthDate"></span>
+                    </div>
+                    <div id="rds-patient-age" class = "hidden">
+                        <label for="example">Enter Patient Age</label>
+                        <input type="text" id="rds-age">
+                    </div>
+                    <div>
+                        <strong>Sample Collection Facility:</strong> <span id="rds-sample-facility-name"></span>
+                    </div>
+
+                    <div>
+                        <strong>Testing Lab:</strong> <span id="rds-lab-name"></span>
+                    </div>
+                </div>
+
+                <h5>Testing</h5>
+
+                <div>
+                    <strong>Test Type:</strong> <span id="rds-test-type"></span>
+                </div>
+                <div>
+                    <strong>Test Date:</strong> <span id="rds-test-date"></span>
+                </div>
+
+                <h5>Symptoms</h5>
+
+                <div>
+                    <strong>Patient Symptomatic:</strong> <span id="rds-patient-symptomatic"></span>
+                </div>
+                <div>
+                    <strong>Date on Set of First Symptom:</strong> <span id="rds-date-on-set"></span>
+                </div>
+
+                <h5>Care Giver</h5>
+
+                <div>
+                    <strong>Care Giver Name:</strong> <span id="rds-care-giver-name"></span>
+                </div>
+                <div>
+                    <strong>Care Giver Phone no:</strong> <span id="rds-care-giver-phone"></span>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="confirm" id="transfer-in-rds-patient">${ui.message("Transfer In")}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    jq(document).ready(function () {
+        jq("#patient-search-rds").click(function () {
+
+            var covidPatientId = jq("#covid-patient-id").val();
+
+            if (covidPatientId !== "") {
+                searchRDSOnLine(covidPatientId);
+
+            }
+        });
+    });
+
+    jQuery(document).ready(function (jq) {
+        jq("#transfer-in-rds-patient").click(function () {
+            jq.post('${ ui.actionLink("ugandaemr","transferInCovidPatient","processCovidPatient") }', {
+                patientDataFromRDS: JSON.stringify(patientTransferInData[0])
+            }
+            , function (response) {
+                var patientEncounterInfo = JSON.parse(response.replace("patientCaseInvesitigationEncounter=", "\"patientCaseInvesitigationEncounter\":").trim());
+                location.href = '/openmrs/htmlformentryui/htmlform/editHtmlFormWithStandardUi.page?patientId='+patientEncounterInfo.patientCaseInvesitigationEncounter.patientId+'&encounterId='+patientEncounterInfo.patientCaseInvesitigationEncounter.encounterId;
+            });
+        });
+    });
+
+    function searchRDSOnLine(identifier) {
+        jq("#loading-model").modal("show");
+        jq.get("<%= serverUrlRDS %>",
+            {
+                token: "FfRAgkkGTN0wHLkV4bXqszwyZgrq3UAE",
+                patient_id: identifier
+
+            },
+            function(data) {
+                var patientInfo = data[0];
+                jq("#loading-model").modal("hide");
+
+                if (data.length > 0) {
+                    displayData(data);
+                    patientTransferInData = data;
+                }
+                else {
+                    alert("Patient NOT Found");
+                }
+            });
+        }
+
+    function displayData(response) {
+         jq("#patient_found").removeClass('hidden');
+         jq("patient_found").show();
+         //var patientNames = "" + patient.name[0].family + " " + response.data.patient.names[0].middleName + " " + response.data.patient.names[0].givenName;
+         var patientInfo = response[0]
+         var patient = patientInfo.contained[3];
+         var careGiver = patient.contact[0];
+         var dateOfBirth = "";
+         if(patient.birthDate !== "") {
+            dateOfBirth = formatDate(new Date(patient.birthDate));
+         }else{
+             // show age text field
+             //hide date-of-birth-container
+             dateOfBirth = "1980-07-27";
+         }
+
+         var patientNames      = "" + patient.name[0].text
+         //patientNames        = patientNames.replace("null", "");
+         var labContainer      = response[0].contained[0];
+         var facilityContainer = response[0].contained[4];
+         var testContainer     = response[0].contained[1];
+         var testDate = "";
+         if(testContainer.effectiveDateTime !== "") {
+            testDate = formatDate(new Date(testContainer.effectiveDateTime));
+         }
+         var symptomsContainer  = response[0].contained[7];
+
+         var dateOnSet = "";
+         if(symptomsContainer.component[0].valueDateTime !== "") {
+            dateOnSet = formatDate(new Date(symptomsContainer.component[0].valueDateTime));
+         }
+
+         jq("#rds-patient-names").html(patientNames);
+         jq("#rds-birth-date").html(dateOfBirth + "");
+         jq("#rds-gender").html(patient.gender);
+         jq("#rds-lab-name").html(labContainer.name);
+         jq("#rds-sample-facility-name").html(facilityContainer.name);
+         jq("#rds-test-type").html(testContainer.code.text);
+         jq("#rds-test-date").html(testDate);
+         jq("#rds-test-result").html(testContainer.valueCodeableConcept.text);
+         jq("#rds-patient-symptomatic").html(symptomsContainer.valueBoolean);
+         jq("#rds-date-on-set").html(dateOnSet);
+         jq("#rds-care-giver-name").html(careGiver.name.text);
+         jq("#rds-care-giver-phone").html(careGiver.telecom[0].value);
+         jq('#rdsMostRecentEncounterModel').modal('show');
+         jq("#loading-model").modal("hide");
+    }
+
+ </script>
