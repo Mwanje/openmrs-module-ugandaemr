@@ -83,6 +83,12 @@ body {
     font-size: 16px;
     width: 100%;
 }
+
+#rdsMostRecentEncounterModel h2 {
+    margin-bottom: 2px;
+    font-weight: bolder;
+}
+
 </style>
 <script type="text/javascript">
     var myVar;
@@ -821,64 +827,31 @@ ${ui.includeFragment("ugandaemr", "checkIn")}
             </div>
 
             <div class="modal-body">
-                <div class="">
-                    <h5>Patient Information</h5>
-                    <div>
-                        <strong>Patient Names:</strong> <span style="" id="rds-patient-names"></span>
-                    </div>
-
-                    <div>
-                        <strong>Sex:</strong> <span id="rds-gender"></span>
-                    </div>
-
-                    <div id="rds-date-of-birth-container">
-                        <strong>Date of Birth:</strong> <span id="rds-birthDate"></span>
-                    </div>
-                    <div id="rds-patient-age" class = "hidden">
-                        <label for="example">Enter Patient Age</label>
-                        <input type="text" id="rds-age">
-                    </div>
-                    <div>
-                        <strong>Sample Collection Facility:</strong> <span id="rds-sample-facility-name"></span>
-                    </div>
-
-                    <div>
-                        <strong>Testing Lab:</strong> <span id="rds-lab-name"></span>
-                    </div>
+                <h2>Patient Information</h2>
+                <div> Patient Names: <strong><span style="" id="rds-patient-names"></span></strong></div>
+                <div>Sex: <strong><span id="rds-gender"></span></strong></div>
+                <div id="rds-date-of-birth-container">Date of Birth: <strong><span id="rds-birthDate"></span></strong></div>
+                <div>Care Giver Name: <strong><span id="rds-care-giver-name"></span></strong></div>
+                <div>Care Giver Phone no: <strong><span id="rds-care-giver-phone"></span></strong></div>
+                <div id="rds-patient-age" class = "hidden">
+                    <label for="example">Enter Patient Age</label>
+                    <input type="text" id="rds-age">
                 </div>
 
-                <h5>Testing</h5>
+                <h2>Testing Information</h2>
+                <div>Sample Collection Facility: <strong><span id="rds-sample-facility-name"></span></strong></div>
+                <div>Testing Lab: <strong><span id="rds-lab-name"></span></strong></div>
+                <div>Test Type: <strong><span id="rds-test-type"></span></strong></div>
+                <div>Test Date: <strong><span id="rds-test-date"></span></strong></div>
 
-                <div>
-                    <strong>Test Type:</strong> <span id="rds-test-type"></span>
-                </div>
-                <div>
-                    <strong>Test Date:</strong> <span id="rds-test-date"></span>
-                </div>
-
-                <h5>Symptoms</h5>
-
-                <div>
-                    <strong>Patient Symptomatic:</strong> <span id="rds-patient-symptomatic"></span>
-                </div>
-                <div>
-                    <strong>Date on Set of First Symptom:</strong> <span id="rds-date-on-set"></span>
-                </div>
-
-                <h5>Care Giver</h5>
-
-                <div>
-                    <strong>Care Giver Name:</strong> <span id="rds-care-giver-name"></span>
-                </div>
-                <div>
-                    <strong>Care Giver Phone no:</strong> <span id="rds-care-giver-phone"></span>
-                </div>
-
+                <h2>Symptoms Information</h2>
+                <div>Patient Symptomatic: <strong><span id="rds-patient-symptomatic"></span></strong></div>
+                <div>Date on Set of First Symptom: <strong><span id="rds-date-on-set"></span></strong></div>
             </div>
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="confirm" id="transfer-in-rds-patient">${ui.message("Transfer In")}</button>
+                <button type="submit" class="confirm" id="transfer-in-rds-patient">${ui.message("Transfer Into UgandaEMR")}</button>
             </div>
         </div>
     </div>
