@@ -830,23 +830,22 @@ ${ui.includeFragment("ugandaemr", "checkIn")}
                 <h2>Patient Information</h2>
                 <div> Patient Names: <strong><span style="" id="rds-patient-names"></span></strong></div>
                 <div>Sex: <strong><span id="rds-gender"></span></strong></div>
-                <div id="rds-date-of-birth-container">Date of Birth: <strong><span id="rds-birthDate"></span></strong></div>
-                <div>Care Giver Name: <strong><span id="rds-care-giver-name"></span></strong></div>
-                <div>Care Giver Phone no: <strong><span id="rds-care-giver-phone"></span></strong></div>
-                <div id="rds-patient-age" class = "hidden">
-                    <label for="example">Enter Patient Age</label>
-                    <input type="text" id="rds-age">
-                </div>
+                <div>Age: <strong><span id="rds-patient-age"></span></strong></div>
+
+                <div id="rds-date-of-birth-container" class = "hidden">Date of Birth: <strong><span id="rds-birthDate"></span></strong></div>
+                <div class = "hidden">Care Giver Name: <strong><span id="rds-care-giver-name"></span></strong></div>
+                <div class = "hidden">Care Giver Phone no: <strong><span id="rds-care-giver-phone"></span></strong></div>
+
 
                 <h2>Testing Information</h2>
-                <div>Sample Collection Facility: <strong><span id="rds-sample-facility-name"></span></strong></div>
-                <div>Testing Lab: <strong><span id="rds-lab-name"></span></strong></div>
-                <div>Test Type: <strong><span id="rds-test-type"></span></strong></div>
-                <div>Test Date: <strong><span id="rds-test-date"></span></strong></div>
+                <div>Site of Collection: <strong><span id="rds-sample-facility-name"></span></strong></div>
+                <div>Date of Sample Collection: <strong><span id="rds-sample-collection-date"></span></strong></div>
+                <div>Test Method: <strong><span id="rds-test-type"></span></strong></div>
 
-                <h2>Symptoms Information</h2>
-                <div>Patient Symptomatic: <strong><span id="rds-patient-symptomatic"></span></strong></div>
-                <div>Date on Set of First Symptom: <strong><span id="rds-date-on-set"></span></strong></div>
+                <h2>Test Results</h2>
+                <div>Result Date: <strong><span id="rds-test-date"></span></strong></div>
+                <div>Result: <strong><span id="rds-test-result"></span></strong></div>
+                <div class = "hidden">Date on Set of First Symptom: <strong><span id="rds-date-on-set"></span></strong></div>
             </div>
 
             <div class="modal-footer">
@@ -927,8 +926,13 @@ ${ui.includeFragment("ugandaemr", "checkIn")}
          var facilityContainer = response[0].contained[4];
          var testContainer     = response[0].contained[1];
          var testDate = "";
+         var age = response[0].contained[9].extension[0].extension[8].valueAge.value;
+         var sampleCollectionDate = "";
          if(testContainer.effectiveDateTime !== "") {
             testDate = formatDate(new Date(testContainer.effectiveDateTime));
+         }
+         if(response[0].contained[5].collection.collectedDateTime !== "") {
+            sampleCollectionDate = formatDate(new Date(response[0].contained[5].collection.collectedDateTime));
          }
          var symptomsContainer  = response[0].contained[7];
 
@@ -945,10 +949,11 @@ ${ui.includeFragment("ugandaemr", "checkIn")}
          jq("#rds-test-type").html(testContainer.code.text);
          jq("#rds-test-date").html(testDate);
          jq("#rds-test-result").html(testContainer.valueCodeableConcept.text);
-         jq("#rds-patient-symptomatic").html(symptomsContainer.valueBoolean);
+         jq("#rds-sample-collection-date").html(sampleCollectionDate);
          jq("#rds-date-on-set").html(dateOnSet);
          jq("#rds-care-giver-name").html(careGiver.name.text);
          jq("#rds-care-giver-phone").html(careGiver.telecom[0].value);
+         jq("#rds-patient-age").html(age);
          jq('#rdsMostRecentEncounterModel').modal('show');
          jq("#loading-model").modal("hide");
     }
