@@ -105,7 +105,7 @@
 		<metadatadeployVersion>1.13.0</metadatadeployVersion>
 		<metadatamappingVersion>1.5.0</metadatamappingVersion>
 		<metadatasharingVersion>1.8.0</metadatasharingVersion>
-		<openconceptlabVersion>1.2.9</openconceptlabVersion>
+		<!--<openconceptlabVersion>1.2.9</openconceptlabVersion>-->
 		<openwebappsVersion>1.13.0</openwebappsVersion>
 		<patientFlagsVersion>3.0.6-SNAPSHOT</patientFlagsVersion>
 		<providermanagementVersion>2.13.0</providermanagementVersion>
@@ -131,7 +131,7 @@
 		<spaModuleVersion>1.0.8</spaModuleVersion>
 		<queueModuleVersion>1.0.0-SNAPSHOT</queueModuleVersion>
 		<o3formsVersion>2.2.0-SNAPSHOT</o3formsVersion>
-		<spaVersion>5.1.0</spaVersion>
+		<spaVersion>4.5.0</spaVersion>
 
 		<!-- core configuration library -->
 		<ugandaemrReportsVersion>2.0.38-SNAPSHOT</ugandaemrReportsVersion>
