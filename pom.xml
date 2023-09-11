@@ -225,26 +225,6 @@
 				<version>${addresshierarchyVersion}</version>
 				<scope>provided</scope>
 			</dependency>
-			<!--<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>appointmentscheduling</artifactId>
-				<version>1.8.0</version>
-				<scope>provided</scope>
-			</dependency>-->
-
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>initializer</artifactId>
-				<version>${initializerVersion}</version>
-				<scope>provided</scope>
-			</dependency>
-
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>referencedemodata</artifactId>
-				<version>${referencedemodataVersion}</version>
-				<scope>provided</scope>
-			</dependency>
 
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
