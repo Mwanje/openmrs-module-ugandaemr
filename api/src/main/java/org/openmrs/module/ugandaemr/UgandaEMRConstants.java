@@ -154,4 +154,20 @@ public class UgandaEMRConstants {
 
     public static final String GP_DEFAULT_LOCATION = MODULE_ID + ".defaultLocation";
 
+    public static final String ENROLL_PATIENTS_TO_AIC_COHORT_QUERY = "INSERT INTO cohort_member (patient_id, cohort_id, start_date, date_created,creator,uuid)\n" +
+            "SELECT\n" +
+            "    (SELECT p.patient_id\n" +
+            "     FROM patient p\n" +
+            "     INNER JOIN obs o ON p.patient_id = o.person_id\n" +
+            "     INNER JOIN encounter e ON o.encounter_id = e.encounter_id\n" +
+            "     INNER JOIN person pp ON pp.person_id = p.patient_id\n" +
+            "     WHERE pp.dead = FALSE AND o.concept_id = 165412),\n" +
+            "    (SELECT pen.cohort.cohort_id\n" +
+            "     FROM pen.cohort\n" +
+            "     WHERE cohort.uuid = '29326d9f-b9a6-42da-b01f-b61ded8371e9') AS cohort_member,\n" +
+            "    NOW(),\n" +
+            "    NOW(),\n" +
+            "    1,\n" +
+            "    UUID() AS uuid;";
+
 }

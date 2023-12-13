@@ -1927,4 +1927,8 @@ public class UgandaEMRServiceImpl extends BaseOpenmrsService implements UgandaEM
     public OrderObs getOrderObsByOrder(Order order) {
         return dao.getOrderObsByOrder(order);
     }
+
+    public void executePatientCohortEnrollmentScript() {
+        dao.executePatientCohortEnrollmentScript();
+    }
 }

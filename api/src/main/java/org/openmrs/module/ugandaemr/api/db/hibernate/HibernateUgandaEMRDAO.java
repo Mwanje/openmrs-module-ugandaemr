@@ -27,6 +27,7 @@ import org.openmrs.Obs;
 import org.openmrs.Order;
 import org.openmrs.api.APIException;
 import org.openmrs.module.patientqueueing.model.PatientQueue;
+import org.openmrs.module.ugandaemr.UgandaEMRConstants;
 import org.openmrs.module.ugandaemr.api.db.UgandaEMRDAO;
 import org.openmrs.module.ugandaemr.PublicHoliday;
 import org.openmrs.module.ugandaemr.api.lab.OrderObs;
@@ -150,5 +151,10 @@ public class HibernateUgandaEMRDAO implements UgandaEMRDAO {
 		return (OrderObs) sessionFactory.getCurrentSession().createCriteria(OrderObs.class).add(Restrictions.eq("order", order)).uniqueResult();
 	}
 
+	@Override
+	public void executePatientCohortEnrollmentScript() {
+		sessionFactory.getCurrentSession().createSQLQuery(UgandaEMRConstants.ENROLL_PATIENTS_TO_AIC_COHORT_QUERY).executeUpdate();
+
+	}
 
 }

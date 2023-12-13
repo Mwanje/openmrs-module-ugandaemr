@@ -69,4 +69,8 @@ public interface UgandaEMRDAO {
 	public OrderObs getOrderObsById(Integer orderObsId);
 
 	public OrderObs getOrderObsByOrder(Order order);
+
+	public void executePatientCohortEnrollmentScript();
+
+
 }
