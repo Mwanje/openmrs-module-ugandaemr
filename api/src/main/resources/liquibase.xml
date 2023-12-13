@@ -762,6 +762,17 @@ VALUES
 			update concept_name set concept_name_id=(concept_name_id-7187255) where concept_name_id>7000000;
 		</sql>
 	</changeSet>
+
+	<changeSet id="ugandaemr-20231205-0510" author="mmwanje">
+		<comment>Insert workflow Cohorts  </comment>
+		<sql>
+			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('TPT','TPT Cohort', 1, '2023-12-05 00:00:00','32d06678-5b9c-40ca-b2b6-e67e630e310e');
+			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('YPPS','YPPS Cohort',1, '2023-12-05 00:00:00', 'dc203d96-acb1-4363-a28d-1380661619d8');
+			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('PMTCT','PMTCT Cohort',1, '2023-12-05 12:09:44', 'e239cc58-0e0e-439a-988b-08538fc56271');
+			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('AIC','AIC Cohort', 1, '2023-12-05 13:05:36', '29326d9f-b9a6-42da-b01f-b61ded8371e9');
+		</sql>
+	</changeSet>
+
 </databaseChangeLog>
 
 
