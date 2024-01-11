@@ -5850,6 +5850,8 @@
     <concept_name  concept_name_id="181420"  concept_id="169002"  name="Wrong Date given"  locale="en"  locale_preferred="1"  creator="1"  date_created="2023-11-01 10:39:11"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="a5abc751-57e9-4dff-a0b1-7574f434b7dc"/>
     <concept_name  concept_name_id="181419"  concept_id="169001"  name="No Transport"  locale="en"  locale_preferred="1"  creator="1"  date_created="2023-11-01 10:13:48"  concept_name_type="FULLY_SPECIFIED"  voided="0" uuid="ed7792b2-612a-4b75-a8ad-3d793e3f3735"/>
 
+    <concept_name  concept_name_id="181432"  concept_id="169014"  name="Confirmatory HIV Test"  locale="en"  locale_preferred="1"  creator="1"  date_created="2024-01-09 08:05:26"  concept_name_type="FULLY_SPECIFIED"  voided="0"  uuid="c8707ede-0b66-4621-92e4-cff709680e05"/>
+
 
     <!-- Imported from CIEL Concept Dic-->
     <concept_name  concept_id="159981"  name="tuberculosis culture construct"  locale="en"  creator="1"  date_created="2010-12-16 14:24:38"  concept_name_id="107547"  voided="0"  voided_by="1" uuid="107547BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"  concept_name_type="FULLY_SPECIFIED"  locale_preferred="1" changed_by="1"/>
@@ -6514,4 +6516,5 @@
     <concept_name  concept_id="118256"  name="Fetal Distress"  locale="en"  creator="1"  date_created="2007-10-18 04:28:24"  concept_name_id="18590"  voided="0"  voided_by="1" uuid="18590BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"  concept_name_type="FULLY_SPECIFIED"  locale_preferred="1" changed_by="1"/>
     <concept_name  concept_id="147232"  name="Vaginal bleeding"  locale="en"  creator="1"  date_created="2007-10-18 04:28:24"  concept_name_id="46857"  voided="0"  voided_by="1" uuid="46857BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"  concept_name_type="FULLY_SPECIFIED"  locale_preferred="1" changed_by="1"/>
     <concept_name  concept_id="148989"  name="Amenorrhea"  locale="en"  creator="1"  date_created="2007-10-18 04:28:24"  concept_name_id="48607"  voided="0"  voided_by="1" uuid="48607BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"  concept_name_type="FULLY_SPECIFIED"  locale_preferred="1" changed_by="1"/>
+
 </dataset>

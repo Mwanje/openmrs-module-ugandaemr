@@ -770,6 +770,7 @@ VALUES
 			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('YPPS','YPPS Cohort',1, '2023-12-05 00:00:00', 'dc203d96-acb1-4363-a28d-1380661619d8');
 			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('PMTCT','PMTCT Cohort',1, '2023-12-05 12:09:44', 'e239cc58-0e0e-439a-988b-08538fc56271');
 			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('AIC','AIC Cohort', 1, '2023-12-05 13:05:36', '29326d9f-b9a6-42da-b01f-b61ded8371e9');
+			REPLACE INTO cohort (name, description, creator, date_created, uuid) VALUES ('Eligible for HIV Program','Eligible for HIV Program', 1, '2024-01-08 08:35:36', '56b082f8-f956-499d-a8c2-d9b32a067e65');
 		</sql>
 	</changeSet>
 
