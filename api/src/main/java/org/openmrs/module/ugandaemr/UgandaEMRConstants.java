@@ -154,20 +154,28 @@ public class UgandaEMRConstants {
 
     public static final String GP_DEFAULT_LOCATION = MODULE_ID + ".defaultLocation";
 
-    public static final String ENROLL_PATIENTS_TO_AIC_COHORT_QUERY = "INSERT INTO cohort_member (patient_id, cohort_id, start_date, date_created,creator,uuid)\n" +
+    public static final String ENROLL_PATIENTS_TO_AIC_COHORT_QUERY = "INSERT INTO cohort_member (patient_id, cohort_id, start_date, date_created, creator, uuid)\n" +
             "SELECT\n" +
-            "    (SELECT p.patient_id\n" +
-            "     FROM patient p\n" +
-            "     INNER JOIN obs o ON p.patient_id = o.person_id\n" +
-            "     INNER JOIN encounter e ON o.encounter_id = e.encounter_id\n" +
-            "     INNER JOIN person pp ON pp.person_id = p.patient_id\n" +
-            "     WHERE pp.dead = FALSE AND o.concept_id = 165412),\n" +
-            "    (SELECT pen.cohort.cohort_id\n" +
-            "     FROM pen.cohort\n" +
-            "     WHERE cohort.uuid = '29326d9f-b9a6-42da-b01f-b61ded8371e9') AS cohort_member,\n" +
-            "    NOW(),\n" +
-            "    NOW(),\n" +
-            "    1,\n" +
-            "    UUID() AS uuid;";
+            "    p.patient_id,\n" +
+            "    pen.cohort.cohort_id AS cohort_member,\n" +
+            "    NOW() AS start_date,\n" +
+            "    NOW() AS date_created,\n" +
+            "    1 AS creator,\n" +
+            "    UUID() AS uuid\n" +
+            "FROM\n" +
+            "    patient p\n" +
+            "INNER JOIN obs o ON p.patient_id = o.person_id\n" +
+            "INNER JOIN encounter e ON o.encounter_id = e.encounter_id\n" +
+            "INNER JOIN person pp ON pp.person_id = p.patient_id\n" +
+            "JOIN pen.cohort ON pen.cohort.uuid = '29326d9f-b9a6-42da-b01f-b61ded8371e9'\n" +
+            "WHERE\n" +
+            "    pp.dead = FALSE\n" +
+            "    AND o.concept_id = 165412\n" +
+            "    AND NOT EXISTS (\n" +
+            "        SELECT 1\n" +
+            "        FROM cohort_member cm\n" +
+            "        WHERE cm.patient_id = p.patient_id\n" +
+            "          AND cm.cohort_id = pen.cohort.cohort_id\n" +
+            "    );\n";
 
 }
