@@ -709,8 +709,6 @@
     <role_privilege  role="Reception"  privilege="Manage Laboratory"/>
     <role_privilege  role="Reception"  privilege="Queue Patients"/>
 
-    <role_privilege  role="Reception"  privilege="View Reception Metrics"/>
-    <role_privilege  role="Reception"  privilege="View Reception Queuelist"/>
 
     <!--* TRIAGE ROLE *-->
     <!--role-role-->
@@ -725,10 +723,7 @@
     <role_privilege  role="Triage"  privilege="View AverageWaitingTime"/>
     <role_privilege  role="Triage"  privilege="View vitalsAndBiometrics"/>
 
-    <role_privilege  role="Triage"  privilege="Add Vitals and Biometrics"/>
-    <role_privilege  role="Triage"  privilege="Add Visits"/>
-    <role_privilege  role="Triage"  privilege="App: patientqueueing.providerDashboard"/>
-    <role_privilege  role="Triage"  privilege="View Triage Queuelist"/>
+
 
     <!--* CLINICIAN ROLE *-->
     <!--role-role-->
@@ -815,22 +810,6 @@
     <role_privilege  role="OPD Clinic" privilege="Task: patientqueueing.completePatientQueue"/>
     <role_privilege  role="OPD Clinic" privilege="Task: patientqueueing.sendPatientToQueue"/>
 
-    <role_privilege  role="OPD Clinic"  privilege="Access Offline Tools"/>
-    <role_privilege  role="OPD Clinic"  privilege="Add Allergies"/>
-    <role_privilege  role="OPD Clinic"  privilege="Add Attachments"/>
-    <role_privilege  role="OPD Clinic"  privilege="Add Conditions"/>
-    <role_privilege  role="OPD Clinic"  privilege="Add Visits"/>
-    <role_privilege  role="OPD Clinic"  privilege="Add Vitals and Biometrics"/>
-    <role_privilege  role="OPD Clinic"  privilege="App: ugandaemr.outpatient"/>
-    <role_privilege  role="OPD Clinic"  privilege="Get Allergies"/>
-    <role_privilege  role="OPD Clinic"  privilege="Get Conditions"/>
-    <role_privilege  role="OPD Clinic"  privilege="Get Forms"/>
-    <role_privilege  role="OPD Clinic"  privilege="Manage IPD"/>
-    <role_privilege  role="OPD Clinic"  privilege="Manage Laboratory"/>
-    <role_privilege  role="OPD Clinic"  privilege="Manage OPD"/>
-    <role_privilege  role="OPD Clinic"  privilege="Manage Programs"/>
-    <role_privilege  role="OPD Clinic"  privilege="View Clinician Queuelist"/>
-    <role_privilege  role="OPD Clinic"  privilege="View Patient Summary"/>
 
     <!--* MCH Clinic *-->
     <!--role-role-->
