@@ -154,4 +154,8 @@ public class UgandaEMRConstants {
 
     public static final String GP_DEFAULT_LOCATION = MODULE_ID + ".defaultLocation";
 
+    public static final String HIV_ELIGIBILITY_COHORT_UUID= "56b082f8-f956-499d-a8c2-d9b32a067e65";
+    public static final String HIV_ELIGIBILITY_QUERY = "select person_id from obs  where concept_id=169015 and value_coded=703 and person_id not in (select cohort_member.patient_id from pen.cohort_member where  obs.uuid='56b082f8-f956-499d-a8c2-d9b32a067e65') and person_id not in\n" +
+            " (select patient_id from patient_program inner join program on(patient_program.program_id = program.program_id))";
+
 }
