@@ -158,4 +158,15 @@ public class UgandaEMRConstants {
     public static final String HIV_ELIGIBILITY_QUERY = "select person_id from obs  where concept_id=169015 and value_coded=703 and person_id not in (select cohort_member.patient_id from pen.cohort_member where  obs.uuid='56b082f8-f956-499d-a8c2-d9b32a067e65') and person_id not in\n" +
             " (select patient_id from patient_program inner join program on(patient_program.program_id = program.program_id))";
 
+
+    public static final String ENROLL_PATIENTS_TO_AIC_COHORT_QUERY = "insert into cohort_member (patient_id, cohort_member_id, start_date, end_date, creator, date_created, voided, voided_by, date_voided, void_reason, uuid, date_changed, changed_by)" +
+            "values  (" +
+            "patient_id, " +
+            "member_id, " +
+            "NOW(), " +
+            "null, " +
+            "creator, " +
+            "NOW(), 0, null, null, null, " +
+            "UUID() AS uuid, null, null)";
+
 }
