@@ -2,9 +2,11 @@ package org.openmrs.module.ugandaemr.web.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.codehaus.jackson.map.util.JSONPObject;
 import org.json.JSONObject;
 import org.openmrs.Cohort;
+import org.openmrs.Patient;
+import org.openmrs.api.AdministrationService;
+import org.openmrs.api.CohortService;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.ugandaemr.UgandaEMRConstants;
 import org.openmrs.module.webservices.rest.SimpleObject;
@@ -13,6 +15,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Controller
@@ -74,6 +78,46 @@ public class CohortRegistrationController {
 		response.add("uuid", cohort.getUuid());
 
 		return response;
+	}
+
+	@RequestMapping(value = "/rest/" + RestConstants.VERSION_1 + "/" + UgandaEMRConstants.UGANDAEMR_MODULE_ID
+			+ "/patientCohorts", method = RequestMethod.GET)
+	@ResponseBody
+	public List<SimpleObject> getCohortsByPatientUuid(
+			@RequestParam(required = true, value = "patientUuid") String patientUuid) {
+
+		List<SimpleObject> cohortsList = new ArrayList<>();
+
+		Patient patient = Context.getPatientService().getPatientByUuid(patientUuid);
+
+		if (patient != null) {
+			// Get the patient's cohorts
+			List<List<Object>> patientCohorts = getCohortsByPatient(patient);
+
+			for (List<Object> cohort : patientCohorts) {
+				SimpleObject cohortObject = new SimpleObject();
+				cohortObject.add("cohort_id", cohort.get(0));
+				cohortObject.add("name", cohort.get(1));
+				cohortObject.add("description", cohort.get(2));
+				cohortsList.add(cohortObject);
+			}
+		}
+
+		return cohortsList;
+	}
+
+	private List<List<Object>> getCohortsByPatient(Patient patient) {
+		CohortService cohortService = Context.getCohortService();
+		AdministrationService administrationService = Context.getAdministrationService();
+		String hqlQuery = "select c.cohort_id, c.name, c.description FROM pen.cohort c\n" +
+				"    inner join pen.cohort_member cm on (c.cohort_id=cm.cohort_id)\n" +
+				"        inner join pen.person p on (cm.patient_id=p.person_id)\n" +
+				"         where p.uuid="+patient.getUuid();
+
+		List res = administrationService.executeSQL(hqlQuery, true);
+
+		return res;
+
 	}
 
 }
