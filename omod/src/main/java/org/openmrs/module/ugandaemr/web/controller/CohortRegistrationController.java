@@ -109,9 +109,9 @@ public class CohortRegistrationController {
 	private List<List<Object>> getCohortsByPatient(Patient patient) {
 		CohortService cohortService = Context.getCohortService();
 		AdministrationService administrationService = Context.getAdministrationService();
-		String hqlQuery = "select c.cohort_id, c.name, c.description FROM pen.cohort c\n" +
-				"    inner join pen.cohort_member cm on (c.cohort_id=cm.cohort_id)\n" +
-				"        inner join pen.person p on (cm.patient_id=p.person_id)\n" +
+		String hqlQuery = "select c.cohort_id, c.name, c.description FROM cohort c\n" +
+				"    inner join cohort_member cm on (c.cohort_id=cm.cohort_id)\n" +
+				"        inner join person p on (cm.patient_id=p.person_id)\n" +
 				"         where cm.voided=0 and p.uuid="+patient.getUuid();
 
 		List res = administrationService.executeSQL(hqlQuery, true);
