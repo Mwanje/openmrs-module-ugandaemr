@@ -769,11 +769,11 @@ VALUES
 			REPLACE INTO cohort_type(name,date_created,creator,uuid)VALUES
 			('Eligibility Cohort Type','2024-01-25',1,'1345c89c-8463-41e9-9cd0-8c14aa255ba8');
 
-			REPLACE INTO cohort(name,date_created,creator,uuid,cohort_type_id)VALUES
-			('HIV Program', '2024-01-25', 1, '56b082f8-f956-499d-a8c2-d9b32a067e65',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8')),
-			('TB Program','2024-01-25',1,'0aa9ba5f-d44a-4b31-aff1-3a046bd8e5e0',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8')),
-			('MCH Program', '2024-01-25', 1, 'd861187f-e25a-493b-81b1-b2a4c4679b7a',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8')),
-			('Nutrition Program','2024-01-25',1,'2827e1b5-be8a-4c1d-afc7-f6afcc4f2537',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8'));
+			REPLACE INTO cohort(name,description, date_created,creator,uuid,cohort_type_id)VALUES
+			('HIV Program','Eligible', '2024-01-25', 1, '56b082f8-f956-499d-a8c2-d9b32a067e65',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8')),
+			('TB Program','Eligible','2024-01-25',1,'0aa9ba5f-d44a-4b31-aff1-3a046bd8e5e0',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8')),
+			('MCH Program','Eligible', '2024-01-25', 1, 'd861187f-e25a-493b-81b1-b2a4c4679b7a',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8')),
+			('Nutrition Program','Eligible', '2024-01-25',1,'2827e1b5-be8a-4c1d-afc7-f6afcc4f2537',(SELECT cohort_type_id from cohort_type where uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8'));
 		</sql>
 	</changeSet>
 
