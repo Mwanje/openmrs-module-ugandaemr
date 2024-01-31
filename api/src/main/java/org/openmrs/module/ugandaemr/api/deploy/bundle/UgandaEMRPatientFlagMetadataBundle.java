@@ -50,6 +50,7 @@ public class UgandaEMRPatientFlagMetadataBundle extends PatientFlagMetadataBundl
         install(Flags.PATIENT_TRANSFERED_OUT);
         install(Flags.BLED_FOR_VIRAL_LOAD);
         install(Flags.ELIGIBLE_FOR_HIV_PROGRAM);
+        install(Flags.ELIGIBLE_FOR_TB_PROGRAM);
     }
 
 
