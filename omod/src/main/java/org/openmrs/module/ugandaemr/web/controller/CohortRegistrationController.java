@@ -17,7 +17,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -62,7 +65,7 @@ public class CohortRegistrationController {
 			+ "/cohort/saveEdit", method = RequestMethod.POST)
 	@ResponseBody
 	public SimpleObject saveEditedCohort(HttpServletRequest request,@RequestBody String body,
-			@RequestParam(required = true, value = "uuid") String cohortUuid) {
+										 @RequestParam(required = true, value = "uuid") String cohortUuid) {
 
 		Cohort cohort = Context.getCohortService().getCohortByUuid(cohortUuid);
 
@@ -98,11 +101,15 @@ public class CohortRegistrationController {
 				// Get the patient's cohorts
 				List<List<Object>> patientCohorts = getCohortsByPatient(patient);
 
+				if (patientCohorts.isEmpty()) {
+					// Handle the case where the patient has no cohorts enrolled
+					return new ResponseEntity<>("Patient has no enrolled cohorts", HttpStatus.OK);
+				}
+
 				for (List<Object> cohort : patientCohorts) {
 					SimpleObject cohortObject = new SimpleObject();
-					cohortObject.add("cohort_id", cohort.get(0));
-					cohortObject.add("name", cohort.get(1));
-					cohortObject.add("description", cohort.get(2));
+					cohortObject.add("display", cohort.get(0));
+					cohortObject.add("enrollmentStatus", cohort.get(1));
 
 					// Handling enrollmentFormUuid and discontinuationFormUuid
 					handleCohortSpecifics(cohort, cohortObject);
@@ -123,40 +130,133 @@ public class CohortRegistrationController {
 	}
 
 	private void handleCohortSpecifics(List<Object> cohort, SimpleObject cohortObject) {
-		String cohortName = cohort.get(1).toString();
+		String cohortName = cohort.get(0).toString();
 
 		// Use constants or enums for cohort names
-		if ("HIV Program".equalsIgnoreCase(cohortName)) {
+		if (UgandaEMRConstants.HIV_PROGRAM.equalsIgnoreCase(cohortName)) {
 			cohortObject.add("uuid", "18c6d4aa-0a36-11e7-8dbb-507b9dc4c741");
-			cohortObject.add("enrollmentFormUuid", "b21e38da-79b0-489f-9e2e-49fa0a562531");
-			cohortObject.add("discontinuationFormUuid", "");
-		} else if ("TB Program".equalsIgnoreCase(cohortName)) {
+			cohortObject.add("enrollmentFormUuid", UgandaEMRConstants.HIV_ENROLLMENT_FORM_UUID);
+			cohortObject.add("discontinuationFormUuid", UgandaEMRConstants.HIV_DISCONTINUATION_FORM_UUID);
+		} else if (UgandaEMRConstants.TB_PROGRAM.equalsIgnoreCase(cohortName)) {
 			cohortObject.add("uuid", "9dc21a72-0971-11e7-8037-507b9dc4c741");
-			cohortObject.add("enrollmentFormUuid", "ce38db94-ce38-4967-850b-efe485da4889");
-			cohortObject.add("discontinuationFormUuid", "");
-		} else if ("MCH Program".equalsIgnoreCase(cohortName)) {
-			cohortObject.add("uuid", "5e8c094c-0a36-11e7-b779-507b9dc4c741");
-			cohortObject.add("enrollmentFormUuid", "");
-			cohortObject.add("discontinuationFormUuid", "");
-		}else {
-			cohortObject.add("uuid", "4d47e58c-01c5-4ecd-8cb0-7c42850eeb7a");
-			cohortObject.add("enrollmentFormUuid", "8bda8f3b-68a3-4f8d-bfab-916648df95b2");
-			cohortObject.add("discontinuationFormUuid", "0aafcba3-fd25-4563-99dc-511c442b9be0");
+			cohortObject.add("enrollmentFormUuid", UgandaEMRConstants.DS_TB_ENROLLMENT_FORM_UUID);
+			cohortObject.add("discontinuationFormUuid", UgandaEMRConstants.TB_DISCONTINUATION_FORM_UUID);
 		}
 	}
 
 	private List<List<Object>> getCohortsByPatient(Patient patient) {
 		CohortService cohortService = Context.getCohortService();
 		AdministrationService administrationService = Context.getAdministrationService();
-		String hqlQuery = "select distinct c.cohort_id, c.name, c.description FROM cohort c\n" +
-				"    inner join cohort_member cm on (c.cohort_id=cm.cohort_id)\n" +
-				"        inner join person p on (cm.patient_id=p.person_id)\n" +
-				"       inner join cohort_type ct on (c.cohort_type_id = ct.cohort_type_id)\n" +
-				"         where cm.voided=0 and ct.uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8' and p.uuid='"+patient.getUuid()+"'";
+		String hqlQuery = "SELECT DISTINCT c.name AS display, c.description AS enrollmentStatus\n" +
+				"FROM cohort c\n" +
+				"         INNER JOIN cohort_member cm ON c.cohort_id = cm.cohort_id\n" +
+				"         INNER JOIN person p ON cm.patient_id = p.person_id\n" +
+				"         INNER JOIN cohort_type ct ON c.cohort_type_id = ct.cohort_type_id\n" +
+				"WHERE cm.voided = 0\n" +
+				"  AND ct.uuid = '1345c89c-8463-41e9-9cd0-8c14aa255ba8'\n" +
+				"  AND p.uuid = '"+patient.getUuid()+"'\n" +
+				"  AND NOT EXISTS (\n" +
+				"    SELECT 1\n" +
+				"    FROM program k\n" +
+				"    INNER JOIN patient_program pp ON k.program_id = pp.program_id\n" +
+				"    WHERE k.name = c.name\n" +
+				"      AND pp.patient_id = p.person_id\n" +
+				"  );";
 
 		List res = administrationService.executeSQL(hqlQuery, true);
 
 		return res;
-
 	}
+
+	@RequestMapping(value = "/rest/" + RestConstants.VERSION_1 + "/" + UgandaEMRConstants.UGANDAEMR_MODULE_ID
+			+ "/patientHistoricalEnrollment", method = RequestMethod.GET)
+	@ResponseBody
+	public ResponseEntity<Object> getPatientHistoricalEnrollment(
+			@RequestParam(required = true, value = "patientUuid") String patientUuid) {
+
+		try {
+			Patient patient = Context.getPatientService().getPatientByUuid(patientUuid);
+
+			if (patient == null) {
+				return new ResponseEntity<>("Patient not found", HttpStatus.NOT_FOUND);
+			}
+
+			List<List<Object>> enrollmentHistory = getPatientEnrollmentHistory(patient);
+
+			if (enrollmentHistory.isEmpty()) {
+				return new ResponseEntity<>("Enrollment history not found", HttpStatus.NOT_FOUND);
+			}
+
+			List<SimpleObject> patientHistoricalEnrollment = processEnrollmentHistory(enrollmentHistory);
+			return new ResponseEntity<>(patientHistoricalEnrollment, HttpStatus.OK);
+
+		} catch (Exception e) {
+			return new ResponseEntity<>("Error processing request", HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+
+	private List<SimpleObject> processEnrollmentHistory(List<List<Object>> enrollmentHistory) {
+		List<SimpleObject> patientHistoricalEnrollment = new ArrayList<>();
+
+		for (List<Object> enrollment : enrollmentHistory) {
+			SimpleObject enrollmentObject = new SimpleObject();
+			enrollmentObject.put("enrollmentUuid", enrollment.get(0));
+
+			// Format the enrolled date
+			LocalDateTime dateEnrolled = enrollment.get(1) == null ? null : convertToDate(enrollment.get(1));
+			enrollmentObject.put("dateEnrolled","2024-02-13" );
+
+			// Format the completed date or set to null if it's null
+			LocalDateTime dateCompleted = enrollment.get(2) == null ? null : convertToDate(enrollment.get(2));
+			enrollmentObject.put("dateCompleted", dateCompleted);
+
+			enrollmentObject.put("programName", enrollment.get(3));
+
+			String programName = enrollment.get(3).toString();
+
+			setProgramSpecificFields(enrollmentObject, programName);
+
+			enrollmentObject.put("active", dateCompleted == null);
+			patientHistoricalEnrollment.add(enrollmentObject);
+		}
+
+		return patientHistoricalEnrollment;
+	}
+
+	private void setProgramSpecificFields(SimpleObject enrollmentObject, String programName) {
+		if (UgandaEMRConstants.HIV_PROGRAM.equalsIgnoreCase(programName)) {
+			enrollmentObject.put("discontinuationFormUuid", UgandaEMRConstants.HIV_DISCONTINUATION_FORM_UUID);
+			enrollmentObject.put("discontinuationFormName", UgandaEMRConstants.HIV_DISCONTINUATION_FORM_NAME);
+			enrollmentObject.add("enrollmentFormUuid", UgandaEMRConstants.HIV_ENROLLMENT_FORM_UUID);
+			enrollmentObject.put("enrollmentFormName", UgandaEMRConstants.HIV_ENROLLMENT_FORM_NAME);
+			enrollmentObject.put("artStartDate", "2020-09-17");
+
+		} else if (UgandaEMRConstants.TB_PROGRAM.equalsIgnoreCase(programName)) {
+			enrollmentObject.put("discontinuationFormUuid", UgandaEMRConstants.TB_DISCONTINUATION_FORM_UUID);
+			enrollmentObject.put("discontinuationFormName", UgandaEMRConstants.TB_DISCONTINUATION_FORM_NAME);
+			enrollmentObject.add("enrollmentFormUuid", UgandaEMRConstants.DS_TB_ENROLLMENT_FORM_UUID);
+			enrollmentObject.put("enrollmentFormName", UgandaEMRConstants.TB_ENROLLMENT_FORM_NAME);
+		}
+	}
+
+	private List<List<Object>> getPatientEnrollmentHistory(Patient patient) {
+		AdministrationService administrationService = Context.getAdministrationService();
+		String query = "SELECT pp.uuid AS enrollmentUuid, pp.date_enrolled AS dateEnrolled, pp.date_completed AS dateCompleted, j.name AS programName FROM patient_program pp\n" +
+				"INNER JOIN program j ON (j.program_id=pp.program_id)\n" +
+				"INNER JOIN person p ON (pp.patient_id=p.person_id)\n" +
+				"WHERE p.uuid='" + patient.getUuid() + "'";
+
+		return administrationService.executeSQL(query, true);
+	}
+
+	private LocalDateTime convertToDate(Object dateObject) {
+		if (dateObject instanceof List) {
+			List<Integer> dateComponents = (List<Integer>) dateObject;
+			return LocalDateTime.of(dateComponents.get(0), dateComponents.get(1), dateComponents.get(2),
+					dateComponents.get(3), dateComponents.get(4), dateComponents.get(5));
+		}
+		return null;
+	}
+
+
 }

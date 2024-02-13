@@ -154,4 +154,17 @@ public class UgandaEMRConstants {
 
     public static final String GP_DEFAULT_LOCATION = MODULE_ID + ".defaultLocation";
 
+    public static final String HIV_PROGRAM = "HIV Program";
+    public static final String HIV_DISCONTINUATION_FORM_NAME = "HIV Discontinuation";
+    public static final String HIV_DISCONTINUATION_FORM_UUID ="1c7baac0-87cf-4d12-a938-81ea0d6f6448";
+    public static final String HIV_ENROLLMENT_FORM_NAME ="HIV Enrollment";
+    public static final String HIV_ENROLLMENT_FORM_UUID ="b21e38da-79b0-489f-9e2e-49fa0a562531";
+
+    public static final String TB_PROGRAM = "TB Program";
+    public static final String TB_DISCONTINUATION_FORM_NAME = "TB Discontinuation";
+    public static final String TB_DISCONTINUATION_FORM_UUID ="7d0dd4eb-3ff7-412c-97e4-808ac8251a83";
+    public static final String TB_ENROLLMENT_FORM_NAME ="TB Enrollment";
+    public static final String DR_TB_ENROLLMENT_FORM_UUID ="ce38db94-ce38-4967-850b-efe485da4889";
+    public static final String DS_TB_ENROLLMENT_FORM_UUID ="a1468eda-f5c8-493a-9b54-46939a3063d0";
+
 }
