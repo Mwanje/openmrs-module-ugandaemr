@@ -8,12 +8,9 @@ import org.openmrs.api.CohortService;
 import org.openmrs.api.context.Context;
 import org.openmrs.scheduler.tasks.AbstractTask;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.openmrs.module.ugandaemr.UgandaEMRConstants.*;
-
 
 public class IdentifyCohortMemberOfProgramsAndWorkflowsTask extends AbstractTask {
 
@@ -22,8 +19,8 @@ public class IdentifyCohortMemberOfProgramsAndWorkflowsTask extends AbstractTask
     @Override
     public void execute() {
         try {
-            // TB HIV eligibility
-            hivEligibilityCohort(TB_ELIGIBILITY_QUERY,TB_ELIGIBILITY_COHORT_UUID);
+            // TB eligibility
+            hivEligibilityCohort(TB_ELIGIBILITY_QUERY, TB_ELIGIBILITY_COHORT_UUID);
             // HIV eligibility
             hivEligibilityCohort(HIV_ELIGIBILITY_QUERY, HIV_ELIGIBILITY_COHORT_UUID);
         } catch (Exception e) {
@@ -34,52 +31,47 @@ public class IdentifyCohortMemberOfProgramsAndWorkflowsTask extends AbstractTask
     private void hivEligibilityCohort(String query, String cohortUuid) {
         AdministrationService administrationService = Context.getAdministrationService();
         try {
-            List<Object> persons = Collections.singletonList(administrationService.executeSQL(query, true));
-            enrollPatientInCohort(persons, cohortUuid);
+            List<List<Object>> results = administrationService.executeSQL(query, true);
+            enrollPatientInCohort(results, cohortUuid);
         } catch (Exception e) {
             log.error(e);
         }
     }
 
-    private void enrollPatientInCohort(List<Object> list, String cohortUuid) {
+    private void enrollPatientInCohort(List<List<Object>> results, String cohortUuid) {
         CohortService cohortService = Context.getCohortService();
         Cohort cohort = cohortService.getCohortByUuid(cohortUuid);
 
-        for (Object item : list) {
-            Integer patientId = Integer.parseInt(item.toString());
+        for (List<Object> result : results) {
+            Integer patientId = Integer.parseInt(result.get(0).toString());
             try {
-
                 Patient patient = Context.getPatientService().getPatient(patientId);
-                cohortService.addPatientToCohort(cohort, patient);
+                if (!cohortService.getCohort(cohort.getId()).contains(patient.getPatientId())) {
+                    cohortService.addPatientToCohort(cohort, patient);
 
-                insertIntoCohortMember(patientId, cohort.getId());
+                    insertIntoCohortMember(patientId, cohort.getId());
+                }
             } catch (Exception e) {
-                log.error(log);
+                log.error(e);
             }
         }
     }
 
     private void insertIntoCohortMember(int patientId, int cohortId) {
-        AdministrationService administrationService = Context.getAdministrationService();
-
         try {
             if (!isMemberInCohort(patientId, cohortId)) {
-                CohortService cohortService = Context.getCohortService();
-                cohortService.addPatientToCohort(cohortService.getCohort(cohortId), Context.getPatientService().getPatient(patientId));
+                Context.getCohortService().addPatientToCohort(
+                        Context.getCohortService().getCohort(cohortId),
+                        Context.getPatientService().getPatient(patientId)
+                );
             }
         } catch (Exception e) {
-            log.error(log);
+            log.error(e);
         }
     }
 
     private boolean isMemberInCohort(int patientId, int cohortId) {
         List<Cohort> cohorts = Context.getCohortService().getCohortsContainingPatientId(patientId);
-        List<Cohort> cohortList = cohorts.stream().filter(cohort -> {
-            cohort.getCohortId();
-            return false;
-        }).collect(Collectors.toList());
-
-        return cohortList.size() > 0;
+        return cohorts.stream().anyMatch(cohort -> cohort.getId() == cohortId);
     }
-
 }
