@@ -766,6 +766,19 @@ VALUES
 			update concept_name set concept_name_id=(concept_name_id-7187255) where concept_name_id>7000000;
 		</sql>
 	</changeSet>
+
+	<changeSet id="ugandaemr-2024-02-28-1330" author="mmwanje">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="1">
+				SELECT COUNT(*) FROM concept WHERE concept_id = 90272;
+			</sqlCheck>
+		</preConditions>
+		<comment> Change concept data type from Date to a Datetime</comment>
+		<sql>
+			update concept set datatype_id=8 where concept_id = 90272;
+		</sql>
+	</changeSet>
+
 </databaseChangeLog>
 
 
