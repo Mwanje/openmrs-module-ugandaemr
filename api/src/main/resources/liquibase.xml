@@ -766,18 +766,6 @@ VALUES
 			update concept_name set concept_name_id=(concept_name_id-7187255) where concept_name_id>7000000;
 		</sql>
 	</changeSet>
-
-	<changeSet id="ugandaemr-2024-03-01-1212" author="mmwanje">
-		<preConditions onFail="MARK_RAN">
-			<sqlCheck expectedResult="1">
-				SELECT COUNT(*) FROM concept WHERE concept_id=166945;
-			</sqlCheck>
-		</preConditions>
-		<comment> Change concept data type from N/A to Coded</comment>
-		<sql>
-			update concept set datatype_id =2 where concept_id=166945;
-		</sql>
-	</changeSet>
 </databaseChangeLog>
 
 
