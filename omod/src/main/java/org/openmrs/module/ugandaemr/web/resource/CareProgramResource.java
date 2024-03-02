@@ -47,34 +47,10 @@ public class CareProgramResource extends BaseRestController {
     //private ProgramManager programManager;
 
     public static String HIV_PROGRAM_UUID = "dfdc6d40-2f2f-463d-ba90-cc97350441a8";
-    public static String MCH_CHILD_PROGRAM_UUID = "c2ecdf11-97cd-432a-a971-cfd9bd296b83";
-    public static String MCH_MOTHER_PROGRAM_UUID = "b5d9e05f-f5ab-4612-98dd-adb75438ed34";
-    public static String TB_PROGRAM_UUID = "9f144a34-3a4a-44a9-8486-6b7af6cc64f6";
-    public static String TPT_PROGRAM_UUID = "335517a1-04bc-438b-9843-1ba49fb7fcd9";
-    public static String OVC_PROGRAM_UUID = "6eda83f0-09d9-11ea-8d71-362b9e155667";
-    public static String OTZ_PROGRAM_UUID = "24d05d30-0488-11ea-8d71-362b9e155667";
-    public static String VMMC_PROGRAM_UUID = "228538f4-cad9-476b-84c3-ab0086150bcc";
-    public static String PREP_PROGRAM_UUID = "214cad1c-bb62-4d8e-b927-810a046daf62";
-    public static String KP_PROGRAM_UUID = "7447305a-18a7-11e9-ab14-d663bd873d93";
-    public static final String KP_CLIENT_ENROLMENT = "c7f47cea-207b-11e9-ab14-d663bd873d93";
-    public static final String KP_CLIENT_DISCONTINUATION = "1f76643e-2495-11e9-ab14-d663bd873d93";
-
-    public static final String PREP_ENROLLMENT_FORM = "d5ca78be-654e-4d23-836e-a934739be555";
-
-    public static final String PREP_DISCONTINUATION_FORM = "467c4cc3-25eb-4330-9cf6-e41b9b14cc10";
-
-    public static final String MCH_DELIVERY_FORM_UUID = "496c7cc3-0eea-4e84-a04c-2292949e2f7f";
-
-    public static final String MCH_DISCHARGE_FORM_UUID = "af273344-a5f9-11e8-98d0-529269fb1459";
-    public static final String LAB_ORDERS_FORM_UUID = "2cdeded1-3f69-3bda-beff-1ed2ead94eaf";
 
     public static final Locale LOCALE = Locale.ENGLISH;
 
     public String name = null;
-
-    public static String ISONIAZID_DRUG_UUID = "78280AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-    public static String RIFAMPIN_ISONIAZID_DRUG_UUID = "1194AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-
 
 
     /**
