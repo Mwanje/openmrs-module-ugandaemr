@@ -2,7 +2,6 @@ package org.openmrs.module.ugandaemr.web.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.codehaus.jackson.map.util.JSONPObject;
 import org.json.JSONObject;
 import org.openmrs.Cohort;
 import org.openmrs.Patient;
@@ -66,7 +65,7 @@ public class CohortRegistrationController {
 			+ "/cohort/saveEdit", method = RequestMethod.POST)
 	@ResponseBody
 	public SimpleObject saveEditedCohort(HttpServletRequest request,@RequestBody String body,
-			@RequestParam(required = true, value = "uuid") String cohortUuid) {
+										 @RequestParam(required = true, value = "uuid") String cohortUuid) {
 
 		Cohort cohort = Context.getCohortService().getCohortByUuid(cohortUuid);
 
@@ -184,10 +183,6 @@ public class CohortRegistrationController {
 
 			List<List<Object>> enrollmentHistory = getPatientEnrollmentHistory(patient);
 
-			if (enrollmentHistory.isEmpty()) {
-				return new ResponseEntity<>("Enrollment history not found", HttpStatus.NOT_FOUND);
-			}
-
 			List<SimpleObject> patientHistoricalEnrollment = processEnrollmentHistory(enrollmentHistory);
 			return new ResponseEntity<>(patientHistoricalEnrollment, HttpStatus.OK);
 
@@ -240,6 +235,17 @@ public class CohortRegistrationController {
 		}
 	}
 
+	private String formatDate(Object dateObject) {
+		if (dateObject instanceof List) {
+			List<Integer> dateComponents = (List<Integer>) dateObject;
+			LocalDateTime dateEnrolled = LocalDateTime.of(dateComponents.get(0), dateComponents.get(1),
+					dateComponents.get(2), dateComponents.get(3), dateComponents.get(4), dateComponents.get(5));
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+			return dateEnrolled.format(formatter);
+		}
+		return null;
+	}
+
 	private List<List<Object>> getPatientEnrollmentHistory(Patient patient) {
 		AdministrationService administrationService = Context.getAdministrationService();
 		String query = "SELECT pp.uuid AS enrollmentUuid, pp.date_enrolled AS dateEnrolled, pp.date_completed AS dateCompleted, j.name AS programName FROM patient_program pp\n" +
@@ -258,4 +264,6 @@ public class CohortRegistrationController {
 		}
 		return null;
 	}
+
+
 }
