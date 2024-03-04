@@ -1,13 +1,6 @@
 {
   "name": "DR TB Enrollment Form",
-  "version": "4.0.0",
-  "description": "This is enrollment page of the DR TB Treatment program",
-  "encounterType": "0271ee3d-f274-49d1-b376-c842f075413f",
-  "encounter": "DR TB Summary (Enrollment)",
-  "uuid": "29510181-61d0-45c5-83ef-a60ab36643d7",
-  "processor": "EncounterFormProcessor",
-  "published": true,
-  "retired": false,
+  "published": "yes",
   "pages": [
     {
       "label": "Case Summary/Patient Type",
@@ -110,7 +103,7 @@
               "required": false,
               "id": "risk-group",
               "questionOptions": {
-                "rendering": "multiCheckbox",
+                "rendering": "checkbox",
                 "concept": "927563c5-cb91-4536-b23c-563a72d3f829",
                 "conceptMappings": [],
                 "answers": [
@@ -324,11 +317,11 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
                     "label": "Yes"
                   },
                   {
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
                     "label": "No"
                   }
                 ]
@@ -754,5 +747,10 @@
       ]
     }
   ],
-  "referencedForms": []
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0271ee3d-f274-49d1-b376-c842f075413f",
+  "referencedForms": [],
+  "uuid": "29510181-61d0-45c5-83ef-a60ab36643d7",
+  "description": "This is enrollment page of the DR TB Treatment program",
+  "version": "3.0"
 }

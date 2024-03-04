@@ -1,13 +1,6 @@
 {
   "name": "HIV Enrolment Form",
-  "version": "4.0.0",
-  "description": "Summary entry form for patients enrolled for ART",
-  "encounterType": "8d5b27bc-c2cc-11de-8d13-0010c6dffd0f",
-  "encounter": "ART Card - Summary",
-  "uuid": "fa318404-2ab9-4135-9361-0a56d85c58e7",
-  "processor": "EncounterFormProcessor",
-  "published": true,
-  "retired": false,
+  "published": "yes",
   "pages": [
     {
       "label": "HIV Enrolment Form",
@@ -613,7 +606,10 @@
       ]
     }
   ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "8d5b27bc-c2cc-11de-8d13-0010c6dffd0f",
   "referencedForms": [],
+  "uuid": "fa318404-2ab9-4135-9361-0a56d85c58e7",
   "postSubmissionActions": [
     {
       "actionId": "ProgramEnrollmentSubmissionAction",
@@ -622,5 +618,7 @@
         "programUuid": "18c6d4aa-0a36-11e7-8dbb-507b9dc4c741"
       }
     }
-  ]
+  ],
+  "description": "Summary entry form for patients enrolled for ART",
+  "version": "1.0"
 }
