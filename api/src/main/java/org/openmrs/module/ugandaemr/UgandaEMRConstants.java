@@ -166,4 +166,17 @@ public class UgandaEMRConstants {
     public static final String TB_ELIGIBILITY_QUERY = "select person_id from obs  where (concept_id=162202 OR concept_id=165291 OR concept_id=165414) and value_coded=703 and person_id not in (select cohort_member.patient_id from cohort_member where  obs.uuid='0aa9ba5f-d44a-4b31-aff1-3a046bd8e5e0') and person_id not in\n" +
             "             (select patient_id from patient_program inner join program on(patient_program.program_id = program.program_id));";
 
+    public static final String HIV_PROGRAM = "HIV Program";
+    public static final String HIV_DISCONTINUATION_FORM_NAME = "HIV Discontinuation";
+    public static final String HIV_DISCONTINUATION_FORM_UUID ="1c7baac0-87cf-4d12-a938-81ea0d6f6448";
+    public static final String HIV_ENROLLMENT_FORM_NAME ="HIV Enrollment";
+    public static final String HIV_ENROLLMENT_FORM_UUID ="52653a60-8300-4c13-be4d-4b746da06fee";
+
+    public static final String TB_PROGRAM = "TB Program";
+    public static final String TB_DISCONTINUATION_FORM_NAME = "TB Discontinuation";
+    public static final String TB_DISCONTINUATION_FORM_UUID ="7d0dd4eb-3ff7-412c-97e4-808ac8251a83";
+    public static final String TB_ENROLLMENT_FORM_NAME ="TB Enrollment";
+    public static final String DR_TB_ENROLLMENT_FORM_UUID ="4929f668-f8d0-11ea-adc1-0242ac120002";
+    public static final String DS_TB_ENROLLMENT_FORM_UUID ="b00452b6-bb7c-11ea-b3de-0242ac130004";
+
 }
