@@ -17,6 +17,18 @@
           "isExpanded": "true",
           "questions": [
             {
+              "label": "Pt Clinic #",
+              "type": "obs",
+              "required": true,
+              "id": "artNumber",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "105ef9de-ad90-4c08-bcd5-ab48f74f6287",
+                "conceptMappings": [],
+                "answers": []
+              }
+            },
+            {
               "label": "Enrollment into HIV Care Transfer in from",
               "type": "encounterDatetime",
               "required": true,
