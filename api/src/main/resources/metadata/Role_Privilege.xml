@@ -831,6 +831,55 @@
 
     <role_privilege  role="HIV Clinic"  privilege="Add Visits"/>
 
+    <role_privilege  role="HIV Clinic"  privilege="Access Offline Tools"/>
+    <role_privilege  role="HIV Clinic"  privilege="Add Allergies"/>
+    <role_privilege  role="HIV Clinic"  privilege="Add Attachments"/>
+    <role_privilege  role="HIV Clinic"  privilege="Add Conditions"/>
+    <role_privilege  role="HIV Clinic"  privilege="Add Visits"/>
+    <role_privilege  role="HIV Clinic"  privilege="Appointments: Invite Providers"/>
+    <role_privilege  role="HIV Clinic"  privilege="Edit conditions"/>
+    <role_privilege  role="HIV Clinic"  privilege="Edit Diagnoses"/>
+    <role_privilege  role="HIV Clinic"  privilege="Edit Notes"/>
+    <role_privilege  role="HIV Clinic"  privilege="Get Allergies"/>
+    <role_privilege  role="HIV Clinic"  privilege="Get conditions"/>
+    <role_privilege  role="HIV Clinic"  privilege="Get Forms"/>
+    <role_privilege  role="HIV Clinic"  privilege="Get Notes"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Appointment"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Appointment Services"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Appointment Specialities"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Appointment Types"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Appointments"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Appointments Settings"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Appointments Summary"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Care Panel"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage OrderTemplates"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Own Appointments"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Allergies"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Appointment"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Conditions"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Investigation"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Medication"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Notes"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Program"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Queues"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Results"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Summary"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Visits"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Patient Vital"/>
+    <role_privilege  role="HIV Clinic"  privilege="Manage Programs"/>
+    <role_privilege  role="HIV Clinic"  privilege="Request Appointments"/>
+    <role_privilege  role="HIV Clinic"  privilege="Reset Appointment Status"/>
+    <role_privilege  role="HIV Clinic"  privilege="Schedule Appointments"/>
+    <role_privilege  role="HIV Clinic"  privilege="Squeezing Appointments"/>
+    <role_privilege  role="HIV Clinic"  privilege="Task: HIV Clinic Access"/>
+    <role_privilege  role="HIV Clinic"  privilege="Update Appointment"/>
+    <role_privilege  role="HIV Clinic"  privilege="Update Appointment Status"/>
+    <role_privilege  role="HIV Clinic"  privilege="View Appointment Services"/>
+    <role_privilege  role="HIV Clinic"  privilege="View attachments"/>
+    <role_privilege  role="HIV Clinic"  privilege="View completedQueue"/>
+    <role_privilege  role="HIV Clinic"  privilege="View Encounters"/>
+    <role_privilege  role="HIV Clinic"  privilege="View Patient Summary"/>
+
     <!--* OPD Clinic *-->
     <!--role-role-->
     <role_role  parent_role="Base Role"  child_role="OPD Clinic"/>
