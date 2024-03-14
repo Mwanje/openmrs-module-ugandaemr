@@ -866,8 +866,11 @@ public class Flags {
     public static FlagDescriptor ELIGIBLE_FOR_HIV_PROGRAM = new FlagDescriptor() {
         @Override
         public String criteria() {
-            return "select person_id from obs  where concept_id=175333 and value_coded=703 and person_id not in (select person_id from obs  where concept_id=169015 and value_coded=703 and person_id not in (select cohort_member.patient_id from cohort_member where  obs.uuid='56b082f8-f956-499d-a8c2-d9b32a067e65') and person_id not in\n" +
-                    "             (select patient_id from patient_program inner join program on(patient_program.program_id = program.program_id)));";
+            return "select person_id from obs  where concept_id=175333 and value_coded=703\n" +
+                    "        and person_id not in (select person_id from obs  where concept_id=169015 and value_coded=703 and\n" +
+                    "            person_id in (select cm.patient_id from cohort_member cm inner join cohort ch on(cm.cohort_id = ch.cohort_id)\n" +
+                    "            where  ch.uuid='56b082f8-f956-499d-a8c2-d9b32a067e65') and person_id not in\n" +
+                    "               (select patient_id from patient_program inner join program on(patient_program.program_id = program.program_id)));";
         }
 
         @Override
@@ -904,8 +907,10 @@ public class Flags {
     public static FlagDescriptor ELIGIBLE_FOR_TB_PROGRAM = new FlagDescriptor() {
         @Override
         public String criteria() {
-            return "select person_id from obs  where (concept_id=162202 OR concept_id=165291 OR concept_id=165414) and value_coded=703 and person_id not in (select cohort_member.patient_id from cohort_member where  obs.uuid='0aa9ba5f-d44a-4b31-aff1-3a046bd8e5e0') and person_id not in\n" +
-                    "             (select patient_id from patient_program inner join program on(patient_program.program_id = program.program_id));";
+            return "select person_id from obs  where (concept_id=162202 OR concept_id=165291 OR concept_id=165414) and value_coded=703\n" +
+                    "    and person_id in (select cm.patient_id from cohort_member cm inner join cohort ch on(cm.cohort_id = ch.cohort_id)\n" +
+                    "            where  ch.uuid='0aa9ba5f-d44a-4b31-aff1-3a046bd8e5e0')\n" +
+                    "     and person_id not in (select patient_id from patient_program inner join program on(patient_program.program_id = program.program_id));";
         }
 
         @Override
