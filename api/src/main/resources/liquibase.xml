@@ -767,7 +767,12 @@ VALUES
 		</sql>
 	</changeSet>
 
-	<changeSet id="ugandaemr-20240228-1031" author="mmwanje">
+	<changeSet id="ugandaemr-20240228-1080" author="mmwanje">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="0">
+				SELECT COUNT(*) FROM cohort_type WHERE uuid='1345c89c-8463-41e9-9cd0-8c14aa255ba8';
+			</sqlCheck>
+		</preConditions>
 		<comment>Insert Cohort type for Eligibility Cohort and eligible Cohorts </comment>
 		<sql>
 			REPLACE INTO cohort_type(name,date_created,creator,uuid)VALUES
