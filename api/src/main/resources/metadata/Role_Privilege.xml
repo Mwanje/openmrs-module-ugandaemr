@@ -578,6 +578,8 @@
     <privilege  privilege="Manage Patient Immunization Orders"  description="Manage Patient Immunization Orders"  uuid="169a6cfa-0111-49bc-b69d-52c1a40ea031"/>
     <privilege  privilege="Manage Patient Appointment Orders"  description="Manage Patient Appointment Orders"  uuid="2d675753-c388-461d-851f-6f12be3ec944"/>
     <privilege  privilege="Manage Immunization Summary"  description="Manage Immunization Summary"  uuid="1c9a3eb6-9e13-4a5e-9a30-c19731a1b956"/>
+    <privilege  privilege="Manage Appointments Summary"  description="Manage Appointments Summary"  uuid="721a53aa-5d73-4fdb-9f61-54f8f981b02b"/>
+
 
 
     <!-- ROLES -->
