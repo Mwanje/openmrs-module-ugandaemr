@@ -55,7 +55,7 @@
           "questions": [
             {
               "label": "Enrollment into HIV Care Transfer in from",
-              "type": "encounterDatetime",
+              "type": "obs",
               "required": true,
               "id": "hiv-care-transfer-in-from",
               "questionOptions": {
@@ -68,7 +68,7 @@
             },
             {
               "label": "Date verification HIV test",
-              "type": "encounterDatetime",
+              "type": "obs",
               "required": false,
               "id": "hiv-test-date",
               "questionOptions": {
@@ -111,104 +111,6 @@
                 "concept": "89d3ee61-7c74-4537-b199-4026bd6a3f67",
                 "conceptMappings": [],
                 "answers": []
-              },
-              "validators": []
-            },
-            {
-              "label": "Care Entry Point",
-              "type": "obs",
-              "required": true,
-              "id": "care-entry-point",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "dcdfe3ce-30ab-102d-86b0-7a5022ba4115",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "concept": "dcd9f59f-30ab-102d-86b0-7a5022ba4115",
-                    "label": "ADOLESCENT OUTREACH"
-                  },
-                  {
-                    "concept": "dcd9fdf8-30ab-102d-86b0-7a5022ba4115",
-                    "label": "COMMUNITY BASED ORGANIZATION"
-                  },
-                  {
-                    "concept": "872139fa-9820-4fde-87fd-f00df9ddcbd6",
-                    "label": "EXPOSED INFANT"
-                  },
-                  {
-                    "concept": "dcd9ecc2-30ab-102d-86b0-7a5022ba4115",
-                    "label": "IDU OUTREACH"
-                  },
-                  {
-                    "concept": "f8c4d125-caba-485d-8561-1dcb22ad715e",
-                    "label": "KP Clinic"
-                  },
-                  {
-                    "concept": "dcd9dd84-30ab-102d-86b0-7a5022ba4115",
-                    "label": "MEDICAL INPATIENT"
-                  },
-                  {
-                    "concept": "dcd87b79-30ab-102d-86b0-7a5022ba4115",
-                    "label": "MEDICAL OUTPATIENT"
-                  },
-                  {
-                    "concept": "dcda021b-30ab-102d-86b0-7a5022ba4115",
-                    "label": "MILITARY RECRUITEMENT"
-                  },
-                  {
-                    "concept": "dcd68a88-30ab-102d-86b0-7a5022ba4115",
-                    "label": "OTHER SPECIFY"
-                  },
-                  {
-                    "concept": "dcd94c69-30ab-102d-86b0-7a5022ba4115",
-                    "label": "PEDIATRIC OUTPATIENT"
-                  },
-                  {
-                    "concept": "dcd7e8e5-30ab-102d-86b0-7a5022ba4115",
-                    "label": "PMTCT"
-                  },
-                  {
-                    "concept": "dcda084b-30ab-102d-86b0-7a5022ba4115",
-                    "label": "POLICE RECRUITEMENT"
-                  },
-                  {
-                    "concept": "165046AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Postnatal Clinic"
-                  },
-                  {
-                    "concept": "dcd99ca1-30ab-102d-86b0-7a5022ba4115",
-                    "label": "PRIVATE PROVIDER"
-                  },
-                  {
-                    "concept": "dcd9f15d-30ab-102d-86b0-7a5022ba4115",
-                    "label": "SEX WORKER OUTREACH"
-                  },
-                  {
-                    "concept": "7d24a93f-73a9-4e7c-a722-ebc3e35809b4",
-                    "label": "SMC care entry"
-                  },
-                  {
-                    "concept": "dcd98f72-30ab-102d-86b0-7a5022ba4115",
-                    "label": "STI OUTPATIENT"
-                  },
-                  {
-                    "concept": "dcd9939d-30ab-102d-86b0-7a5022ba4115",
-                    "label": "TB TREATMENT CENTER"
-                  },
-                  {
-                    "concept": "c8d71c2c-95e3-4ce2-b8c4-095a7160f8f7",
-                    "label": "UNDER 5 "
-                  },
-                  {
-                    "concept": "dcd9f9cd-30ab-102d-86b0-7a5022ba4115",
-                    "label": "VCT"
-                  },
-                  {
-                    "concept": "e9469d61-b0c3-4785-81c6-057c7bc099fc",
-                    "label": "YCC-Young child clinic"
-                  }
-                ]
               },
               "validators": []
             },
@@ -299,7 +201,12 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
             },
             {
               "label": "Start ART 1st Line Initial Regimen",
