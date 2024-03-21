@@ -1,10 +1,10 @@
 {
   "name": "HIV Enrolment Form",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Summary entry form for patients enrolled for ART",
-  "encounterType": "8d5b27bc-c2cc-11de-8d13-0010c6dffd0f",
   "encounter": "ART Card - Summary",
-  "uuid": "52653a60-8300-4c13-be4d-4b746da06fee",
+  "encounterType": "8d5b27bc-c2cc-11de-8d13-0010c6dffd0f",
+  "uuid": "9894cef1-4bf4-4ae6-b34a-785d014f9fd8",
   "processor": "EncounterFormProcessor",
   "published": true,
   "retired": false,
@@ -64,7 +64,12 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "true"
+                }
+              ]
             },
             {
               "label": "Date verification HIV test",
@@ -77,7 +82,12 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "true"
+                }
+              ]
             },
             {
               "label": "Test type",
@@ -111,6 +121,104 @@
                 "concept": "89d3ee61-7c74-4537-b199-4026bd6a3f67",
                 "conceptMappings": [],
                 "answers": []
+              },
+              "validators": []
+            },
+            {
+              "label": "Care Entry Point",
+              "type": "obs",
+              "required": true,
+              "id": "care-entry-point",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "dcdfe3ce-30ab-102d-86b0-7a5022ba4115",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "dcd9f59f-30ab-102d-86b0-7a5022ba4115",
+                    "label": "ADOLESCENT OUTREACH"
+                  },
+                  {
+                    "concept": "dcd9fdf8-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COMMUNITY BASED ORGANIZATION"
+                  },
+                  {
+                    "concept": "872139fa-9820-4fde-87fd-f00df9ddcbd6",
+                    "label": "EXPOSED INFANT"
+                  },
+                  {
+                    "concept": "dcd9ecc2-30ab-102d-86b0-7a5022ba4115",
+                    "label": "IDU OUTREACH"
+                  },
+                  {
+                    "concept": "f8c4d125-caba-485d-8561-1dcb22ad715e",
+                    "label": "KP Clinic"
+                  },
+                  {
+                    "concept": "dcd9dd84-30ab-102d-86b0-7a5022ba4115",
+                    "label": "MEDICAL INPATIENT"
+                  },
+                  {
+                    "concept": "dcd87b79-30ab-102d-86b0-7a5022ba4115",
+                    "label": "MEDICAL OUTPATIENT"
+                  },
+                  {
+                    "concept": "dcda021b-30ab-102d-86b0-7a5022ba4115",
+                    "label": "MILITARY RECRUITEMENT"
+                  },
+                  {
+                    "concept": "dcd68a88-30ab-102d-86b0-7a5022ba4115",
+                    "label": "OTHER SPECIFY"
+                  },
+                  {
+                    "concept": "dcd94c69-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PEDIATRIC OUTPATIENT"
+                  },
+                  {
+                    "concept": "dcd7e8e5-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PMTCT"
+                  },
+                  {
+                    "concept": "dcda084b-30ab-102d-86b0-7a5022ba4115",
+                    "label": "POLICE RECRUITEMENT"
+                  },
+                  {
+                    "concept": "165046AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Postnatal Clinic"
+                  },
+                  {
+                    "concept": "dcd99ca1-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PRIVATE PROVIDER"
+                  },
+                  {
+                    "concept": "dcd9f15d-30ab-102d-86b0-7a5022ba4115",
+                    "label": "SEX WORKER OUTREACH"
+                  },
+                  {
+                    "concept": "7d24a93f-73a9-4e7c-a722-ebc3e35809b4",
+                    "label": "SMC care entry"
+                  },
+                  {
+                    "concept": "dcd98f72-30ab-102d-86b0-7a5022ba4115",
+                    "label": "STI OUTPATIENT"
+                  },
+                  {
+                    "concept": "dcd9939d-30ab-102d-86b0-7a5022ba4115",
+                    "label": "TB TREATMENT CENTER"
+                  },
+                  {
+                    "concept": "c8d71c2c-95e3-4ce2-b8c4-095a7160f8f7",
+                    "label": "UNDER 5 "
+                  },
+                  {
+                    "concept": "dcd9f9cd-30ab-102d-86b0-7a5022ba4115",
+                    "label": "VCT"
+                  },
+                  {
+                    "concept": "e9469d61-b0c3-4785-81c6-057c7bc099fc",
+                    "label": "YCC-Young child clinic"
+                  }
+                ]
               },
               "validators": []
             },
@@ -191,9 +299,21 @@
           "isExpanded": "true",
           "questions": [
             {
+              "type": "patientIdentifier",
+              "label": "Pt Clinic #",
+              "questionInfo": "",
+              "id": "art-number",
+              "default": "",
+              "required": true,
+              "questionOptions": {
+                "rendering": "text",
+                "identifierType": "e1731641-30ab-102d-86b0-7a5022ba4115"
+              }
+            },
+            {
               "label": "At Start ART",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "art-start-date",
               "questionOptions": {
                 "rendering": "date",
@@ -204,7 +324,7 @@
               "validators": [
                 {
                   "type": "date",
-                  "allowFutureDates": "false"
+                  "allowFutureDates": "true"
                 }
               ]
             },

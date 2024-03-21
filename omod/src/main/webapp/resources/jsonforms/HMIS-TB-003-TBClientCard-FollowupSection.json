@@ -4,7 +4,7 @@
   "description": "This is a followup form for a DS-TB patient",
   "encounterType": "455bad1f-5e97-4ee9-9558-ff1df8808732",
   "encounter": "DS TB Encounter (Followup)",
-  "uuid": "121645df-8c26-4dc7-889c-4103fe9d6b9d",
+  "uuid": "4695cadc-ed35-4c85-9e09-e785024d38d0",
   "processor": "EncounterFormProcessor",
   "published": true,
   "retired": false,
