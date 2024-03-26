@@ -66,7 +66,7 @@
             {
               "label": "Unit TB No.",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "unit-tb-no",
               "questionOptions": {
                 "rendering": "text",
@@ -78,7 +78,7 @@
             {
               "label": "DR TB No.",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "dr-tb-no",
               "questionOptions": {
                 "rendering": "text",
@@ -91,7 +91,7 @@
             {
               "label": "Treatment Initiation Facility",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "treatment-initiation-facility",
               "questionOptions": {
                 "rendering": "text",
@@ -104,7 +104,7 @@
             {
               "label": "Followup Health Facility",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "followup-health-facility",
               "questionOptions": {
                 "rendering": "text",
@@ -120,7 +120,7 @@
             {
               "label": "Date Transferred to this Facility",
               "type": "encounterDatetime",
-              "required": false,
+              "required": "false",
               "id": "date-transferred-to-this-facility",
               "questionOptions": {
                 "rendering": "date",
@@ -152,7 +152,7 @@
             {
               "label": "Risk Group",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "risk-group",
               "questionOptions": {
                 "rendering": "select",
@@ -224,7 +224,7 @@
             {
               "label": "Treatment Supporter Name",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "treatment-supporter-name",
               "questionOptions": {
                 "rendering": "text",
@@ -237,7 +237,7 @@
             {
               "label": "Supporter Phone Number",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "support-phone-number",
               "questionOptions": {
                 "rendering": "text",
@@ -250,7 +250,7 @@
             {
               "label": "District",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "district",
               "questionOptions": {
                 "rendering": "text",
@@ -263,7 +263,7 @@
             {
               "label": "Sub County",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "sub-county",
               "questionOptions": {
                 "rendering": "text",
@@ -276,7 +276,7 @@
             {
               "label": "Parish",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "parish",
               "questionOptions": {
                 "rendering": "text",
@@ -289,7 +289,7 @@
             {
               "label": "Village",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "village",
               "questionOptions": {
                 "rendering": "text",
@@ -313,7 +313,7 @@
             {
               "label": "Treatment Start Date",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "treatment-start-date",
               "questionOptions": {
                 "rendering": "date",
@@ -331,7 +331,7 @@
             {
               "label": "Date of Prior TB Registration",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "date-of-prior-tb-registration",
               "questionOptions": {
                 "rendering": "date",
@@ -349,7 +349,7 @@
             {
               "label": "Reason for 2nd Line Treatment",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "reason-for-2nd-line-treatment",
               "questionOptions": {
                 "rendering": "select",
@@ -371,7 +371,7 @@
             {
               "label": "Transfer In",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "transfer-in",
               "questionOptions": {
                 "rendering": "radio",
@@ -393,7 +393,7 @@
             {
               "label": "Health Center Name",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "health-center-name",
               "questionOptions": {
                 "rendering": "text",
@@ -415,7 +415,7 @@
             {
               "label": "Registration Group",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "registration-group",
               "questionOptions": {
                 "rendering": "select",
@@ -452,7 +452,7 @@
             {
               "label": "Known MDR-TB Contact",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "known-mdr-tb-contact",
               "questionOptions": {
                 "rendering": "radio",
@@ -474,7 +474,7 @@
             {
               "label": "Patient Name",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "patient-name",
               "questionOptions": {
                 "rendering": "text",
@@ -490,7 +490,7 @@
             {
               "label": "Date Initial Home Assessment Completed",
               "type": "encounterDatetime",
-              "required": false,
+              "required": "false",
               "id": "date-initial-home-assessment-completed",
               "questionOptions": {
                 "rendering": "date",
