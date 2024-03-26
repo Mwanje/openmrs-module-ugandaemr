@@ -56,7 +56,7 @@
             {
               "label": "Enrollment into HIV Care Transfer in from",
               "type": "obs",
-              "required": true,
+              "required": "true",
               "id": "hiv-care-transfer-in-from",
               "questionOptions": {
                 "rendering": "date",
@@ -74,7 +74,7 @@
             {
               "label": "Date verification HIV test",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "hiv-test-date",
               "questionOptions": {
                 "rendering": "date",
@@ -92,7 +92,7 @@
             {
               "label": "Test type",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "test-type",
               "questionOptions": {
                 "rendering": "select",
@@ -114,7 +114,7 @@
             {
               "label": "Where",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "txt-where",
               "questionOptions": {
                 "rendering": "text",
@@ -127,7 +127,7 @@
             {
               "label": "Care Entry Point",
               "type": "obs",
-              "required": true,
+              "required": "true",
               "id": "care-entry-point",
               "questionOptions": {
                 "rendering": "select",
@@ -225,7 +225,7 @@
             {
               "label": "Special Categories",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "special-categories",
               "questionOptions": {
                 "rendering": "select",
@@ -304,7 +304,7 @@
               "questionInfo": "",
               "id": "art-number",
               "default": "",
-              "required": true,
+              "required": "true",
               "questionOptions": {
                 "rendering": "text",
                 "identifierType": "e1731641-30ab-102d-86b0-7a5022ba4115"
@@ -313,7 +313,7 @@
             {
               "label": "At Start ART",
               "type": "obs",
-              "required": true,
+              "required": "true",
               "id": "art-start-date",
               "questionOptions": {
                 "rendering": "date",
@@ -331,7 +331,7 @@
             {
               "label": "Start ART 1st Line Initial Regimen",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "initial-regimen",
               "questionOptions": {
                 "rendering": "select",
@@ -451,7 +451,7 @@
             {
               "label": "WHO Clinical Stage",
               "type": "obs",
-              "required": true,
+              "required": "true",
               "id": "who-clinical-stage",
               "questionOptions": {
                 "rendering": "select",
@@ -481,7 +481,7 @@
             {
               "label": "CD4",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "cd4",
               "questionOptions": {
                 "rendering": "number",
@@ -494,7 +494,7 @@
             {
               "label": "Preg",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "preg",
               "questionOptions": {
                 "rendering": "select",
@@ -518,7 +518,7 @@
             {
               "label": "Lactating",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "lac",
               "questionOptions": {
                 "rendering": "select",
@@ -549,7 +549,7 @@
             {
               "label": "Prior ARV/ART",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "encART",
               "questionOptions": {
                 "rendering": "select",
@@ -607,7 +607,7 @@
             {
               "label": "Duration in Months",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "duration-in-months",
               "questionOptions": {
                 "rendering": "number",
@@ -659,7 +659,7 @@
             {
               "label": "Duration in Months",
               "type": "obs",
-              "required": false,
+              "required": "false",
               "id": "duration-in-months",
               "questionOptions": {
                 "rendering": "number",
