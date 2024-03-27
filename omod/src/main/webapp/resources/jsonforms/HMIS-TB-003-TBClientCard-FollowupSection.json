@@ -49,7 +49,7 @@
             {
               "label": "Month of Follow up",
               "type": "obs",
-              "required": "false",
+              "required": "true",
               "id": "month-of-follow-up",
               "questionOptions": {
                 "rendering": "select",
@@ -136,7 +136,6 @@
                 {
                   "label": "Adverse event",
                   "type": "obs",
-                  "required": "false",
                   "id": "adverse-event-type",
                   "questionOptions": {
                     "rendering": "select",
@@ -206,7 +205,6 @@
                 {
                   "label": "Severity of adverse event",
                   "type": "obs",
-                  "required": "false",
                   "id": "severity-of-adverse-event",
                   "questionOptions": {
                     "rendering": "select",
@@ -240,7 +238,6 @@
                 {
                   "label": "Drug causing",
                   "type": "",
-                  "required": "false",
                   "id": "drug-causing-adverse-event",
                   "questionOptions": {
                     "rendering": "text",
@@ -266,7 +263,6 @@
             {
               "label": "Date of report",
               "type": "obs",
-              "required": "false",
               "id": "date-of-report",
               "questionOptions": {
                 "rendering": "date",
@@ -284,7 +280,6 @@
             {
               "label": "Total # of contacts     5 years",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-younger-than-five-years",
               "questionOptions": {
                 "rendering": "number",
@@ -297,7 +292,6 @@
             {
               "label": "Total # of contacts < 5 years",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-older-than-five-years",
               "questionOptions": {
                 "rendering": "number",
@@ -310,7 +304,6 @@
             {
               "label": "Total # of     5 years old contacts screened for TB",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-younger-than-five-years-screened-for-tb",
               "questionOptions": {
                 "rendering": "number",
@@ -323,7 +316,6 @@
             {
               "label": "Total # of < 5 years old contacts screened for TB",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-older-than-five-years-screened-for-tb",
               "questionOptions": {
                 "rendering": "number",
@@ -336,7 +328,6 @@
             {
               "label": "Total # of     5 years old contacts with TB",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-younger-than-five-years-with-tb",
               "questionOptions": {
                 "rendering": "number",
@@ -349,7 +340,6 @@
             {
               "label": "Total # of < 5 years old contacts with TB",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-older-than-five-years-with-tb",
               "questionOptions": {
                 "rendering": "number",
@@ -362,7 +352,6 @@
             {
               "label": "Total # of     5 years old contacts on TPT",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-younger-than-five-years-on-tpt",
               "questionOptions": {
                 "rendering": "number",
@@ -375,7 +364,6 @@
             {
               "label": "Total # of < 5 years old contacts on TPT",
               "type": "obs",
-              "required": "false",
               "id": "total-number-contacts-older-than-five-years-on-tpt",
               "questionOptions": {
                 "rendering": "number",
@@ -399,7 +387,6 @@
             {
               "label": "Date of follow up",
               "type": "obs",
-              "required": "false",
               "id": "date-of-follow-up",
               "questionOptions": {
                 "rendering": "date",
@@ -418,7 +405,6 @@
             {
               "label": "Patient missed appointment",
               "type": "obs",
-              "required": "false",
               "id": "patient-missed-appointment",
               "questionOptions": {
                 "rendering": "radio",
@@ -451,7 +437,6 @@
             {
               "label": "DOT monitoring (Patient active)",
               "type": "obs",
-              "required": "false",
               "id": "dot-monitoring-patient-active",
               "questionOptions": {
                 "rendering": "radio",
@@ -473,7 +458,6 @@
             {
               "label": "Counselling",
               "type": "obs",
-              "required": "false",
               "id": "counselling",
               "questionOptions": {
                 "rendering": "radio",
@@ -495,7 +479,6 @@
             {
               "label": "Pill refill",
               "type": "obs",
-              "required": "false",
               "id": "pill-refill",
               "questionOptions": {
                 "rendering": "radio",
@@ -517,7 +500,6 @@
             {
               "label": "Appointment reminder",
               "type": "obs",
-              "required": "false",
               "id": "appointment-reminder",
               "questionOptions": {
                 "rendering": "radio",
@@ -539,7 +521,6 @@
             {
               "label": "Sputum sample collection",
               "type": "obs",
-              "required": "false",
               "id": "sputum-sample-collection",
               "questionOptions": {
                 "rendering": "radio",
@@ -561,7 +542,6 @@
             {
               "label": "Other Support",
               "type": "obs",
-              "required": "false",
               "id": "other-support",
               "questionOptions": {
                 "rendering": "text",
@@ -580,7 +560,6 @@
             {
               "label": "Patient evaluated",
               "type": "obs",
-              "required": "false",
               "id": "patient-evaluated",
               "questionOptions": {
                 "rendering": "radio",
@@ -602,7 +581,6 @@
             {
               "label": "Found with a treatment supporter",
               "type": "obs",
-              "required": "false",
               "id": "found-with-a-treatment-supporter",
               "questionOptions": {
                 "rendering": "radio",
@@ -624,7 +602,6 @@
             {
               "label": "Patient transferred out",
               "type": "obs",
-              "required": "false",
               "id": "patient-transferred-out",
               "questionOptions": {
                 "rendering": "radio",
@@ -646,7 +623,6 @@
             {
               "label": "Outcome of follow up",
               "type": "obs",
-              "required": "false",
               "id": "outcome-of-follow-up",
               "questionOptions": {
                 "rendering": "select",
@@ -691,7 +667,6 @@
             {
               "label": "Date of DOT report",
               "type": "obs",
-              "required": "false",
               "id": "date-of-dot-report",
               "questionOptions": {
                 "rendering": "date",
@@ -704,7 +679,6 @@
             {
               "label": "Next date of DOT appointment",
               "type": "obs",
-              "required": "false",
               "id": "next-date-of-dot-appointment",
               "questionOptions": {
                 "rendering": "date",
@@ -717,7 +691,6 @@
             {
               "label": "No. of days when patient was directly observed (in hospital or by DOT Nurse)",
               "type": "obs",
-              "required": "false",
               "id": "number-of-days-under-direct-observation",
               "questionOptions": {
                 "rendering": "number",
@@ -730,7 +703,6 @@
             {
               "label": "No. days of incomplete doses",
               "type": "obs",
-              "required": "false",
               "id": "number-of-days-of-incomplete-doses",
               "questionOptions": {
                 "rendering": "number",
@@ -743,7 +715,6 @@
             {
               "label": "No. of days electronic message notifications of drug refills were received",
               "type": "obs",
-              "required": "false",
               "id": "number-of-days-of-electronic-notifications-of-drug-refills-received",
               "questionOptions": {
                 "rendering": "number",
@@ -756,7 +727,6 @@
             {
               "label": "No. of days of video observed therapy",
               "type": "obs",
-              "required": "false",
               "id": "number-of-days-video-observed-therapy",
               "questionOptions": {
                 "rendering": "number",
@@ -769,7 +739,6 @@
             {
               "label": "No. of days when DOT was not supervised",
               "type": "obs",
-              "required": "false",
               "id": "number-of-days-when-dot-was-not-supervised",
               "questionOptions": {
                 "rendering": "number",
@@ -782,7 +751,6 @@
             {
               "label": "No. of days when doses were taken under observation of a treatment supporter",
               "type": "obs",
-              "required": "false",
               "id": "number-of-days-when-doses-were-taken-under-observation-of-a-treatment-supporter",
               "questionOptions": {
                 "rendering": "number",
@@ -795,7 +763,6 @@
             {
               "label": "No. of days when drugs were not taken",
               "type": "obs",
-              "required": "false",
               "id": "number-of-days-when-drugs-were-not-taken",
               "questionOptions": {
                 "rendering": "number",
@@ -819,7 +786,6 @@
             {
               "label": "Outcome",
               "type": "obs",
-              "required": "false",
               "id": "tb-treatment-outcome",
               "questionOptions": {
                 "rendering": "select",
@@ -857,7 +823,6 @@
             {
               "label": "Transferred to 2nd line",
               "type": "obs",
-              "required": "false",
               "id": "transferred-to-second-line",
               "questionOptions": {
                 "rendering": "radio",
@@ -879,7 +844,6 @@
             {
               "label": "Miss-classification",
               "type": "obs",
-              "required": "false",
               "id": "miss-classification",
               "questionOptions": {
                 "rendering": "radio",
@@ -901,7 +865,6 @@
             {
               "label": "Reason for miss-classification",
               "type": "obs",
-              "required": "false",
               "id": "reason-for-miss-classification",
               "questionOptions": {
                 "rendering": "text",
@@ -914,7 +877,6 @@
             {
               "label": "Action taken for miss-classification",
               "type": "obs",
-              "required": "false",
               "id": "action-taken-for-miss-classification",
               "questionOptions": {
                 "rendering": "text",

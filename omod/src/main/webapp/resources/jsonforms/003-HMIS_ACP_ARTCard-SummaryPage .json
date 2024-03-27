@@ -74,7 +74,6 @@
             {
               "label": "Date verification HIV test",
               "type": "obs",
-              "required": "false",
               "id": "hiv-test-date",
               "questionOptions": {
                 "rendering": "date",
@@ -92,7 +91,6 @@
             {
               "label": "Test type",
               "type": "obs",
-              "required": "false",
               "id": "test-type",
               "questionOptions": {
                 "rendering": "select",
@@ -114,7 +112,6 @@
             {
               "label": "Where",
               "type": "obs",
-              "required": "false",
               "id": "txt-where",
               "questionOptions": {
                 "rendering": "text",
@@ -225,7 +222,6 @@
             {
               "label": "Special Categories",
               "type": "obs",
-              "required": "false",
               "id": "special-categories",
               "questionOptions": {
                 "rendering": "select",
@@ -331,7 +327,6 @@
             {
               "label": "Start ART 1st Line Initial Regimen",
               "type": "obs",
-              "required": "false",
               "id": "initial-regimen",
               "questionOptions": {
                 "rendering": "select",
@@ -481,7 +476,6 @@
             {
               "label": "CD4",
               "type": "obs",
-              "required": "false",
               "id": "cd4",
               "questionOptions": {
                 "rendering": "number",
@@ -494,7 +488,6 @@
             {
               "label": "Preg",
               "type": "obs",
-              "required": "false",
               "id": "preg",
               "questionOptions": {
                 "rendering": "select",
@@ -518,7 +511,6 @@
             {
               "label": "Lactating",
               "type": "obs",
-              "required": "false",
               "id": "lac",
               "questionOptions": {
                 "rendering": "select",
@@ -549,7 +541,6 @@
             {
               "label": "Prior ARV/ART",
               "type": "obs",
-              "required": "false",
               "id": "encART",
               "questionOptions": {
                 "rendering": "select",
@@ -607,7 +598,6 @@
             {
               "label": "Duration in Months",
               "type": "obs",
-              "required": "false",
               "id": "duration-in-months",
               "questionOptions": {
                 "rendering": "number",
@@ -659,7 +649,6 @@
             {
               "label": "Duration in Months",
               "type": "obs",
-              "required": "false",
               "id": "duration-in-months",
               "questionOptions": {
                 "rendering": "number",

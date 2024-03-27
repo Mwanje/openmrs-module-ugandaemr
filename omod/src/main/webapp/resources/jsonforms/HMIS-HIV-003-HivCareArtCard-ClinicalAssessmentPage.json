@@ -50,7 +50,6 @@
             {
               "label": "Pregnancy",
               "type": "obs",
-              "required": "false",
               "id": "pregnant",
               "questionOptions": {
                 "rendering": "checkbox",
@@ -86,7 +85,6 @@
             {
               "label": "EDD",
               "type": "obs",
-              "required": "false",
               "id": "edd",
               "questionOptions": {
                 "rendering": "date",
@@ -126,7 +124,6 @@
             {
               "label": "Gestation Age in Weeka",
               "type": "obs",
-              "required": "false",
               "id": "age_in_weeks",
               "questionOptions": {
                 "rendering": "number",
@@ -142,7 +139,6 @@
             {
               "label": "ANC No.",
               "type": "obs",
-              "required": "false",
               "id": "anc_no",
               "questionOptions": {
                 "rendering": "number",
@@ -261,7 +257,6 @@
             {
               "label": "CACX Status",
               "type": "obs",
-              "required": "false",
               "id": "cacx_status",
               "questionOptions": {
                 "rendering": "select",
@@ -303,7 +298,6 @@
             {
               "label": "TB Status",
               "type": "obs",
-              "required": "false",
               "id": "tb_status",
               "questionOptions": {
                 "rendering": "select",
@@ -367,7 +361,6 @@
             {
               "label": "TB Start Date",
               "type": "obs",
-              "required": "false",
               "id": "tb_start_date",
               "questionOptions": {
                 "rendering": "date",
@@ -380,7 +373,6 @@
             {
               "label": "Reg No.",
               "type": "obs",
-              "required": "false",
               "id": "reg_no",
               "questionOptions": {
                 "rendering": "number",
@@ -393,7 +385,6 @@
             {
               "label": "TB Stop Date",
               "type": "obs",
-              "required": "false",
               "id": "tb_stop_date",
               "questionOptions": {
                 "rendering": "date",
@@ -444,7 +435,6 @@
             {
               "label": "TPT Date Initiated",
               "type": "obs",
-              "required": "false",
               "id": "tpt_date_initiated",
               "questionOptions": {
                 "rendering": "date",
@@ -457,7 +447,6 @@
             {
               "label": "TPT Date Completed",
               "type": "obs",
-              "required": "false",
               "id": "tpt_date_completed",
               "questionOptions": {
                 "rendering": "date",
@@ -470,7 +459,6 @@
             {
               "label": "TPT Side Effects",
               "type": "obs",
-              "required": "false",
               "id": "tpt_date_completed",
               "questionOptions": {
                 "rendering": "text",
@@ -483,7 +471,6 @@
             {
               "label": "Signs and Symptoms",
               "type": "obs",
-              "required": "false",
               "id": "signs_and_symptoms",
               "questionOptions": {
                 "rendering": "checkbox",
@@ -581,7 +568,6 @@
             {
               "label": "Side effects of ART",
               "type": "obs",
-              "required": "false",
               "id": "side_effects_of_ART",
               "questionOptions": {
                 "rendering": "checkbox",
@@ -802,7 +788,6 @@
             {
               "label": "Syphilis Status",
               "type": "obs",
-              "required": "false",
               "id": "syphillis_status",
               "questionOptions": {
                 "rendering": "select",
@@ -835,7 +820,6 @@
             {
               "label": "ART - adherence ",
               "type": "obs",
-              "required": "false",
               "id": "art-adherence",
               "questionOptions": {
                 "rendering": "radio",
@@ -860,7 +844,6 @@
             {
               "label": "Why Poor/Fair",
               "type": "obs",
-              "required": "false",
               "id": "why-poor-fair",
               "questionOptions": {
                 "rendering": "multiCheckbox",
@@ -942,7 +925,6 @@
             {
               "label": "Duration on Current Regimen",
               "type": "obs",
-              "required": "false",
               "id": "duration_on_current_regimen",
               "questionOptions": {
                 "rendering": "number",
@@ -955,7 +937,6 @@
             {
               "label": "Duration on ART",
               "type": "obs",
-              "required": "false",
               "id": "duration_on_art",
               "questionOptions": {
                 "rendering": "number",

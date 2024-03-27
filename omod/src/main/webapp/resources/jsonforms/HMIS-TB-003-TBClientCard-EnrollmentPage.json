@@ -48,9 +48,9 @@
             {
               "type": "patientIdentifier",
               "label": "District TB Number",
-              "required": "false",
               "questionInfo": "",
               "id": "districtRegNum",
+              "required": "true",
               "default": "",
               "questionOptions": {
                 "rendering": "text",
@@ -60,7 +60,6 @@
             {
               "label": " Unit TB No.",
               "type": "obs",
-              "required": "false",
               "id": "unit-tb-number",
               "questionOptions": {
                 "rendering": "text",
@@ -79,7 +78,7 @@
             {
               "label": "Disease Classification and Patient Type",
               "type": "obs",
-              "required": "false",
+              "required": "true",
               "id": "disease-classification",
               "questionOptions": {
                 "rendering": "select",
@@ -105,7 +104,6 @@
             {
               "label": "Indicate Site",
               "type": "obs",
-              "required": "false",
               "id": "indication-site",
               "questionOptions": {
                 "rendering": "text",
@@ -118,7 +116,6 @@
             {
               "label": "Patient Type",
               "type": "obs",
-              "required": "false",
               "id": "patient-type",
               "questionOptions": {
                 "rendering": "select",
@@ -163,7 +160,6 @@
             {
               "label": "Risk Groups",
               "type": "obs",
-              "required": "false",
               "id": "risk-groups",
               "questionOptions": {
                 "rendering": "checkbox",
