@@ -1,10 +1,10 @@
 {
-  "name": "DS TB Enrollment Form",
+  "name": "DS TB: HMIS TB 003 - TB Client Card Enrollment Page",
   "version": "4.0.0",
   "description": "This is the enrollment form for a DS TB patient",
   "encounterType": "334bf97e-28e2-4a27-8727-a5ce31c7cd66",
-  "encounter": "Ds TB Enrollment",
-  "uuid": "2e26cc12-df19-4588-afc0-38ea107769fe",
+  "encounter": "DS TB Enrollment",
+  "uuid": "b00452b6-bb7c-11ea-b3de-0242ac130004",
   "processor": "EncounterFormProcessor",
   "published": true,
   "retired": false,

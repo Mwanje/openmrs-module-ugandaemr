@@ -1,9 +1,9 @@
 {
-  "name": "Health Education and Psychosocial Support",
+  "name": "HMIS ACP 003: HIV Care ART Card - Health Education And Psychosocial support Page",
   "version": "4.0.0",
-  "description": "ART Encounter for Health Education and Psychosocial Support",
+  "description": "Captures health eduction and counseling encounters",
   "encounterType": "6d88e370-f2ba-476b-bf1b-d8eaf3b1b67e",
-  "uuid": "497ac991-459d-41e6-acad-743854fb3f1d",
+  "uuid": "b8224534-7df0-4c00-ba8e-6b1f291087eb",
   "processor": "EncounterFormProcessor",
   "published": true,
   "retired": false,
@@ -189,7 +189,7 @@
               "type": "obs",
               "id": "depression_status",
               "questionOptions": {
-                "rendering": "multiCheckbox",
+                "rendering": "checkbox",
                 "concept": "fe9a6bfc-b0db-4bf3-bab6-a8800dd93ded",
                 "conceptMappings": [],
                 "answers": [
@@ -334,7 +334,7 @@
               "type": "obs",
               "id": "PHDP_components",
               "questionOptions": {
-                "rendering": "multiCheckbox",
+                "rendering": "checkbox",
                 "concept": "d788b8df-f25d-49e7-b946-bf5fe2d9407c",
                 "conceptMappings": [],
                 "answers": [

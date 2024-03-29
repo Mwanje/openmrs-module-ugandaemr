@@ -1,9 +1,10 @@
 {
-  "name": "DR TB Enrollment Form",
+  "name": "DR TB: HMIS TB 001 Second Line TB Treatment Card - Enrollment Page",
   "version": "4.0.0",
   "description": "This is enrollment page of the DR TB Treatment program",
   "encounter": "DR TB Summary (Enrollment)",
-  "uuid": "8d3e2b4f-9c0a-4211-a3c8-5c5db44e3147",
+  "encounterType": "0271ee3d-f274-49d1-b376-c842f075413f",
+  "uuid": "4929f668-f8d0-11ea-adc1-0242ac120002",
   "processor": "EncounterFormProcessor",
   "published": true,
   "retired": false,
@@ -490,6 +491,5 @@
       ]
     }
   ],
-  "referencedForms": [],
-  "encounterType": "0271ee3d-f274-49d1-b376-c842f075413f"
+  "referencedForms": []
 }
