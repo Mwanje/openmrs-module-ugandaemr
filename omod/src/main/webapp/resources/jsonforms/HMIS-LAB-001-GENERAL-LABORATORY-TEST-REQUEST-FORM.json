@@ -47,34 +47,6 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Choose Priority Level",
-              "type": "obs",
-              "id": "priority_level",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "ed593e94-9a9a-4a23-9e12-1408e5399be6",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "concept": "0ce58dab-e411-4bff-9980-3cc754b5df3f",
-                    "label": "Emergency",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "455a7b58-7e12-4711-8a32-9b9f0ea3cdb7",
-                    "label": "Urgent",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "0bd1650f-7d0d-40c7-be2a-2136eb3cd655",
-                    "label": "Not Urgent",
-                    "conceptMappings": []
-                  }
-                ]
-              },
-              "validators": []
-            },
-            {
               "label": "Clinical Notes",
               "type": "obs",
               "id": "clinical_notes",
