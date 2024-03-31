@@ -75,18 +75,6 @@
               "validators": []
             },
             {
-              "label": "Clinical Notes",
-              "type": "obs",
-              "id": "clinical_notes",
-              "questionOptions": {
-                "rendering": "textarea",
-                "concept": "e7f0ed50-a83d-11ed-afa1-0242ac120002",
-                "conceptMappings": [],
-                "answers": []
-              },
-              "validators": []
-            },
-            {
               "type": "obsGroup",
               "label": "Test orders",
               "questionOptions": {
