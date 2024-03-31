@@ -1,11 +1,13 @@
 {
   "name": "HMIS ACP HIV 003: HIV CARE/ART CARD - Family Tracking Form",
-  "description": "Summary entry form for patients enrolled for ART",
   "version": "4.0.0",
-  "published": true,
+  "description": "Summary entry form for patients enrolled for ART",
+  "encounterType": "591cba6a-5c5f-11ee-8c99-0242ac120002",
+  "encounter": "ART Card - Family Tracking",
   "uuid": "f2722150-5c5f-11ee-8c99-0242ac120002",
+  "processor": "EncounterFormProcessor",
+  "published": true,
   "retired": false,
-  "encounter": "Registration",
   "pages": [
     {
       "label": "HMIS ACP HIV 003: HIV CARE/ART CARD - Family Tracking Form ",
@@ -213,6 +215,5 @@
       ]
     }
   ],
-  "processor": "EncounterFormProcessor",
   "referencedForms": []
 }
