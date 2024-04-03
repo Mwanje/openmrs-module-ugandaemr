@@ -574,7 +574,7 @@
     <privilege  privilege="Mark Dead Button"  description="Mark Dead Button"  uuid="b85b632d-af61-4d50-a083-2b8b1b782953"/>
     <privilege  privilege="Edit Patient Details Button"  description="Edit Patient Details Button"  uuid="3e63bb7d-91d9-4b89-992a-a585593ba1e6"/>
     <privilege  privilege="Add Patient To List Button"  description="Add Patient To List Button"  uuid="9cff066d-5764-416f-a798-0c1c0975e7db"/>
-    <privilege  privilege="Move Patient To Next Service Point Button"  description="Move Patient To Next Service Point Button"  uuid="933de750-a2c3-43cb-b03d-5e510882d6c6"/>
+    <privilege  privilege="Next Service Point"  description="Move Patient To Next Service Point Button"  uuid="933de750-a2c3-43cb-b03d-5e510882d6c6"/>
     <privilege  privilege="Manage Patient Banner End Visit Button"  description="Manage Patient Banner End Visit Button"  uuid="8ec2ca2a-1283-4ea9-b471-ff09b477927c"/>
     <privilege  privilege="Manage Patient Test Summary"  description="Manage Patient Test Summary"  uuid="cf1743c6-a354-4d74-9254-2ee0dacce9ff"/>
     <privilege  privilege="Manage Patient Immunization Orders"  description="Manage Patient Immunization Orders"  uuid="169a6cfa-0111-49bc-b69d-52c1a40ea031"/>
@@ -783,6 +783,8 @@
     <role_privilege role="Triage" privilege="View Triage Metrics"/>
     <role_privilege role="Triage" privilege="View Triage Queuelist"/>
     <role_privilege role="Triage" privilege="View Triage Menu"/>
+    <role_privilege role="Triage"  privilege="Next Service Point" />
+
 
     <!--* CLINICIAN ROLE *-->
     <!--role-role-->
@@ -923,7 +925,7 @@
     <role_privilege  role="HIV Clinic"  privilege="Manage Patient Immunization Orders"/>
     <role_privilege  role="HIV Clinic"  privilege="Manage Patient Lab Orders"/>
     <role_privilege  role="HIV Clinic"  privilege="Mark Dead Button"/>
-    <role_privilege  role="HIV Clinic"  privilege="Move Patient To Next Service Point Button"/>
+    <role_privilege  role="HIV Clinic"  privilege="Next Service Point"/>
     <role_privilege  role="HIV Clinic"  privilege="Task: patientqueueing.sendPatientToQueue"/>
     <role_privilege  role="HIV Clinic"  privilege="Manage Patient Medication"/>
     <role_privilege  role="HIV Clinic"  privilege="Manage Patient Conditions"/>
@@ -1024,7 +1026,7 @@
     <role_privilege  role="TB Clinic"  privilege="Manage Patient Vital"/>
     <role_privilege  role="TB Clinic"  privilege="Manage Programs"/>
     <role_privilege  role="TB Clinic"  privilege="Mark Dead Button"/>
-    <role_privilege  role="TB Clinic"  privilege="Move Patient To Next Service Point Button"/>
+    <role_privilege  role="TB Clinic"  privilege="Next Service Point"/>
     <role_privilege  role="TB Clinic"  privilege="Request Appointments"/>
     <role_privilege  role="TB Clinic"  privilege="Reset Appointment Status"/>
     <role_privilege  role="TB Clinic"  privilege="Schedule Appointments"/>

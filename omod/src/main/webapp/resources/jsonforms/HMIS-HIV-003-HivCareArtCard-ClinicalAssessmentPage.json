@@ -253,41 +253,6 @@
               "hide": {
                 "hideWhenExpression": "sex !== 'F'"
               }
-            },
-            {
-              "label": "CACX Status",
-              "type": "obs",
-              "id": "cacx_status",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "5029d903-51ba-4c44-8745-e97f320739b6",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "concept": "6f3bcf5f-f113-4950-949b-2af0926b8110",
-                    "label": "No evidence of Malignancy",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "dc9b0596-30ab-102d-86b0-7a5022ba4115",
-                    "label": "Not Applicable",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "66a3eee8-68c7-42bc-9f27-a866293c1e68",
-                    "label": "Suspicious of Malignancy",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
-                    "label": "Not eligible",
-                    "conceptMappings": []
-                  }
-                ]
-              },
-              "hide": {
-                "hideWhenExpression": "sex !== 'F'"
-              }
             }
           ]
         },
