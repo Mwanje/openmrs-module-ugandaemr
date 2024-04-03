@@ -827,6 +827,10 @@
     <role_privilege role="Organizational: Clinician" privilege="Manage Patient Summary"/>
     <role_privilege role="Organizational: Clinician" privilege="Manage Patient Investigation"/>
     <role_privilege role="Organizational: Clinician" privilege="View Clinical Room Menu"/>
+    <role_privilege  role="Organizational: Clinician"  privilege="Manage AI Button"/>
+    <role_privilege  role="Organizational: Clinician"  privilege="Manage Order Basket"/>
+    <role_privilege  role="Organizational: Clinician"  privilege="Manage Clinical Forms"/>
+    <role_privilege  role="Organizational: Clinician"  privilege="Manage Visit Note"/>
 
 
     <!--* COUNSELOR ROLE *-->
@@ -1236,6 +1240,10 @@
     <role_privilege role="Privilege Level: Full" privilege="View Menu App"/>
     <role_privilege role="Privilege Level: Full" privilege="Add Patient Button"/>
     <role_privilege role="Privilege Level: Full" privilege="View Triage Queuelist"/>
+    <role_privilege  role="Privilege Level: Full"  privilege="Manage AI Button"/>
+    <role_privilege  role="Privilege Level: Full"  privilege="Manage Clinical Forms"/>
+    <role_privilege  role="Privilege Level: Full"  privilege="Manage Order Basket"/>
+    <role_privilege  role="Privilege Level: Full"  privilege="Manage Visit Note"/>
 
     <role_privilege role="Privilege Level: High" privilege="Manage Patient Medication"/>
     <role_privilege role="Privilege Level: High" privilege="Manage Patient Conditions"/>
@@ -1269,17 +1277,10 @@
     <role_privilege role="Privilege Level: High" privilege="View Menu App"/>
     <role_privilege role="Privilege Level: High" privilege="Add Patient Button"/>
     <role_privilege role="Privilege Level: High" privilege="View Triage Queuelist"/>
-
-    <role_privilege  role="HIV Clinic"  privilege="Manage AI Button"/>
-    <role_privilege  role="Privilege Level: Full"  privilege="Manage AI Button"/>
-    <role_privilege  role="Privilege Level: High"  privilege="Manage AI Button"/>
-    <role_privilege  role="TB Clinic"  privilege="Manage AI Button"/>
-    <role_privilege  role="HIV Clinic"  privilege="Manage Clinical Forms"/>
-    <role_privilege  role="Privilege Level: Full"  privilege="Manage Clinical Forms"/>
+    <role_privilege  role="Privilege Level: High"  privilege="Manage Visit Note"/>
+    <role_privilege  role="Privilege Level: High"  privilege="Manage Order Basket"/>
     <role_privilege  role="Privilege Level: High"  privilege="Manage Clinical Forms"/>
-    <role_privilege  role="TB Clinic"  privilege="Manage Clinical Forms"/>
-    <role_privilege  role="HIV Clinic"  privilege="Manage Order Basket"/>
-    <role_privilege  role="Privilege Level: Full"  privilege="Manage Order Basket"/>
+    <role_privilege  role="Privilege Level: High"  privilege="Manage AI Button"/>
 
 </dataset>
 
