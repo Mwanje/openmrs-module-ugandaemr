@@ -579,4 +579,19 @@ public class EncounterTypes {
         }
     };
 
+    public static EncounterTypeDescriptor TB_SCREENING_ENCOUNTER = new EncounterTypeDescriptor() {
+        @Override
+        public String name() {
+            return "TB Screening";
+        }
+
+        @Override
+        public String description() {
+            return "The encounter for screening TB patient";
+        }
+
+        public String uuid() {
+            return "08478ad9-ccc1-4cbe-9e55-473447984158";
+        }
+    };
 }
