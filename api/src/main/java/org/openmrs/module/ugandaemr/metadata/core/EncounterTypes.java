@@ -587,7 +587,7 @@ public class EncounterTypes {
 
         @Override
         public String description() {
-            return "The encounter for screening TB patient";
+            return "Encounter type for screening TB patient";
         }
 
         public String uuid() {
