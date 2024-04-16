@@ -175,7 +175,7 @@ public class UgandaEMRConstants {
     public static final String HIV_DISCONTINUATION_FORM_NAME = "HIV Discontinuation";
     public static final String HIV_DISCONTINUATION_FORM_UUID ="1c7baac0-87cf-4d12-a938-81ea0d6f6448";
     public static final String HIV_ENROLLMENT_FORM_NAME ="HMIS ACP HIV 003: HIV CARE/ART CARD - Summary Form";
-    public static final String HIV_ENROLLMENT_FORM_UUID ="2efbb08f-e6df-3791-bbd7-8de42eeb9cd7";
+    public static final String HIV_ENROLLMENT_FORM_UUID ="52653a60-8300-4c13-be4d-4b746da06fee";
 
     public static final String TB_PROGRAM = "TB Program";
     public static final String TB_PROGRAM_UUID="9dc21a72-0971-11e7-8037-507b9dc4c741";
@@ -183,5 +183,5 @@ public class UgandaEMRConstants {
     public static final String TB_DISCONTINUATION_FORM_UUID ="7d0dd4eb-3ff7-412c-97e4-808ac8251a83";
     public static final String TB_ENROLLMENT_FORM_NAME ="DS TB: HMIS TB 003 - TB Client Card Enrollment Page";
     public static final String DR_TB_ENROLLMENT_FORM_UUID ="4929f668-f8d0-11ea-adc1-0242ac120002";
-    public static final String DS_TB_ENROLLMENT_FORM_UUID ="f5e06c9a-0468-337f-b1b4-d5239cb5dbc6";
+    public static final String DS_TB_ENROLLMENT_FORM_UUID ="b00452b6-bb7c-11ea-b3de-0242ac130004";
 }
