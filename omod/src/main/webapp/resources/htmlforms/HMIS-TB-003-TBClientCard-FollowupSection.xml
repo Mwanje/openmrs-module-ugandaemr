@@ -34,7 +34,7 @@
                     }
                 });
 
-                var currentTBProgram = getCurrentTBProgramOrBlockEncounter(patientUUID, visitDate, serverResponse, tbInfectionTypeUUID, messageNotInTbProgram, messageWrongTBInfection);
+                <!--var currentTBProgram = getCurrentTBProgramOrBlockEncounter(patientUUID, visitDate, serverResponse, tbInfectionTypeUUID, messageNotInTbProgram, messageWrongTBInfection);-->
 
                 //Block multiple encounter entries on the same date
                 blockEncounterOnSameDateEncounter(jq("#encounterDate").find("input[type=hidden]"),"block");
@@ -1188,5 +1188,5 @@
 			</div>
 		</div>
 	</div>
-    <!-- <postSubmissionAction class="org.openmrs.module.ugandaemr.htmlformentry.TBEncounterPageSubmissionAction"/> -->
+    <postSubmissionAction class="org.openmrs.module.ugandaemr.htmlformentry.TBEncounterPageSubmissionAction"/>
 </htmlform>

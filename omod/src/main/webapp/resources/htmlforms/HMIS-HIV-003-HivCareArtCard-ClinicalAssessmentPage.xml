@@ -1558,6 +1558,11 @@
         return false;
         }
 
+        if(returnDate=="") {
+        jq().toastmessage('showErrorToast', "The return visit date is required");
+        return false;
+        }
+
         //In case of a transfer out
         if (transferOut == 90003) {
         if (getValue('transfer_out_date.value') == "") {
