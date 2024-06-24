@@ -3,6 +3,8 @@ package org.openmrs.module.ugandaemr.api.deploy.bundle;
 import org.openmrs.module.ugandaemr.metadata.core.*;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
 import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.encounterRole;
+
+import org.openmrs.module.ugandaemr.metadata.core.location.*;
 import org.springframework.stereotype.Component;
 
 /**
@@ -33,6 +35,9 @@ public class CommonMetadataBundle extends AbstractMetadataBundle {
         install(PatientIdentifierTypes.PATIENT_IUC_HEALTH_ID);
         install(PatientIdentifierTypes.PATIENT_ORGANIZATION_ID);
         install(PatientIdentifierTypes.PATIENT_OPD_IDENTIFICATION_NUMBER);
+        install(PatientIdentifierTypes.DISTRICT_REG_TB_NUMBER);
+        install(PatientIdentifierTypes.NHPI);
+        install(PatientIdentifierTypes.PASSPORT);
         log.info("Patient IdentifierTypes installed");
 
         // install person attribute types
@@ -91,6 +96,12 @@ public class CommonMetadataBundle extends AbstractMetadataBundle {
         install(EncounterTypes.LAB_REQUEST_ENCOUNTER);
         install(EncounterTypes.INTER_FACILITY_LINKAGE_ENCOUNTER);
         install(EncounterTypes.MOBILITY_SCREENING);
+        install(EncounterTypes.FAMILY_TRACKING);
+        install(EncounterTypes.DEATH_NOTIFICATION);
+        install(EncounterTypes.REGISTRATION);
+        install(EncounterTypes.MEDICATION_ORDER);
+        install(EncounterTypes.TB_SCREENING_ENCOUNTER);
+
 
         //installing programs metadata
         log.info("Installing Programs");
@@ -106,15 +117,59 @@ public class CommonMetadataBundle extends AbstractMetadataBundle {
 
         //install Locations
         log.info("Installing Locations");
-        install(Locations.TB_CLINIC);
-        install(Locations.OPD_CLINIC);
-        install(Locations.UNKNOWN);
-        install(Locations.PHARMACY);
-        install(Locations.RECEPTION);
-        install(Locations.TRIAGE);
-        install(Locations.COUNSELING_CENTER);
-        install(Locations.Community);
-        install(Locations.COVID19_CLINIC);
+
+        log.info("Installing LocationTags");
+        install(LocationTags.ORGANIZATION);
+        install(LocationTags.DEPARTMENT);
+        install(LocationTags.CLINIC);
+        install(LocationTags.RECEPTION);
+        install(LocationTags.TRIAGE);
+        install(LocationTags.CLINICAL_ROOM);
+        install(LocationTags.LABORATORY);
+        install(LocationTags.MAIN_PHARMACY);
+        install(LocationTags.THEATER);
+        install(LocationTags.RADIOLOGY);
+        install(LocationTags.SUPPORTIVE_SERVICE);
+        install(LocationTags.ADMISSION);
+        install(LocationTags.QUEUE_ROOM);
+
+        log.info("Installing Departments");
+        install(LocationDepartments.IPD);
+        install(LocationDepartments.OPD);
+        install(LocationDepartments.RADIOLOGY);
+
+        log.info("Installing Clinics");
+        install(LocationClinic.TB_CLINIC);
+        install(LocationClinic.ART_CLINIC);
+        install(LocationClinic.MCH_CLINIC);
+        install(LocationClinic.OPD_CLINIC);
+        install(LocationClinic.COVID19_CLINIC);
+
+        log.info("Installing Wards");
+        install(LocationWard.ISOLATION_WARD);
+        install(LocationWard.PEAD_WARD);
+        install(LocationWard.PRIVATE_WAR);
+        install(LocationWard.TB_ARD);
+        install(LocationWard.GENERAL_WARD);
+        install(LocationWard.GENERAL_MEN_WARD);
+        install(LocationWard.GENERAL_WOMEN_WARD);
+        install(LocationWard.GENERAL_WARD);
+        install(LocationWard.CAUSALITY_WARD);
+
+
+        log.info("Installing Service Areas");
+        install(LocationServiceArea.RECEPTION);
+        install(LocationServiceArea.TRIAGE);
+        install(LocationServiceArea.COUNSELING_CENTER);
+
+        log.info("Installing Supportive Service areas");
+        install(LocationSupportService.PHARMACY);
+        install(LocationSupportService.LABORATORY);
+        install(LocationSupportService.MAIN_THEATER);
+
+        install(LocationOther.UNKNOWN);
+        install(LocationOther.Community);
+
 
         // Install Encounter Role
         install(encounterRole(EncounterRoles.ASSISTANT_CIRCUMCISER_NAME,EncounterRoles.ASSISTANT_CIRCUMCISER_DESCRIPTION,EncounterRoles.ASSISTANT_CIRCUMCISER_UUID));

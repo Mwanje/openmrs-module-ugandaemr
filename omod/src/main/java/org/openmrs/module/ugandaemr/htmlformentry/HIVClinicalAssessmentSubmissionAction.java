@@ -42,7 +42,6 @@ public class HIVClinicalAssessmentSubmissionAction implements CustomFormSubmissi
 
         if (ugandaEMRService.getPreviousQueue(session.getPatient(), session.getEncounter().getLocation(), PatientQueue.Status.PENDING) != null) {
             ugandaEMRService.processLabTestOrdersFromEncounterObs(session, true);
-
             ugandaEMRService.processDrugOrdersFromEncounterObs(session, true);
 
             completeClinicianQueue(session.getEncounter());
@@ -306,7 +305,7 @@ public class HIVClinicalAssessmentSubmissionAction implements CustomFormSubmissi
                 viralLoadTest = obs;
             } else if (obs.getConcept().getConceptId() == 165845) {
                 labNo = obs;
-            } else if (obs.getConcept().getConceptId() == 162476) {
+            } else if (obs.getConcept().getConceptId() == 159959) {
                 specimenSource = obs;
             }
         }

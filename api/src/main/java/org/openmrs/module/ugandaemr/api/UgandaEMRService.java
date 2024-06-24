@@ -16,13 +16,11 @@ package org.openmrs.module.ugandaemr.api;
 import org.openmrs.*;
 import org.openmrs.api.APIException;
 import org.openmrs.api.OpenmrsService;
-import org.openmrs.api.context.Context;
 import org.openmrs.module.htmlformentry.FormEntrySession;
 import org.openmrs.module.ugandaemr.PublicHoliday;
 import org.openmrs.module.ugandaemr.api.lab.OrderObs;
+import org.openmrs.module.ugandaemr.api.queuemapper.PatientQueueVisitMapper;
 import org.springframework.transaction.annotation.Transactional;
-import org.openmrs.api.OpenmrsService;
-import org.openmrs.module.htmlformentry.FormEntrySession;
 import org.openmrs.module.patientqueueing.mapper.PatientQueueMapper;
 import org.openmrs.module.patientqueueing.model.PatientQueue;
 import org.openmrs.module.ugandaemr.api.lab.mapper.OrderMapper;
@@ -388,5 +386,65 @@ public interface UgandaEMRService extends OpenmrsService {
      */
     @Transactional(readOnly = true)
     public OrderObs getOrderObsByObs(Obs obs);
+
+
+    /**
+     * Gets all OrderObs
+     * @return List<OrderObs
+     */
+    @Transactional(readOnly = true)
+    public List<OrderObs> getAllOrderObs();
+
+    /**
+     * Get OrderObs List By search Obs
+     * @param orderObsId The obs to search in the list
+     * @return OrderObs A list of orderObs that meet the parameters
+     */
+    @Transactional(readOnly = true)
+    public OrderObs getOrderObsById(Integer orderObsId);
+
+    /**
+     * Get OrderObs List By search Obs
+     * @param uuid The obs to search in the list
+     * @return OrderObs A list of orderObs that meet the parameters
+     */
+    @Transactional(readOnly = true)
+    public OrderObs getOrderObsByUuid(String uuid);
+
+
+    /**
+     * Get OrderObs List By search Obs
+     * @param order The obs to search in the list
+     * @return OrderObs A list of orderObs that meet the parameters
+     */
+    @Transactional(readOnly = true)
+    public OrderObs getOrderObsByOrder(Order order);
+
+    /**
+     * send patient back to previous location from Laboratory
+     * @param encounter
+     * @param locationTo
+     * @param locationFrom
+     * @param previousQueueStatus
+     * @return a new queue where the patient has been sent
+     */
+    public PatientQueue sendPatientBackToClinician(Encounter encounter, Location locationTo, Location locationFrom, String previousQueueStatus);
+
+    /**
+     * Generates LabNumber for the day for the patient
+     * @param orderUuid the uuid of the order to be generated a lab number
+     * @return generated lab number as a string
+     */
+    public String generateLabNumber(String orderUuid);
+
+
+    /**
+     * Supports the accession of a lab order
+     * @param orderUuid the id of the order to be accessioned
+     * @param accessionNumber the lab number or the accession number for the test
+     * @param specimenSourceUuid the specimen source uuid for the order
+     * @param instructions more instructions for the order
+     */
+    public TestOrder accessionLabTest(String orderUuid, String accessionNumber, String specimenSourceUuid, String instructions);
 
 }

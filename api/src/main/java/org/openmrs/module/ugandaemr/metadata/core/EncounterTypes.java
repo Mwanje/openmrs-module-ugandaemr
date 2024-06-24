@@ -514,4 +514,84 @@ public class EncounterTypes {
             return "b57e1835-4ee2-47fa-9569-c700c39c169a";
         }
     };
+
+    public static EncounterTypeDescriptor FAMILY_TRACKING = new EncounterTypeDescriptor() {
+        @Override
+        public String name() {
+            return "ART Card - Family Tracking";
+        }
+
+        @Override
+        public String description() {
+            return "This encounter supports tracking family members of a patient";
+        }
+
+        public String uuid() {
+            return "591cba6a-5c5f-11ee-8c99-0242ac120002";
+        }
+    };
+    public static EncounterTypeDescriptor DEATH_NOTIFICATION = new EncounterTypeDescriptor() {
+        @Override
+        public String name() {
+            return "DEATH AND CERTIFICATION";
+        }
+
+        @Override
+        public String description() {
+            return "Notification of Death and Certification of Cause of Death";
+        }
+
+        public String uuid() {
+            return "e75c856a-9e91-4ffb-bf43-1b0450b4ff8c";
+        }
+    };
+
+    public static EncounterTypeDescriptor REGISTRATION = new EncounterTypeDescriptor() {
+        @Override
+        public String name() {
+            return "Registration";
+        }
+
+        @Override
+        public String description() {
+            return "Encounter type for extra fields on registration";
+        }
+
+        public String uuid() {
+            return "1458b726-4a62-4444-be97-bb3e08c73745";
+        }
+    };
+
+
+    public static EncounterTypeDescriptor MEDICATION_ORDER = new EncounterTypeDescriptor() {
+        @Override
+        public String name() {
+            return "Medication Order";
+        }
+
+        @Override
+        public String description() {
+            return "The encounter for ordering drugs for patient";
+        }
+
+        public String uuid() {
+            return "dbe038cd-cad5-439d-a761-a6d6d680219c";
+        }
+    };
+
+    public static EncounterTypeDescriptor TB_SCREENING_ENCOUNTER = new EncounterTypeDescriptor() {
+        @Override
+        public String name() {
+            return "TB Screening";
+        }
+
+        @Override
+        public String description() {
+            return "Encounter type for screening TB patient";
+        }
+
+        public String uuid() {
+            return "08478ad9-ccc1-4cbe-9e55-473447984158";
+        }
+    };
 }
