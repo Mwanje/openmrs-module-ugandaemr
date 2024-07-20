@@ -1062,7 +1062,7 @@
             {
               "label": "Approach",
               "type": "obs",
-              "id": "dsdm_approach",
+              "id": "dsdmApproach",
               "questionOptions": {
                 "concept": "73312fee-c321-11e8-a355-529269fb1459",
                 "rendering": "select",
@@ -1115,7 +1115,7 @@
                 "workflowUuid": "306c02b7-198e-4066-8b2c-39e40a1bcc53"
               },
               "hide": {
-                "hideWhenExpression": "dsdm_approach !== '0ca3db87-567f-4159-acc0-0ec14d0b8036' && dsdm_approach !== '7e2acb9c-25e9-4b8f-b012-8436051d5c32'"
+                "hideWhenExpression": "dsdmApproach !== '0ca3db87-567f-4159-acc0-0ec14d0b8036' && dsdmApproach !== '7e2acb9c-25e9-4b8f-b012-8436051d5c32'"
               }
             },
             {
