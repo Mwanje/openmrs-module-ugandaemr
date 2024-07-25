@@ -11,10 +11,10 @@
   "referencedForms": [],
   "pages": [
     {
-      "label": "HIV Clinical Form",
+      "label": "HIV CARE/ART CARD - CLINICIAL ASSESSMENT",
       "sections": [
         {
-          "label": "Pregnancy",
+          "label": "Pregnancy/eMTCT Status",
           "isExpanded": "true",
           "questions": [
             {
@@ -134,6 +134,105 @@
               "hide": {
                 "hideWhenExpression": "isEmpty(pregnant) || pregnant != 'dcda5179-30ab-102d-86b0-7a5022ba4115'"
               }
+            }
+          ]
+        },
+        {
+          "label": "Digital Health Messaging",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Digital Health Messaging Registration",
+              "type": "obs",
+              "required": true,
+              "id": "digitalHealthRegistration",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "dce13f66-30ab-102d-86b0-7a5022ba4115",
+                "answers": [
+                  {
+                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
+                    "label": "YES"
+                  },
+                  {
+                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NO"
+                  }
+                ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Mental Health Assessment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Anxiety and/or Depression (MH-A/D)",
+              "type": "obs",
+              "required": false,
+              "id": "MHAD",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "2061a1ad-00f8-45dc-9b54-ea1c97593608",
+                    "label": "Ear Infection"
+                  },
+                  {
+                    "concept": "5018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Diarrhea, chronic"
+                  },
+                  {
+                    "concept": "06188d96-17ec-490a-b5af-72ceefe4bc39",
+                    "label": "ACUTE DIARRHEA"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Alcohol and Substance Use Disorder (MH-A/S)",
+              "type": "obs",
+              "required": false,
+              "id": "MHAS",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "2061a1ad-00f8-45dc-9b54-ea1c97593608",
+                    "label": "Ear Infection"
+                  },
+                  {
+                    "concept": "5018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Diarrhea, chronic"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  },
+                  {
+                    "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
+                    "label": "No clinical Symptoms and Signs"
+                  }
+                ]
+              },
+              "validators": []
             }
           ]
         },
@@ -260,34 +359,109 @@
               "hide": {
                 "hideWhenExpression": "sex !== 'F'"
               }
-            },
+            }
+          ]
+        },
+        {
+          "label": "CaCx Management",
+          "isExpanded": "true",
+          "questions": [
             {
-              "label": "CaCx Status",
+              "label": "CaCx Screening Visit Type",
               "type": "obs",
-              "id": "cacxScreening",
+              "required": false,
+              "id": "CaCxScreeningVisitType",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "5029d903-51ba-4c44-8745-e97f320739b6",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
                 "answers": [
                   {
-                    "concept": "6f3bcf5f-f113-4950-949b-2af0926b8110",
-                    "label": "No evidence of Malignancy"
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
                   },
                   {
-                    "concept": "dc9b0596-30ab-102d-86b0-7a5022ba4115",
-                    "label": "NOT APPLICABLE"
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "sex !== 'F'"
+              }
+            },
+            {
+              "label": "CaCx Screening Method",
+              "type": "obs",
+              "required": false,
+              "id": "CaCxScreeningMethod",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dcde7e49-30ab-102d-86b0-7a5022ba4115",
+                    "label": "THRUSH"
                   },
                   {
-                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
-                    "label": "NOT ELIGIBLE"
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "sex !== 'F'"
+              }
+            },
+            {
+              "label": "CaCx Screening Status",
+              "type": "obs",
+              "required": false,
+              "id": "CaCxScreeningStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
                   },
                   {
-                    "concept": "e644e291-7848-456c-a7a3-197b8659cb54",
-                    "label": "Not screened for cancer"
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
                   },
                   {
-                    "concept": "66a3eee8-68c7-42bc-9f27-a866293c1e68",
-                    "label": "Suspicious of Malignancy"
+                    "concept": "06188d96-17ec-490a-b5af-72ceefe4bc39",
+                    "label": "ACUTE DIARRHEA"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "sex !== 'F'"
+              }
+            },
+            {
+              "label": "CaCx Treatment",
+              "type": "obs",
+              "required": false,
+              "id": "CaCxRx",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  },
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "06188d96-17ec-490a-b5af-72ceefe4bc39",
+                    "label": "ACUTE DIARRHEA"
                   }
                 ]
               },
@@ -397,6 +571,45 @@
               }
             },
             {
+              "label": "Regimen",
+              "type": "obs",
+              "id": "TBRegimen",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "16fd7307-0b26-4c8b-afa3-8362baff4042",
+                "answers": [
+                  {
+                    "concept": "d250bcae-5889-4bb4-9903-e47f8594f746",
+                    "label": "2RHZE/4H"
+                  },
+                  {
+                    "concept": "eb1f1131-d0e2-414a-94a5-d5c7ad126c9f",
+                    "label": "2RHZE/4RH"
+                  },
+                  {
+                    "concept": "73cd1cda-e82a-43d8-938c-fbaf97b7642b",
+                    "label": "2RHZE/6EH"
+                  },
+                  {
+                    "concept": "b539f758-b24b-417f-9400-4edeca0f6e06",
+                    "label": "2RHZ/4RH"
+                  },
+                  {
+                    "concept": "7f47837f-1ea5-4a99-b4dd-5ca268d24ba8",
+                    "label": "2RHZE/10RH"
+                  },
+                  {
+                    "concept": "c25e5586-4660-4020-83cd-ee7f7f7fec20",
+                    "label": "2SRHZE/RHZE/5RHE"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(tbStatus) || tbStatus !== 'dcdaa6b4-30ab-102d-86b0-7a5022ba4115'"
+              }
+            },
+            {
               "label": "TB Stop Date",
               "type": "obs",
               "id": "tbStopDate",
@@ -492,7 +705,7 @@
               }
             },
             {
-              "label": "Signs and Symptoms",
+              "label": "Presenting Signs and Symptoms",
               "type": "obs",
               "id": "signsAndSymptoms",
               "questionOptions": {
@@ -955,6 +1168,218 @@
               "hide": {
                 "hideWhenExpression": "isEmpty(artAdherence) || artAdherence == 'dcdf1708-30ab-102d-86b0-7a5022ba4115'"
               }
+            },
+            {
+              "label": "Offending Agent/Intervation",
+              "type": "obs",
+              "id": "OffendingAgent",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Grading",
+              "type": "obs",
+              "id": "grading",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Severity",
+              "type": "obs",
+              "id": "severity",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Action taken",
+              "type": "obs",
+              "id": "actionTaken",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Outcome",
+              "type": "obs",
+              "id": "outcome",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date of occurance",
+              "type": "obs",
+              "required": false,
+              "id": "date",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1410AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "1410 (Vaccination date)"
+                  }
+                ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Vaccination Status",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "HPV Vaccination Status",
+              "type": "obs",
+              "id": "HPVvacStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  },
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "06188d96-17ec-490a-b5af-72ceefe4bc39",
+                    "label": "ACUTE DIARRHEA"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "HPV Vaccination Date",
+              "type": "obs",
+              "required": false,
+              "id": "date",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1410AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "1410 (Vaccination date)"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "COVID-19 Vaccination Status",
+              "type": "obs",
+              "required": false,
+              "id": "COVID19VaccinationStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc54ef9a-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PNEUMONIA, TUBERCULOUS"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  },
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": " COVID-19 Vaccination Date",
+              "type": "obs",
+              "required": false,
+              "id": "COVID19vaccDate",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1410AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "1410 (Vaccination date)"
+                  }
+                ]
+              },
+              "validators": []
             }
           ]
         },
@@ -1034,107 +1459,65 @@
           ]
         },
         {
-          "label": "DSD Model",
+          "label": "HIV Drug Resistance",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Patient Categorization",
-              "type": "obs",
-              "required": "true",
-              "id": "patientCategorization",
+              "label": "HIV Drug Resistance",
+              "type": "obsGroup",
               "questionOptions": {
-                "rendering": "select",
-                "concept": "cc183c11-0f94-4992-807c-84f33095ce37",
-                "answers": [
-                  {
-                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
-                    "label": "Stable",
-                    "conceptMappings": []
+                "concept": "163153AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "repeating"
+              },
+              "questions": [
+                {
+                  "label": "Drug",
+                  "type": "obs",
+                  "id": "drug",
+                  "questionOptions": {
+                    "rendering": "text",
+                    "concept": "1134AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
-                  {
-                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
-                    "label": "Unstable",
-                    "conceptMappings": []
-                  }
-                ]
-              }
+                  "validators": []
+                },
+                {
+                  "label": "DR Status",
+                  "type": "obs",
+                  "id": "drStatus",
+                  "questionOptions": {
+                    "rendering": "select",
+                    "concept": "dce03b2f-30ab-102d-86b0-7a5022ba4115",
+                    "answers": [
+                      {
+                        "concept": "dcdf1b36-30ab-102d-86b0-7a5022ba4115",
+                        "label": "FAIR ADHERENCE"
+                      },
+                      {
+                        "concept": "dcdf1708-30ab-102d-86b0-7a5022ba4115",
+                        "label": "GOOD ADHERENCE"
+                      },
+                      {
+                        "concept": "dcdf1f4a-30ab-102d-86b0-7a5022ba4115",
+                        "label": "POOR ADHERENCE"
+                      }
+                    ]
+                  },
+                  "validators": []
+                }
+              ],
+              "id": "IKHospqEM"
             },
             {
-              "label": "Approach",
+              "label": "Date of Sample Collection",
               "type": "obs",
-              "id": "dsdmApproach",
+              "required": false,
+              "id": "dateOfSampleCollection",
+              "datePickerFormat": "calendar",
               "questionOptions": {
-                "concept": "73312fee-c321-11e8-a355-529269fb1459",
-                "rendering": "select",
-                "answers": [
-                  {
-                    "concept": "733144c0-c321-11e8-a355-529269fb1459",
-                    "label": "FBIM - Facility Based Individual Management"
-                  },
-                  {
-                    "concept": "73313c96-c321-11e8-a355-529269fb1459",
-                    "label": "FBG - Facility Based Group"
-                  },
-                  {
-                    "concept": "73313f20-c321-11e8-a355-529269fb1459",
-                    "label": "FTDR - Fast-Track Drug Refills"
-                  },
-                  {
-                    "concept": "733139e4-c321-11e8-a355-529269fb1459",
-                    "label": "CCLAD - Community Client-Led ART Delivery"
-                  },
-                  {
-                    "concept": "73313728-c321-11e8-a355-529269fb1459",
-                    "label": "CDDP - Community Drug Distribution Point"
-                  }
-                ]
-              }
-            },
-            {
-              "label": "Drug Pickup Model",
-              "type": "programState",
-              "id": "drugPickupModel",
-              "questionOptions": {
-                "concept": "73312fee-c321-11e8-a355-529269fb1459",
-                "answers": [
-                  {
-                    "value": "a6a0ab45-b7dc-43b2-b28c-45a91f968ebf",
-                    "label": "CRPDDP - Community Retail Pharmacy Drug Distribution Point"
-                  },
-                  {
-                    "value": "1b9b83d4-eaca-40da-a7c6-53b8ea3436ad",
-                    "label": "General CDDP"
-                  },
-                  {
-                    "value": "d77cc565-5e53-4633-8fc7-956cfc1831d9",
-                    "label": "CLDDP - Community Led Drug Distribution Point"
-                  }
-                ],
-                "rendering": "select",
-                "programUuid": "18c6d4aa-0a36-11e7-8dbb-507b9dc4c741",
-                "workflowUuid": "306c02b7-198e-4066-8b2c-39e40a1bcc53"
-              }
-            },
-            {
-              "label": "Visit Type",
-              "type": "obs",
-              "id": "visitType",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "160288AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "answers": [
-                  {
-                    "concept": "77cd3409-b088-42dd-af70-47673b222042",
-                    "label": "R - Drug Refill ONLY",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "32dbfbc2-0f6c-4beb-88d0-55e0ee1a7b8c",
-                    "label": "C - Clinical Assessment/Drug refill and/or Tests/Investigations",
-                    "conceptMappings": []
-                  }
-                ]
-              }
+                "rendering": "date",
+                "concept": "c4389c60-32f5-4390-b7c6-9095ff880df5"
+              },
+              "validators": []
             }
           ]
         },
