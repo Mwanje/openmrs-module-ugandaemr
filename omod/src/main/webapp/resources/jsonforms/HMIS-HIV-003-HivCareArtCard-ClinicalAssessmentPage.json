@@ -1,17 +1,17 @@
 {
-  "name": "HMIS 003 HIV Care ART Card - Clinical Assessment - New Tools",
+  "name": "HMIS 003 HIV Care ART Card - Clinical Assessment",
   "version": "4.0.0",
   "description": "A visit for a client for clinical assessment",
   "encounterType": "8d5b2be0-c2cc-11de-8d13-0010c6dffd0f",
   "encounter": "ART Card - Encounter",
-  "uuid": "4d8fa375-c39e-4f95-9826-44a9668895a4",
+  "uuid": "12de5bc5-352e-4faf-9961-a2125085a75c",
   "processor": "EncounterFormProcessor",
   "published": true,
   "retired": false,
   "referencedForms": [],
   "pages": [
     {
-      "label": "HIV CARE/ART CARD - CLINICIAL ASSESSMENT NEW TOOLS",
+      "label": "HIV CARE/ART CARD - CLINICIAL ASSESSMENT",
       "sections": [
         {
           "label": "NCDs (Non-communicable Diseases) Status",
