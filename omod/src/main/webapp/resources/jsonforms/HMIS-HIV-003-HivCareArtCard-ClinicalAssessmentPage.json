@@ -1,20 +1,404 @@
 {
-  "name": "HMIS 003 HIV Care ART Card - Clinical Assessment",
+  "name": "HMIS 003 HIV Care ART Card - Clinical Assessment - New Tools",
   "version": "4.0.0",
   "description": "A visit for a client for clinical assessment",
   "encounterType": "8d5b2be0-c2cc-11de-8d13-0010c6dffd0f",
   "encounter": "ART Card - Encounter",
-  "uuid": "12de5bc5-352e-4faf-9961-a2125085a75c",
+  "uuid": "4d8fa375-c39e-4f95-9826-44a9668895a4",
   "processor": "EncounterFormProcessor",
   "published": true,
   "retired": false,
   "referencedForms": [],
   "pages": [
     {
-      "label": "HIV Clinical Form",
+      "label": "HIV CARE/ART CARD - CLINICIAL ASSESSMENT NEW TOOLS",
       "sections": [
         {
-          "label": "Pregnancy",
+          "label": "NCDs (Non-communicable Diseases) Status",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "HTN Status",
+              "type": "obs",
+              "id": "htnStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "c8f00db3-abb6-46a2-89a4-25acf95be863",
+                "answers": [
+                  {
+                    "concept": "6fd77b25-dc32-4c42-b278-d10034d0238a",
+                    "label": "Hypertensive patient referred for further management"
+                  },
+                  {
+                    "concept": "4c71f560-3d28-4ed5-9a81-e79e9706960d",
+                    "label": "Known Hypertensive and Controlled and on lifestyle modification"
+                  },
+                  {
+                    "concept": "f569d1a9-de58-4c80-8f97-807cc6129a6b",
+                    "label": "Known Hypertensive and Controlled and on lifestyle modification and Medication"
+                  },
+                  {
+                    "concept": "00a80828-26be-463c-8090-9c6d1c11a885",
+                    "label": "Known Hypertensive but not on Treatment"
+                  },
+                  {
+                    "concept": "5b839510-a3d0-41fa-bbeb-e446d98140d8",
+                    "label": "Known Hypertensive, not controlled and on lifestyle modification"
+                  },
+                  {
+                    "concept": "0e43e79e-92ba-42dd-b436-564e1bc1d856",
+                    "label": "Known Hypertensive, not controlled and on lifestyle modification and Medication"
+                  },
+                  {
+                    "concept": "f23000f4-f6bf-4438-bcb8-2b741612238c",
+                    "label": "Newly Diagnosed and on lifestyle modification"
+                  },
+                  {
+                    "concept": "205b0a6e-7367-46d0-9d2c-ee5a64fbc756",
+                    "label": "Newly Diagnosed and on lifestyle modification and Medication"
+                  },
+                  {
+                    "concept": "5f0b55b8-d4ec-46e7-a052-7f1176a91077",
+                    "label": "Normal Blood pressure"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Diabetes Mellitus Status",
+              "type": "obs",
+              "id": "dmstatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "126aecd6-c4de-4b1f-bfa2-8f68380f9329",
+                "answers": [
+                  {
+                    "concept": "fd36c202-06ad-4e9b-95e7-d3e02d34c936",
+                    "label": "Normal blood sugar"
+                  },
+                  {
+                    "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
+                    "label": "No clinical Symptoms and Signs"
+                  },
+                  {
+                    "concept": "8473a4cb-5431-4775-83b2-6f0c8086ecbe",
+                    "label": "Known Diabetic but not on Treatment"
+                  },
+                  {
+                    "concept": "c1ede22a-fe95-402e-b2f2-18b1709f0414",
+                    "label": "Known Diabetic and not controlled on medication and lifestyle modification"
+                  },
+                  {
+                    "concept": "844dec77-9c0c-4bb1-ab23-ccc083c9c97a",
+                    "label": "Known Diabetic and not controlled on lifestyle modification"
+                  },
+                  {
+                    "concept": "8047b4be-11cb-47a6-a98b-2e7777ea7477",
+                    "label": "Diabetic patient referred for further management"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "MH-A/D Status",
+              "type": "obs",
+              "id": "mhStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6649a671-32ea-45b7-adc5-bda1cff7febd",
+                "answers": [
+                  {
+                    "concept": "2e3760ca-aea9-4958-a2c6-6ad32dc79445",
+                    "label": "Has signs and symptoms with high suicide Risk on Medication only"
+                  },
+                  {
+                    "concept": "8faa9bb9-9065-44bc-b426-ef0336ff4c94",
+                    "label": "Has signs and symptoms with high suicide Risk on Psychotherapy and Medication"
+                  },
+                  {
+                    "concept": "9a3ecb59-6cfd-4c9a-b63b-1f4bda0a3a47",
+                    "label": "Has signs and symptoms with Low/moderate suicide Risk"
+                  },
+                  {
+                    "concept": "678ae5a3-8b79-4d2a-ac95-32128cf311f1",
+                    "label": "Known mental illness NEITHER on Psychotherapy NOR Medication"
+                  },
+                  {
+                    "concept": "d3182660-b86b-4df1-950b-d9903587d88b",
+                    "label": "Known mental illness on Medication only"
+                  },
+                  {
+                    "concept": "62d257a7-9dea-4240-a7de-ec1f800da668",
+                    "label": "Known mental illness on Psychotherapy and Medication"
+                  },
+                  {
+                    "concept": "0888ffe4-47d1-4f72-8d98-df2ff30a6f79",
+                    "label": "Known mental illness on Psychotherapy only"
+                  },
+                  {
+                    "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
+                    "label": "No clinical Symptoms and Signs"
+                  },
+                  {
+                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NOT ELIGIBLE"
+                  },
+                  {
+                    "concept": "21641587-3417-4f0a-b77a-bb7c07126b5b",
+                    "label": "Recovered"
+                  },
+                  {
+                    "concept": "7b246acf-d518-4b51-828c-d69593f3d66b",
+                    "label": "Referred Out"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "MH-A/S Status",
+              "type": "obs",
+              "id": "mhastatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "10eb8116-0602-41e4-8e62-6325440dffb2",
+                "answers": [
+                  {
+                    "concept": "3a67585e-e401-4320-a31e-0d7c97818e61",
+                    "label": "Has Signs and Symptoms on Brief Intervention"
+                  },
+                  {
+                    "concept": "9b0fdd9e-0607-441b-80cd-de7ef710376c",
+                    "label": "Has Signs and Symptoms on Brief Intervention/clinical management"
+                  },
+                  {
+                    "concept": "fb681708-d19a-4a92-91c4-df29a50cbb35",
+                    "label": "Known Alcohol or Substance use disorder NEITHER on Brief Intervention NOR clinical management"
+                  },
+                  {
+                    "concept": "f8c953db-113d-4b11-b4e6-83ad7516869d",
+                    "label": "Known Alcohol or Substance use disorder on Brief Intervention and/or clinical management"
+                  },
+                  {
+                    "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
+                    "label": "No clinical Symptoms and Signs"
+                  },
+                  {
+                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NOT ELIGIBLE"
+                  },
+                  {
+                    "concept": "21641587-3417-4f0a-b77a-bb7c07126b5b",
+                    "label": "Recovered"
+                  },
+                  {
+                    "concept": "7b246acf-d518-4b51-828c-d69593f3d66b",
+                    "label": "Referred Out"
+                  }
+                ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Nutrition Assessment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Nutritional Status",
+              "type": "obs",
+              "id": "nutritionalStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "165050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "dc9816bd-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NORMAL"
+                  },
+                  {
+                    "concept": "267a937a-f03c-487b-963c-1858f1382a5a",
+                    "label": "MODERATE ACUTE MALNUTRITION"
+                  },
+                  {
+                    "concept": "001c08bb-ac87-4c0a-9272-da17324f5b3b",
+                    "label": "OVER WEIGHT"
+                  },
+                  {
+                    "concept": "a4543170-8155-41c7-b618-da6962b81f45",
+                    "label": "SEVERE ACUTE MALNUTRITION"
+                  },
+                  {
+                    "concept": "e4d7bc04-14e6-4ed2-a0d8-1ad85314b071",
+                    "label": "SEVERE ACUTE MALNUTRITION WITH OEDEMA"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Nutritional support and infant feeding ",
+              "type": "obs",
+              "id": "nutritionalSupport",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "8531d1a7-9793-4c62-adab-f6716cf9fabb",
+                "answers": [
+                  {
+                    "concept": "76d127ee-7e5b-467a-b1d4-eab8ebcf2c37",
+                    "label": "FOOD SUPPORT"
+                  },
+                  {
+                    "concept": "cfbed699-fbf4-4346-a4a3-1b5c57d2902e",
+                    "label": "INFANT FEEDING COUNSELING"
+                  },
+                  {
+                    "concept": "7cb048f9-550b-4be2-9eb9-cc8e19c87041",
+                    "label": "NUTRITION COUNSELLING ONLY >2YRS"
+                  },
+                  {
+                    "concept": "598dba00-b878-474c-9a10-9998f1748228",
+                    "label": "THERAPEUTIC FEEDING"
+                  },
+                  {
+                    "concept": "dcd68a88-30ab-102d-86b0-7a5022ba4115",
+                    "label": "OTHER SPECIFY"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex !== 'F'"
+              }
+            },
+            {
+              "label": "Oedema",
+              "type": "obs",
+              "id": "oedema",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "460AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "AMPATH",
+                    "value": "6002"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "IMO ProblemIT",
+                    "value": "42607"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "AMPATH",
+                    "value": "5143"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "PIH Malawi",
+                    "value": "460"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "PIH",
+                    "value": "460"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "460"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "AMPATH",
+                    "value": "460"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "ICD-11-WHO",
+                    "value": "MG29 (Oedema)"
+                  },
+                  {
+                    "relationship": "NARROWER-THAN",
+                    "type": "ICD-10-WHO",
+                    "value": "R60.9"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "SNOMED CT",
+                    "value": "267038008"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
+                    "label": "YES"
+                  },
+                  {
+                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NO"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "INR. No.",
+              "type": "obs",
+              "id": "inrNo",
+              "questionOptions": {
+                "rendering": "number",
+                "min": "0",
+                "max": "100",
+                "concept": "b644c29c-9bb0-447e-9f73-2ae89496a709",
+                "disallowDecimals": true
+              },
+              "validators": []
+            },
+            {
+              "label": "RBS/FBS",
+              "type": "obs",
+              "id": "rbs-fbs",
+              "questionOptions": {
+                "rendering": "number",
+                "min": "0",
+                "max": "100",
+                "concept": "9b0ca481-9546-4846-a963-a5d57b2aa3f1"
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Digital Health Messaging",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Digital Health Messaging Registration",
+              "type": "obs",
+              "id": "digitalHealthRegistration",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "dce13f66-30ab-102d-86b0-7a5022ba4115",
+                "answers": [
+                  {
+                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
+                    "label": "YES"
+                  },
+                  {
+                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NO"
+                  }
+                ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Pregnancy/eMTCT Status",
           "isExpanded": "true",
           "questions": [
             {
@@ -123,7 +507,7 @@
               "label": "ANC No.",
               "type": "obs",
               "id": "ancNo",
-              "required": "false",
+              "required": "true",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "c7231d96-34d8-4bf7-a509-c810f75e3329",
@@ -227,7 +611,7 @@
                     "label": "Vascetomy",
                     "conceptMappings": [],
                     "hide": {
-                      "hideWhenExpression": "sex !== 'M'"
+                      "hideWhenExpression": "sex !== 'F'"
                     }
                   }
                 ]
@@ -260,235 +644,164 @@
               "hide": {
                 "hideWhenExpression": "sex !== 'F'"
               }
-            },
+            }
+          ]
+        },
+        {
+          "label": "CaCx Management",
+          "isExpanded": "true",
+          "questions": [
             {
-              "label": "CaCx Status",
+              "label": "CaCx Screening Visit Type",
               "type": "obs",
-              "id": "cacxScreening",
+              "id": "CaCxScreeningVisitType",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "5029d903-51ba-4c44-8745-e97f320739b6",
+                "concept": "68096054-7cc0-4884-b5c8-c7ec5920fbc2",
                 "answers": [
                   {
-                    "concept": "6f3bcf5f-f113-4950-949b-2af0926b8110",
-                    "label": "No evidence of Malignancy"
+                    "concept": "0ed59469-7fee-4a57-b2f9-626ac81cbd3b",
+                    "label": "1st time screened"
+                  },
+                  {
+                    "concept": "56ba6d89-32a0-4b17-9de1-ee68ff1d3257",
+                    "label": "Post treatment follow-up"
+                  },
+                  {
+                    "concept": "48d9dcd5-714b-40c5-b386-f3aeb9f276e9",
+                    "label": "Re-screened after previous negative"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex !== 'F'"
+              }
+            },
+            {
+              "label": "CaCx Screening Method",
+              "type": "obs",
+              "id": "CaCxScreeningMethod",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "bd0c20f2-39a5-4d82-ad69-742e7b67e447",
+                "answers": [
+                  {
+                    "concept": "dc8e17cc-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PAPANICOLAOU SMEAR"
+                  },
+                  {
+                    "concept": "159859AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Polymerase chain reaction, human papilloma virus, qualitative"
+                  },
+                  {
+                    "concept": "6155ab75-5849-4130-ba07-0bb9da59f595",
+                    "label": "VIA Procedure Screening Results"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex !== 'F'"
+              }
+            },
+            {
+              "label": "CaCx Screening Status",
+              "type": "obs",
+              "id": "CaCxScreeningStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "d3ac6593-b782-4ba9-9ff9-f320e59c6417",
+                "answers": [
+                  {
+                    "concept": "03a2a1b7-f1c0-4655-a26b-9053e8c57fa4",
+                    "label": "Cancer suspect"
+                  },
+                  {
+                    "concept": "5b3f1946-a7e2-11ed-afa1-0242ac120002",
+                    "label": "INVASIVE CERVICAL CANCER"
+                  },
+                  {
+                    "concept": "dc85aa72-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NEGATIVE"
                   },
                   {
                     "concept": "dc9b0596-30ab-102d-86b0-7a5022ba4115",
                     "label": "NOT APPLICABLE"
                   },
                   {
+                    "concept": "dc9825cf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NOT DONE"
+                  },
+                  {
                     "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
                     "label": "NOT ELIGIBLE"
                   },
                   {
-                    "concept": "e644e291-7848-456c-a7a3-197b8659cb54",
-                    "label": "Not screened for cancer"
-                  },
-                  {
-                    "concept": "66a3eee8-68c7-42bc-9f27-a866293c1e68",
-                    "label": "Suspicious of Malignancy"
+                    "concept": "dc866728-30ab-102d-86b0-7a5022ba4115",
+                    "label": "POSITIVE"
                   }
                 ]
               },
-              "validators": [],
               "hide": {
                 "hideWhenExpression": "sex !== 'F'"
               }
-            }
-          ]
-        },
-        {
-          "label": "NCDs (Non-communicable Diseases) Status",
-          "isExpanded": "true",
-          "questions": [
-            {
-              "label": "HTN Status",
-              "type": "obs",
-              "required": false,
-              "id": "htnStatus",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "c8f00db3-abb6-46a2-89a4-25acf95be863",
-                "answers": [
-                  {
-                    "concept": "6fd77b25-dc32-4c42-b278-d10034d0238a",
-                    "label": "Hypertensive patient referred for further management"
-                  },
-                  {
-                    "concept": "4c71f560-3d28-4ed5-9a81-e79e9706960d",
-                    "label": "Known Hypertensive and Controlled and on lifestyle modification"
-                  },
-                  {
-                    "concept": "f569d1a9-de58-4c80-8f97-807cc6129a6b",
-                    "label": "Known Hypertensive and Controlled and on lifestyle modification and Medication"
-                  },
-                  {
-                    "concept": "00a80828-26be-463c-8090-9c6d1c11a885",
-                    "label": "Known Hypertensive but not on Treatment"
-                  },
-                  {
-                    "concept": "5b839510-a3d0-41fa-bbeb-e446d98140d8",
-                    "label": "Known Hypertensive, not controlled and on lifestyle modification"
-                  },
-                  {
-                    "concept": "0e43e79e-92ba-42dd-b436-564e1bc1d856",
-                    "label": "Known Hypertensive, not controlled and on lifestyle modification and Medication"
-                  },
-                  {
-                    "concept": "f23000f4-f6bf-4438-bcb8-2b741612238c",
-                    "label": "Newly Diagnosed and on lifestyle modification"
-                  },
-                  {
-                    "concept": "205b0a6e-7367-46d0-9d2c-ee5a64fbc756",
-                    "label": "Newly Diagnosed and on lifestyle modification and Medication"
-                  },
-                  {
-                    "concept": "5f0b55b8-d4ec-46e7-a052-7f1176a91077",
-                    "label": "Normal Blood pressure"
-                  }
-                ]
-              },
-              "validators": []
             },
             {
-              "label": "Diabetes Mellitus Status",
+              "label": "CaCx Treatment",
               "type": "obs",
-              "required": false,
-              "id": "dmstatus",
+              "id": "CaCxRx",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "126aecd6-c4de-4b1f-bfa2-8f68380f9329",
+                "concept": "6f1baf4c-1cdd-44a5-a48e-909391ed05f2",
                 "answers": [
                   {
-                    "concept": "fd36c202-06ad-4e9b-95e7-d3e02d34c936",
-                    "label": "Normal blood sugar"
+                    "concept": "c09f8971-8bf4-4624-b9f2-a62bfea92c67",
+                    "label": "Thermocoagulation / Thermoablation"
                   },
                   {
-                    "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
-                    "label": "No clinical Symptoms and Signs"
+                    "concept": "12f92268-8e92-4c4e-8b8d-53b81c1c361d",
+                    "label": "LEEP"
                   },
                   {
-                    "concept": "8473a4cb-5431-4775-83b2-6f0c8086ecbe",
-                    "label": "Known Diabetic but not on Treatment"
-                  },
-                  {
-                    "concept": "c1ede22a-fe95-402e-b2f2-18b1709f0414",
-                    "label": "Known Diabetic and not controlled on medication and lifestyle modification"
-                  },
-                  {
-                    "concept": "844dec77-9c0c-4bb1-ab23-ccc083c9c97a",
-                    "label": "Known Diabetic and not controlled on lifestyle modification"
-                  },
-                  {
-                    "concept": "8047b4be-11cb-47a6-a98b-2e7777ea7477",
-                    "label": "Diabetic patient referred for further management"
+                    "concept": "dd80befb-70fc-4f90-a1ff-0c78c9752d67",
+                    "label": "Cryotherapy"
                   }
                 ]
               },
-              "validators": []
+              "hide": {
+                "hideWhenExpression": "sex !== 'F'"
+              }
             },
             {
-              "label": "MH-A/D Status",
+              "label": "Syphilis Status",
               "type": "obs",
-              "required": false,
-              "id": "mhStatus",
+              "id": "syphillisStatus",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "6649a671-32ea-45b7-adc5-bda1cff7febd",
+                "concept": "d8bc9915-ed4b-4df9-9458-72ca1bc2cd06",
+                "conceptMappings": [],
                 "answers": [
                   {
-                    "concept": "2e3760ca-aea9-4958-a2c6-6ad32dc79445",
-                    "label": "Has signs and symptoms with high suicide Risk on Medication only"
-                  },
-                  {
-                    "concept": "8faa9bb9-9065-44bc-b426-ef0336ff4c94",
-                    "label": "Has signs and symptoms with high suicide Risk on Psychotherapy and Medication"
-                  },
-                  {
-                    "concept": "9a3ecb59-6cfd-4c9a-b63b-1f4bda0a3a47",
-                    "label": "Has signs and symptoms with Low/moderate suicide Risk"
-                  },
-                  {
-                    "concept": "678ae5a3-8b79-4d2a-ac95-32128cf311f1",
-                    "label": "Known mental illness NEITHER on Psychotherapy NOR Medication"
-                  },
-                  {
-                    "concept": "d3182660-b86b-4df1-950b-d9903587d88b",
-                    "label": "Known mental illness on Medication only"
-                  },
-                  {
-                    "concept": "62d257a7-9dea-4240-a7de-ec1f800da668",
-                    "label": "Known mental illness on Psychotherapy and Medication"
-                  },
-                  {
-                    "concept": "0888ffe4-47d1-4f72-8d98-df2ff30a6f79",
-                    "label": "Known mental illness on Psychotherapy only"
-                  },
-                  {
                     "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
-                    "label": "No clinical Symptoms and Signs"
+                    "label": "No symptoms",
+                    "conceptMappings": []
                   },
                   {
-                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
-                    "label": "NOT ELIGIBLE"
+                    "concept": "0d323507-97ff-4146-917c-11119546c051",
+                    "label": "Symptomatic Non-Reactive",
+                    "conceptMappings": []
                   },
                   {
-                    "concept": "21641587-3417-4f0a-b77a-bb7c07126b5b",
-                    "label": "Recovered"
+                    "concept": "fe247560-8db6-4664-a6bc-e3b873b9b10a",
+                    "label": "Symptomatic Reactive",
+                    "conceptMappings": []
                   },
                   {
-                    "concept": "7b246acf-d518-4b51-828c-d69593f3d66b",
-                    "label": "Referred Out"
+                    "concept": "db3b19b2-e5f0-48c5-9ab4-dd9e4ad519dd",
+                    "label": "Symptomatic Reactive and treated",
+                    "conceptMappings": []
                   }
                 ]
-              },
-              "validators": []
-            },
-            {
-              "label": "MH-A/S Status",
-              "type": "obs",
-              "required": false,
-              "id": "mhastatus",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "10eb8116-0602-41e4-8e62-6325440dffb2",
-                "answers": [
-                  {
-                    "concept": "3a67585e-e401-4320-a31e-0d7c97818e61",
-                    "label": "Has Signs and Symptoms on Brief Intervention"
-                  },
-                  {
-                    "concept": "9b0fdd9e-0607-441b-80cd-de7ef710376c",
-                    "label": "Has Signs and Symptoms on Brief Intervention/clinical management"
-                  },
-                  {
-                    "concept": "fb681708-d19a-4a92-91c4-df29a50cbb35",
-                    "label": "Known Alcohol or Substance use disorder NEITHER on Brief Intervention NOR clinical management"
-                  },
-                  {
-                    "concept": "f8c953db-113d-4b11-b4e6-83ad7516869d",
-                    "label": "Known Alcohol or Substance use disorder on Brief Intervention and/or clinical management"
-                  },
-                  {
-                    "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
-                    "label": "No clinical Symptoms and Signs"
-                  },
-                  {
-                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
-                    "label": "NOT ELIGIBLE"
-                  },
-                  {
-                    "concept": "21641587-3417-4f0a-b77a-bb7c07126b5b",
-                    "label": "Recovered"
-                  },
-                  {
-                    "concept": "7b246acf-d518-4b51-828c-d69593f3d66b",
-                    "label": "Referred Out"
-                  }
-                ]
-              },
-              "validators": []
+              }
             }
           ]
         },
@@ -590,6 +903,45 @@
                 },
                 "conceptMappings": [],
                 "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(tbStatus) || tbStatus !== 'dcdaa6b4-30ab-102d-86b0-7a5022ba4115'"
+              }
+            },
+            {
+              "label": "Regimen",
+              "type": "obs",
+              "id": "TBRegimen",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "16fd7307-0b26-4c8b-afa3-8362baff4042",
+                "answers": [
+                  {
+                    "concept": "d250bcae-5889-4bb4-9903-e47f8594f746",
+                    "label": "2RHZE/4H"
+                  },
+                  {
+                    "concept": "eb1f1131-d0e2-414a-94a5-d5c7ad126c9f",
+                    "label": "2RHZE/4RH"
+                  },
+                  {
+                    "concept": "73cd1cda-e82a-43d8-938c-fbaf97b7642b",
+                    "label": "2RHZE/6EH"
+                  },
+                  {
+                    "concept": "b539f758-b24b-417f-9400-4edeca0f6e06",
+                    "label": "2RHZ/4RH"
+                  },
+                  {
+                    "concept": "7f47837f-1ea5-4a99-b4dd-5ca268d24ba8",
+                    "label": "2RHZE/10RH"
+                  },
+                  {
+                    "concept": "c25e5586-4660-4020-83cd-ee7f7f7fec20",
+                    "label": "2SRHZE/RHZE/5RHE"
+                  }
+                ]
               },
               "validators": [],
               "hide": {
@@ -701,7 +1053,7 @@
               }
             },
             {
-              "label": "Signs and Symptoms",
+              "label": "Presenting Signs and Symptoms",
               "type": "obs",
               "id": "signsAndSymptoms",
               "questionOptions": {
@@ -888,6 +1240,34 @@
               }
             },
             {
+              "label": "Diagnosis (Including OIs)",
+              "type": "obs",
+              "required": false,
+              "id": "diagnosisOIS",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "677cea54-d613-4d98-b65f-bfc76202505d",
+                "answers": [
+                  {
+                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
+                    "label": "Bacterial Pneumonia"
+                  },
+                  {
+                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
+                    "label": "Thrush-oral/vagina"
+                  },
+                  {
+                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
+                    "label": "Toxoplasmosis"
+                  },
+                  {
+                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
+                    "label": " Pelvic Inflammatory Disease"
+                  }
+                ]
+              }
+            },
+            {
               "label": "Advanced Disease Status",
               "type": "obs",
               "required": "true",
@@ -1034,38 +1414,6 @@
               }
             },
             {
-              "label": "Syphilis Status",
-              "type": "obs",
-              "id": "syphillisStatus",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "d8bc9915-ed4b-4df9-9458-72ca1bc2cd06",
-                "conceptMappings": [],
-                "answers": [
-                  {
-                    "concept": "5bc3446f-c473-4f6c-ba58-a168ea79f096",
-                    "label": "No symptoms",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "0d323507-97ff-4146-917c-11119546c051",
-                    "label": "Symptomatic Non-Reactive",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "fe247560-8db6-4664-a6bc-e3b873b9b10a",
-                    "label": "Symptomatic Reactive",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "db3b19b2-e5f0-48c5-9ab4-dd9e4ad519dd",
-                    "label": "Symptomatic Reactive and treated",
-                    "conceptMappings": []
-                  }
-                ]
-              }
-            },
-            {
               "label": "ART Adherence",
               "type": "obs",
               "id": "artAdherence",
@@ -1164,21 +1512,277 @@
               "hide": {
                 "hideWhenExpression": "isEmpty(artAdherence) || artAdherence == 'dcdf1708-30ab-102d-86b0-7a5022ba4115'"
               }
+            },
+            {
+              "label": "Offending Agent/Intervation",
+              "type": "obs",
+              "id": "OffendingAgent",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "24b52dcb-2809-4ed8-92bb-b212f394bf50",
+                "answers": [
+                  {
+                    "concept": "d7821ccb-f313-4340-a6c4-6b64353dc44c",
+                    "label": "Anti-Cancer Drug"
+                  },
+                  {
+                    "concept": "9aacf7ca-7560-4d64-b1b6-47f0a0fb5d9d",
+                    "label": "Anti-TB drugs"
+                  },
+                  {
+                    "concept": "dc9760b4-30ab-102d-86b0-7a5022ba4115",
+                    "label": "ANTIRETROVIRAL DRUGS"
+                  },
+                  {
+                    "concept": "dcdf4a6b-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COTRIMOXAZOLE"
+                  },
+                  {
+                    "concept": "dc65c7d5-30ab-102d-86b0-7a5022ba4115",
+                    "label": "DAPSONE"
+                  },
+                  {
+                    "concept": "277f8bf8-ae27-4489-a1fc-6d7253efc217",
+                    "label": "TPT"
+                  },
+                  {
+                    "concept": "dc9b6c79-30ab-102d-86b0-7a5022ba4115",
+                    "label": "VACCINATIONS"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Grading",
+              "type": "obs",
+              "id": "grading",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f2547a99-21c9-4e86-99e8-b6c4dda36f42",
+                "answers": [
+                  {
+                    "concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No ADR"
+                  },
+                  {
+                    "concept": "1498AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Mild"
+                  },
+                  {
+                    "concept": "ba7ae66b-8108-45b6-a34d-e842cf31c623",
+                    "label": "Moderate"
+                  },
+                  {
+                    "concept": "1500AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Severe"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Severity",
+              "type": "obs",
+              "id": "severity",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
+                "answers": [
+                  {
+                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Action taken",
+              "type": "obs",
+              "id": "actionTaken",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "14eb35a0-1454-47bb-90cf-bf6cf96340a8",
+                "answers": [
+                  {
+                    "concept": "5b3ead8a-a7e2-11ed-afa1-0242ac120002",
+                    "label": "Managed Locally"
+                  },
+                  {
+                    "concept": "7b246acf-d518-4b51-828c-d69593f3d66b",
+                    "label": "Referred"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Outcome",
+              "type": "obs",
+              "id": "outcome",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "d0a568f1-fd17-4327-aba2-24619aa24273",
+                "answers": [
+                  {
+                    "concept": "dcb23465-30ab-102d-86b0-7a5022ba4115",
+                    "label": "LOST TO FOLLOWUP"
+                  },
+                  {
+                    "concept": "160034AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Died"
+                  },
+                  {
+                    "concept": "9fe77bf2-7175-46bd-8478-be5fa7411313",
+                    "label": "Not Recovered"
+                  },
+                  {
+                    "concept": "21641587-3417-4f0a-b77a-bb7c07126b5b",
+                    "label": "Recovered"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  },
+                  {
+                    "concept": "12fdfbd4-1df4-4649-b32e-591feefab59e",
+                    "label": "Recovering"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Other Outcome",
+              "type": "obs",
+              "id": "otherOutcome",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "05018034-4bf1-4025-8396-5c08e3690c10"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(outcome) || outcome != '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Date of occurrence",
+              "type": "obs",
+              "id": "date",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "648995af-baf8-4954-a850-2ead8162a86b",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "1410 (Vaccination date)"
+                  }
+                ],
+                "answers": []
+              }
             }
           ]
         },
         {
-          "label": "Clinic Notes",
+          "label": "Vaccination Status",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Clinical Notes",
+              "label": "HPV Vaccination Status",
               "type": "obs",
-              "required": false,
-              "id": "clinical-notes",
+              "id": "hpvVacStatus",
               "questionOptions": {
-                "rendering": "textarea",
-                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "rendering": "select",
+                "concept": "525c11be-f4d6-4373-b09a-3fc03390ec8c",
+                "answers": [
+                  {
+                    "concept": "560c41fd-07a2-4b84-8f6c-df7b671f0425",
+                    "label": "Partial"
+                  },
+                  {
+                    "concept": "dca06bae-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COMPLETED"
+                  },
+                  {
+                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NOT ELIGIBLE"
+                  },
+                  {
+                    "concept": "9a135b14-6b01-474b-a8ff-63398e65a4c6",
+                    "label": "Not Vaccinated"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "HPV Vaccination Date",
+              "type": "obs",
+              "id": "date",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1410AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "1410 (Vaccination date)"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "hpvVacStatus !== '560c41fd-07a2-4b84-8f6c-df7b671f0425' && hpvVacStatus !== 'dca06bae-30ab-102d-86b0-7a5022ba4115'"
+              }
+            },
+            {
+              "label": "COVID-19 Vaccination Status",
+              "type": "obs",
+              "id": "COVID19VaccinationStatus",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "50032cf9-d5e6-4b8d-8d7d-32906d6a1115",
+                "answers": [
+                  {
+                    "concept": "560c41fd-07a2-4b84-8f6c-df7b671f0425",
+                    "label": "Partial"
+                  },
+                  {
+                    "concept": "f1ba16e1-1567-4657-b881-02a6218f7533",
+                    "label": "Boosted"
+                  },
+                  {
+                    "concept": "dca06bae-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COMPLETED"
+                  },
+                  {
+                    "concept": "dca26f78-30ab-102d-86b0-7a5022ba4115",
+                    "label": "NOT ELIGIBLE"
+                  },
+                  {
+                    "concept": "9a135b14-6b01-474b-a8ff-63398e65a4c6",
+                    "label": "Not Vaccinated"
+                  }
+                ]
+              }
+            },
+            {
+              "label": " COVID-19 Vaccination Date",
+              "type": "obs",
+              "id": "COVID19vaccDate",
+              "datePickerFormat": "calendar",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1410AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "1410 (Vaccination date)"
+                  }
+                ]
               },
               "validators": []
             }
@@ -1445,6 +2049,22 @@
                     "label": "Checkup"
                   }
                 ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Clinic Notes",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Clinical Notes",
+              "type": "obs",
+              "id": "clinical-notes",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "validators": []
             }
