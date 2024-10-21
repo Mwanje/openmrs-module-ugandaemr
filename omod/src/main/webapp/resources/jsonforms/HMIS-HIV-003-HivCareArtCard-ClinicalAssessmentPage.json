@@ -381,7 +381,7 @@
               "id": "digitalHealthRegistration",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "dce13f66-30ab-102d-86b0-7a5022ba4115",
+                "concept": "6908508b-70c0-4b21-92d4-4fffd9458dac",
                 "answers": [
                   {
                     "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
@@ -392,8 +392,7 @@
                     "label": "NO"
                   }
                 ]
-              },
-              "validators": []
+              }
             }
           ]
         },
