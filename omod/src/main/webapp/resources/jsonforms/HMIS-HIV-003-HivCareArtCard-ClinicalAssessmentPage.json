@@ -1239,34 +1239,6 @@
               }
             },
             {
-              "label": "Diagnosis (Including OIs)",
-              "type": "obs",
-              "required": false,
-              "id": "diagnosisOIS",
-              "questionOptions": {
-                "rendering": "checkbox",
-                "concept": "677cea54-d613-4d98-b65f-bfc76202505d",
-                "answers": [
-                  {
-                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
-                    "label": "Bacterial Pneumonia"
-                  },
-                  {
-                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
-                    "label": "Thrush-oral/vagina"
-                  },
-                  {
-                    "concept": "dcd695dc-30ab-102d-86b0-7a5022ba4115",
-                    "label": "Toxoplasmosis"
-                  },
-                  {
-                    "concept": "dcd69c06-30ab-102d-86b0-7a5022ba4115",
-                    "label": " Pelvic Inflammatory Disease"
-                  }
-                ]
-              }
-            },
-            {
               "label": "Advanced Disease Status",
               "type": "obs",
               "required": "true",
@@ -1577,26 +1549,6 @@
                   }
                 ]
               }
-            },
-            {
-              "label": "Severity",
-              "type": "obs",
-              "id": "severity",
-              "questionOptions": {
-                "rendering": "select",
-                "concept": "f0826902-a6d1-4abb-9783-1aeec0dea9d3",
-                "answers": [
-                  {
-                    "concept": "dc6625ec-30ab-102d-86b0-7a5022ba4115",
-                    "label": "COUGH"
-                  },
-                  {
-                    "concept": "dcddd7bf-30ab-102d-86b0-7a5022ba4115",
-                    "label": "FEVER"
-                  }
-                ]
-              },
-              "validators": []
             },
             {
               "label": "Action taken",
