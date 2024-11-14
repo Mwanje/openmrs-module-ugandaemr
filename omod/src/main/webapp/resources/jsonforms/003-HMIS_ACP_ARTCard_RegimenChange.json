@@ -39,7 +39,7 @@
               "readonly": true,
               "questionOptions": {
                 "rendering": "select",
-                "concept": "dd2b0b4d-30ab-102d-86b0-7a5022ba4115",
+                "concept": "107bef04-bf05-4f41-9260-b167c1108f7e",
                 "calculate": {
                   "calculateExpression": "resolve(api.getLatestObs(patient.id, 'dd2b0b4d-30ab-102d-86b0-7a5022ba4115')).then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
                 },
@@ -222,14 +222,15 @@
               "validators": []
             },
             {
-              "label": "Current Line",
-              "type": "programState",
-              "id": "currentLine",
+              "label": "Current Regimen Line",
+              "type": "obs",
+              "id": "currentRegimenLine",
               "readonly": true,
               "questionOptions": {
-                "concept": "",
+                "concept": "80148344-ce80-42f7-9d4a-8c1935efe76e",
+                "rendering": "select",
                 "calculate": {
-                  "calculateExpression": "resolve(api.getLatestObs(patient.id, 'e6a72c98-1c79-4e76-84b1-2db63d27bce6'))?.valueCodeableConcept?.coding[0]?.code"
+                  "calculateExpression": "resolve(api.getLatestObs(patient.id, '164515AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')).then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
                 },
                 "answers": [
                   {
@@ -244,21 +245,8 @@
                     "value": "5d2d0e7e-69a6-408a-b5ce-8d93fb72bc21",
                     "label": "THIRD LINE REGIMEN"
                   }
-                ],
-                "rendering": "select",
-                "programUuid": "18c6d4aa-0a36-11e7-8dbb-507b9dc4c741",
-                "workflowUuid": "4c30d724-dbcc-42db-ba9b-a9b9d2aadc00"
+                ]
               }
-            },
-            {
-              "label": "Clinician",
-              "type": "encounterProvider",
-              "required": false,
-              "id": "provider",
-              "questionOptions": {
-                "rendering": "ui-select-extended"
-              },
-              "validators": []
             },
             {
               "label": "Regimen Change Type",
@@ -489,6 +477,33 @@
               }
             },
             {
+              "label": "New Regimen Line",
+              "type": "obs",
+              "id": "newRegimenLine",
+              "readonly": true,
+              "questionOptions": {
+                "concept": "164515AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "select",
+                "calculate": {
+                  "calculateExpression": "resolve(api.getLatestObs(patient.id, '164515AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')).then(obs => obs.valueCodeableConcept?.coding[0]?.code)"
+                },
+                "answers": [
+                  {
+                    "value": "ab6d1f1d-fcf6-4255-8b6f-2bf8959ad8f2",
+                    "label": "FIRST LINE ARV REGIMEN"
+                  },
+                  {
+                    "value": "9a42a3ad-d8a4-4f2e-9fa0-04d5f2e6436e",
+                    "label": "SECOND LINE ARV REGIMEN"
+                  },
+                  {
+                    "value": "5d2d0e7e-69a6-408a-b5ce-8d93fb72bc21",
+                    "label": "THIRD LINE REGIMEN"
+                  }
+                ]
+              }
+            },
+            {
               "label": "Reason for Regimen Substitution",
               "type": "obs",
               "required": false,
@@ -641,10 +656,10 @@
               }
             },
             {
-              "label": "Clinician Notes",
+              "label": "Clinical Notes",
               "type": "obs",
               "required": false,
-              "id": "clinicianNotes",
+              "id": "clinicalNotes",
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "159395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
