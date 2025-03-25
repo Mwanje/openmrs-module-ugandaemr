@@ -133,7 +133,8 @@
 		<o3formsVersion>2.3.0</o3formsVersion>
 		<orderTemplatesVersion>1.0.3</orderTemplatesVersion>
 		<attachmentsVersion>3.0.0</attachmentsVersion>
-
+		<orderexpansionVersion>1.0.0</orderexpansionVersion>
+		<billingVersion>1.2.0-SNAPSHOT</billingVersion>
 		<!-- core configuration library -->
 		<ugandaemrReportsVersion>2.1.2</ugandaemrReportsVersion>
 	</properties>
@@ -531,6 +532,20 @@
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>attachments</artifactId>
 				<version>${attachmentsVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>orderexpansion</artifactId>
+				<version>${orderexpansionVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>billing</artifactId>
+				<version>${bilingVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 
